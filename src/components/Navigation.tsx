@@ -23,8 +23,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="font-playfair text-2xl font-bold text-primary">
-            Metro Laminates
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/b07303d8-e39a-4b29-968d-c44490fbbfd8.png" 
+              alt="Metro Laminates - Premium decorative surfaces for architectural excellence" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -160,8 +160,8 @@ const ContactPage = () => {
                       <h4 className="font-inter font-semibold text-primary mb-2">WhatsApp</h4>
                       <p className="font-inter text-muted-foreground mb-2">Quick responses for immediate needs</p>
                       <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                        <a href="https://wa.me/919326005195" target="_blank" rel="noopener noreferrer">
-                          +91 93260 05195
+                         <a href="https://wa.me/919326005195" target="_blank" rel="noopener noreferrer">
+                          +91 9326005195
                         </a>
                       </Button>
                     </div>
@@ -205,8 +205,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Sample Delivery</h4>
-                    <p>Mumbai: Same day</p>
-                    <p>Pan India: 2-3 business days</p>
+                    <p>All India: 2-3 business days</p>
                   </div>
                 </div>
               </Card>
@@ -217,9 +216,8 @@ const ContactPage = () => {
                   Service Areas
                 </h3>
                 <div className="space-y-2 font-inter text-muted-foreground">
-                  <p><span className="font-semibold text-primary">Primary:</span> Mumbai, Pune, Nashik</p>
-                  <p><span className="font-semibold text-primary">Secondary:</span> Delhi, Bangalore, Chennai</p>
-                  <p><span className="font-semibold text-primary">Distribution:</span> Pan India network</p>
+                  <p className="font-semibold text-primary">We serve customers across India.</p>
+                  <p>Our distribution network ensures timely delivery and support nationwide.</p>
                 </div>
               </Card>
             </div>

@@ -64,13 +64,13 @@ const Home = () => {
         <section className="py-24 px-6 bg-background">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-primary mb-6">
-                Premium Product Range
-              </h2>
-              <p className="font-inter text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                From ASA Acrycore sheets to decorative louvers, explore our curated 
-                collection of premium surfaces designed for architectural excellence.
-              </p>
+            <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-primary mb-6">
+              Our Product Collection
+            </h2>
+            <p className="font-inter text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              From ASA Acrycore sheets to decorative louvers, explore our curated 
+              collection of surfaces designed for architectural excellence.
+            </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">

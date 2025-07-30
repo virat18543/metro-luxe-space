@@ -8,10 +8,16 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="font-playfair text-2xl font-bold">Metro Laminates</h3>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/b07303d8-e39a-4b29-968d-c44490fbbfd8.png" 
+                alt="Metro Laminates" 
+                className="h-8 w-auto opacity-90"
+              />
+            </div>
             <p className="font-inter text-primary-foreground/80 leading-relaxed">
-              Premium decorative surfaces for architectural excellence. 
-              Trusted B2B partner since decades.
+              Decorative surfaces for architectural excellence. 
+              Trusted B2B partner for decades.
             </p>
           </div>
 
@@ -62,7 +68,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center"
                 >
-                  WhatsApp: +91 93260 05195
+                  WhatsApp: +91 9326005195
                 </a>
               </Button>
               <Button 

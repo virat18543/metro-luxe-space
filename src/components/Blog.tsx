@@ -1,4 +1,5 @@
 import { Card } from "./ui/card";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const articles = [
@@ -7,21 +8,24 @@ const Blog = () => {
       excerpt: "A comprehensive guide to choosing between ASA Acrycore and PETG decorative sheets for your architectural projects.",
       category: "Material Science",
       readTime: "5 min read",
-      keywords: "ASA Acrycore, PETG, decorative sheets, material comparison, architectural surfaces"
+      keywords: "ASA Acrycore, PETG, decorative sheets, material comparison, architectural surfaces",
+      path: "/blog/asa-vs-petg"
     },
     {
-      title: "Sustainable Design with Decorative Laminates",
-      excerpt: "Exploring eco-friendly options in premium laminate selection for modern commercial and residential spaces.",
+      title: "Sustainable Design with Laminates",
+      excerpt: "Exploring eco-friendly options in laminate selection for modern commercial and residential spaces.",
       category: "Sustainability",
       readTime: "7 min read",
-      keywords: "sustainable laminates, eco-friendly materials, green building, environmental design"
+      keywords: "sustainable laminates, eco-friendly materials, green building, environmental design",
+      path: "/blog/sustainable-design"
     },
     {
       title: "Louver Systems: Function Meets Aesthetic Appeal",
       excerpt: "How decorative louvers enhance both ventilation and visual impact in contemporary architectural design.",
       category: "Design Trends",
       readTime: "6 min read", 
-      keywords: "decorative louvers, architectural elements, ventilation design, commercial interiors"
+      keywords: "decorative louvers, architectural elements, ventilation design, commercial interiors",
+      path: "/blog/louver-systems"
     }
   ];
 
@@ -40,10 +44,8 @@ const Blog = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {articles.map((article, index) => (
-            <Card 
-              key={index}
-              className="p-8 h-full hover:shadow-elegant transition-all duration-300 cursor-pointer group border-border/50"
-            >
+            <Link key={index} to={article.path}>
+              <Card className="p-8 h-full hover:shadow-elegant transition-all duration-300 cursor-pointer group border-border/50">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="font-inter text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
@@ -68,7 +70,8 @@ const Blog = () => {
                   </span>
                 </div>
               </div>
-            </Card>
+              </Card>
+            </Link>
           ))}
         </div>
         

@@ -47,6 +47,7 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--cream-base)), hsl(var(--cream-light)));
     --gradient-brown: linear-gradient(135deg, hsl(var(--brown-base)), hsl(var(--brown-light)));
+    --gradient-overlay: linear-gradient(135deg, rgba(32, 22, 18, 0.6), rgba(32, 22, 18, 0.3));
     
     /* Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(var(--brown-base) / 0.1);

@@ -13,6 +13,9 @@ import Resources from "./pages/Resources";
 import ContactPage from "./pages/ContactPage";
 import Downloads from "./pages/Downloads";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import AsaVsPetg from "./pages/blog/AsaVsPetg";
+import SustainableDesign from "./pages/blog/SustainableDesign";
+import LouverSystems from "./pages/blog/LouverSystems";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,9 +35,12 @@ const App = () => (
             <Route path="/philosophy" element={<PhilosophyPage />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/downloads" element={<Downloads />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="*" element={<NotFound />} />
+        <Route path="/downloads" element={<Downloads />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/blog/asa-vs-petg" element={<AsaVsPetg />} />
+        <Route path="/blog/sustainable-design" element={<SustainableDesign />} />
+        <Route path="/blog/louver-systems" element={<LouverSystems />} />
+        <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>

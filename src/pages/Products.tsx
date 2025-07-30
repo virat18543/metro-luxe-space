@@ -42,7 +42,7 @@ const Products = () => {
       <section className="py-24 px-6 bg-gradient-to-b from-cream-light to-background">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="font-playfair text-4xl md:text-6xl font-semibold text-primary mb-6">
-            Premium Product Range
+            Our Product Collection
           </h1>
           <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Discover our comprehensive collection of decorative surfaces, 
