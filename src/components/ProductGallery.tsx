@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
@@ -145,15 +146,24 @@ const ProductGallery = () => {
         {/* Product Categories Overview */}
         <div className="mt-24 pt-16 border-t border-border">
           <div className="grid md:grid-cols-4 gap-8 text-center">
-            {['ASA Acrycore Sheets', 'Premium Laminates', 'Decorative Louvers', 'Cane Wallpaper'].map((category, index) => (
-              <div key={index} className="group">
+            {[
+              { name: 'ASA Acrycore Sheets', anchor: '#asa-sheets' },
+              { name: 'Premium Laminates', anchor: '#laminates' },
+              { name: 'Decorative Louvers', anchor: '#louvers' },
+              { name: 'Cane Wallpaper', anchor: '#wallpaper' }
+            ].map((category, index) => (
+              <Link 
+                key={index} 
+                to={`/products${category.anchor}`}
+                className="group hover:scale-105 transition-all duration-300"
+              >
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-brown rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <div className="w-8 h-8 border-2 border-primary-foreground rounded-full" />
                 </div>
-                <h5 className="font-inter font-medium text-primary">
-                  {category}
+                <h5 className="font-inter font-medium text-primary group-hover:text-primary/80 transition-colors">
+                  {category.name}
                 </h5>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
