@@ -87,50 +87,6 @@ const PhilosophyPage = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-24 px-6 bg-background">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
-              Our Journey
-            </h2>
-            <p className="font-inter text-lg text-muted-foreground">
-              Three decades of growth, innovation, and unwavering commitment to quality.
-            </p>
-          </div>
-
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/20" />
-            
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <div key={index} className="relative flex items-start space-x-8">
-                  {/* Timeline Dot */}
-                  <div className="relative z-10 w-16 h-16 bg-gradient-brown rounded-full flex items-center justify-center flex-shrink-0">
-                    <div className="w-6 h-6 bg-primary-foreground rounded-full" />
-                  </div>
-                  
-                  {/* Content */}
-                  <Card className="flex-1 p-8 hover:shadow-elegant transition-all duration-300">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <span className="font-playfair text-2xl font-bold text-primary">
-                        {item.year}
-                      </span>
-                      <h3 className="font-playfair text-xl font-semibold text-primary">
-                        {item.title}
-                      </h3>
-                    </div>
-                    <p className="font-inter text-muted-foreground leading-relaxed">
-                      {item.description}
-                    </p>
-                  </Card>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Core Values */}
       <section className="py-24 px-6 bg-cream-light">

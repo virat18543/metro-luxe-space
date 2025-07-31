@@ -34,6 +34,7 @@ const Footer = () => {
                 <Link
                   key={link.path}
                   to={link.path}
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="block font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   {link.name}
@@ -95,6 +96,7 @@ const Footer = () => {
             <div className="flex space-x-6">
               <Link 
                 to="/privacy-policy" 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 Privacy Policy

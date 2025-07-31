@@ -18,6 +18,10 @@ const Navigation = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -37,6 +41,7 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
+                onClick={handleNavClick}
                 className={`font-inter font-medium transition-colors duration-200 ${
                   isActive(item.path)
                     ? 'text-primary'
@@ -78,7 +83,10 @@ const Navigation = () => {
                       ? 'text-primary bg-primary/10'
                       : 'text-muted-foreground hover:text-primary hover:bg-primary/5'
                   }`}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    handleNavClick();
+                  }}
                 >
                   {item.name}
                 </Link>

@@ -56,7 +56,16 @@ const Products = () => {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {productCategories.map((category, index) => (
-              <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+              <div 
+                key={index} 
+                id={
+                  index === 0 ? "asa-sheets" : 
+                  index === 1 ? "laminates" : 
+                  index === 2 ? "louvers" : 
+                  "wallpaper"
+                }
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}
+              >
                 <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                   <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary">
                     {category.name}

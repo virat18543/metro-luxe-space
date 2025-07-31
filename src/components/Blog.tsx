@@ -44,7 +44,11 @@ const Blog = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {articles.map((article, index) => (
-            <Link key={index} to={article.path}>
+            <Link 
+              key={index} 
+              to={article.path}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
               <Card className="p-8 h-full hover:shadow-elegant transition-all duration-300 cursor-pointer group border-border/50">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

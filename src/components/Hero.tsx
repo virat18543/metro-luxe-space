@@ -13,15 +13,15 @@ const Hero = () => {
           className="w-full h-full object-cover object-center"
           poster={heroImage}
         >
-          <source src="/hero-video.mp4" type="video/mp4" />
+          <source src="/modern-interior-video.mp4" type="video/mp4" />
           {/* Fallback image if video fails to load */}
           <img 
             src={heroImage} 
-            alt="Elegant interior with decorative surfaces and laminates"
+            alt="Modern interior with premium decorative surfaces and laminates"
             className="w-full h-full object-cover object-center"
           />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-brown-dark/70 via-brown-dark/50 to-brown-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90" />
       </div>
       
       {/* Content */}

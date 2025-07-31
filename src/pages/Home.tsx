@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
-import Philosophy from "../components/Philosophy";
+import CoreValues from "../components/CoreValues";
+import ProductIcons from "../components/ProductIcons";
 import JsonLd from "../components/JsonLd";
 import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
@@ -60,49 +61,11 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Product Preview */}
-        <section className="py-24 px-6 bg-background">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-primary mb-6">
-              Our Product Collection
-            </h2>
-            <p className="font-inter text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              From ASA Acrycore sheets to decorative louvers, explore our curated 
-              collection of surfaces designed for architectural excellence.
-            </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              {productPreview.map((product, index) => (
-                <Card key={index} className="overflow-hidden group hover:shadow-elegant transition-all duration-300">
-                  <div className="relative h-64">
-                    <img 
-                      src={product.image} 
-                      alt={`${product.name} premium decorative surface sample`}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-playfair text-xl font-semibold text-primary mb-2">
-                      {product.name}
-                    </h3>
-                    <p className="font-inter text-muted-foreground">
-                      {product.description}
-                    </p>
-                  </div>
-                </Card>
-              ))}
-            </div>
-
-            <div className="text-center">
-              <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
-                <Link to="/products">Explore All Products</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+        {/* Product Icons Section */}
+        <ProductIcons />
+        
+        {/* Core Values Strip */}
+        <CoreValues />
 
         {/* Where Our Work Lives */}
         <section className="py-24 px-6 bg-cream-light">
