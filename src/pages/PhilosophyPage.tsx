@@ -1,4 +1,5 @@
 import { Card } from "../components/ui/card";
+import { Users, RefreshCw, Scale, Target } from "lucide-react";
 
 const PhilosophyPage = () => {
   const timeline = [
@@ -26,7 +27,7 @@ const PhilosophyPage = () => {
 
   const values = [
     {
-      icon: "🤝",
+      icon: Users,
       title: "Uncompromising Service",
       description: "Every client interaction reflects our commitment to excellence, from initial consultation to project completion. We believe that exceptional service builds lasting relationships.",
       details: [
@@ -37,7 +38,7 @@ const PhilosophyPage = () => {
       ]
     },
     {
-      icon: "🔄",
+      icon: RefreshCw,
       title: "Supply Continuity",
       description: "Reliable partnerships built on consistent quality and dependable delivery schedules that architects and designers can trust without compromise.",
       details: [
@@ -48,7 +49,7 @@ const PhilosophyPage = () => {
       ]
     },
     {
-      icon: "⚖️",
+      icon: Scale,
       title: "Ethical Practice",
       description: "Transparent processes, honest communication, and sustainable business practices guide every decision we make in our journey towards excellence.",
       details: [
@@ -59,7 +60,7 @@ const PhilosophyPage = () => {
       ]
     },
     {
-      icon: "🎯",
+      icon: Target,
       title: "Selective Distribution",
       description: "Curated partnerships with premium brands ensure our clients access only the finest decorative surface solutions available in the market.",
       details: [
@@ -104,7 +105,9 @@ const PhilosophyPage = () => {
             {values.map((value, index) => (
               <Card key={index} className="p-8 h-full hover:shadow-elegant transition-all duration-300">
                 <div className="text-center mb-6">
-                  <div className="text-4xl mb-4">{value.icon}</div>
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+                    <value.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+                  </div>
                   <h3 className="font-playfair text-2xl font-semibold text-primary mb-4">
                     {value.title}
                   </h3>
