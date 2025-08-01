@@ -156,14 +156,14 @@ const Resources = () => {
             <Button 
               asChild 
               variant="outline"
-              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
             >
               <Link to="/contact">Contact Technical Team</Link>
             </Button>
             <Button 
               asChild 
               variant="outline"
-              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
             >
               <a href="https://wa.me/919326005195" target="_blank" rel="noopener noreferrer">
                 WhatsApp Support
