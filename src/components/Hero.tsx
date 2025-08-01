@@ -3,23 +3,30 @@ import heroImage from "@/assets/hero-ambient.jpg";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video */}
+      {/* Background Image with Video-Ready Structure */}
       <div className="absolute inset-0 z-0">
+        {/* Main background image */}
+        <img 
+          src={heroImage} 
+          alt="Modern interior with premium decorative surfaces and laminates"
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Video will be added when available */}
         <video 
           autoPlay 
           muted 
           loop 
           playsInline
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center absolute inset-0 opacity-0"
           poster={heroImage}
+          onLoadedData={(e) => {
+            e.currentTarget.style.opacity = "1";
+          }}
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
         >
           <source src="/modern-interior-video.mp4" type="video/mp4" />
-          {/* Fallback image if video fails to load */}
-          <img 
-            src={heroImage} 
-            alt="Modern interior with premium decorative surfaces and laminates"
-            className="w-full h-full object-cover object-center"
-          />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90" />
       </div>
