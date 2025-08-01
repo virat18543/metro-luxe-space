@@ -55,7 +55,7 @@ const Home = () => {
               Our commitment extends beyond products to lasting relationships built on 
               service, continuity, and ethical practice.
             </p>
-            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
               <Link to="/philosophy">Discover Our Philosophy</Link>
             </Button>
           </div>
@@ -102,7 +102,7 @@ const Home = () => {
             </div>
 
             <div className="text-center">
-              <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
                 <Link to="/applications">View All Applications</Link>
               </Button>
             </div>

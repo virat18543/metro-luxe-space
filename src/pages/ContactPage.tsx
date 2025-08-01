@@ -159,7 +159,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className="font-inter font-semibold text-primary mb-2">WhatsApp</h4>
                       <p className="font-inter text-muted-foreground mb-2">Quick responses for immediate needs</p>
-                      <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                       <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
                          <a href="https://wa.me/919326005195" target="_blank" rel="noopener noreferrer">
                           +91 9326005195
                         </a>
@@ -177,7 +177,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className="font-inter font-semibold text-primary mb-2">Email</h4>
                       <p className="font-inter text-muted-foreground mb-2">Detailed project discussions</p>
-                      <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
                         <a href="mailto:rrrmetro@gmail.com">
                           rrrmetro@gmail.com
                         </a>

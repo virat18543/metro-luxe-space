@@ -90,7 +90,7 @@ const Products = () => {
                     <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
                       <Link to="/contact">Request Samples</Link>
                     </Button>
-                    <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
                       <Link to="/applications">View Applications</Link>
                     </Button>
                   </div>
