@@ -18,6 +18,10 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AsaVsPetg from "./pages/blog/AsaVsPetg";
 import SustainableDesign from "./pages/blog/SustainableDesign";
 import LouverSystems from "./pages/blog/LouverSystems";
+import AsaAcrycoreSheets from "./pages/products/AsaAcrycoreSheets";
+import PremiumLaminates from "./pages/products/PremiumLaminates";
+import DecorativeLouvers from "./pages/products/DecorativeLouvers";
+import CaneWallpaper from "./pages/products/CaneWallpaper";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +37,10 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/asa-acrycore-sheets" element={<AsaAcrycoreSheets />} />
+            <Route path="/products/premium-laminates" element={<PremiumLaminates />} />
+            <Route path="/products/decorative-louvers" element={<DecorativeLouvers />} />
+            <Route path="/products/cane-wallpaper" element={<CaneWallpaper />} />
             <Route path="/applications" element={<Applications />} />
             <Route path="/philosophy" element={<PhilosophyPage />} />
             <Route path="/resources" element={<Resources />} />

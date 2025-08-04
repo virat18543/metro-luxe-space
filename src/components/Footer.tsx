@@ -48,28 +48,28 @@ const Footer = () => {
             <h4 className="font-inter font-semibold text-lg">Our Products</h4>
             <div className="space-y-2 font-inter text-primary-foreground/80">
               <Link 
-                to="/products#asa-sheets"
+                to="/products/asa-acrycore-sheets"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="block hover:text-primary-foreground transition-colors"
               >
                 ASA Acrycore Sheets
               </Link>
               <Link 
-                to="/products#laminates"
+                to="/products/premium-laminates"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="block hover:text-primary-foreground transition-colors"
               >
                 Premium Laminates
               </Link>
               <Link 
-                to="/products#louvers"
+                to="/products/decorative-louvers"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="block hover:text-primary-foreground transition-colors"
               >
                 Decorative Louvers
               </Link>
               <Link 
-                to="/products#wallpaper"
+                to="/products/cane-wallpaper"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="block hover:text-primary-foreground transition-colors"
               >
