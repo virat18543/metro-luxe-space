@@ -45,7 +45,13 @@ const Footer = () => {
 
           {/* Products */}
           <div className="space-y-4">
-            <h4 className="font-inter font-semibold text-lg">Our Products</h4>
+            <Link 
+              to="/products"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="block"
+            >
+              <h4 className="font-inter font-semibold text-lg hover:text-primary-foreground/80 transition-colors">Our Products</h4>
+            </Link>
             <div className="space-y-2 font-inter text-primary-foreground/80">
               <p>ASA Acrycore Sheets</p>
               <p>Premium Laminates</p>
