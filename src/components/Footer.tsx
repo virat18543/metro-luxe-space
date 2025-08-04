@@ -45,18 +45,36 @@ const Footer = () => {
 
           {/* Products */}
           <div className="space-y-4">
-            <Link 
-              to="/products"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="block"
-            >
-              <h4 className="font-inter font-semibold text-lg hover:text-primary-foreground/80 transition-colors">Our Products</h4>
-            </Link>
+            <h4 className="font-inter font-semibold text-lg">Our Products</h4>
             <div className="space-y-2 font-inter text-primary-foreground/80">
-              <p>ASA Acrycore Sheets</p>
-              <p>Premium Laminates</p>
-              <p>Decorative Louvers</p>
-              <p>Cane Wallpaper</p>
+              <Link 
+                to="/products#asa-sheets"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="block hover:text-primary-foreground transition-colors"
+              >
+                ASA Acrycore Sheets
+              </Link>
+              <Link 
+                to="/products#laminates"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="block hover:text-primary-foreground transition-colors"
+              >
+                Premium Laminates
+              </Link>
+              <Link 
+                to="/products#louvers"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="block hover:text-primary-foreground transition-colors"
+              >
+                Decorative Louvers
+              </Link>
+              <Link 
+                to="/products#wallpaper"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="block hover:text-primary-foreground transition-colors"
+              >
+                Cane Wallpaper
+              </Link>
             </div>
           </div>
 
