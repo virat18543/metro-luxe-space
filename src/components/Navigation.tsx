@@ -27,11 +27,17 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3 min-w-0 flex-shrink-0">
             <img 
               src="/lovable-uploads/b07303d8-e39a-4b29-968d-c44490fbbfd8.png" 
               alt="Metro Laminates - Premium decorative surfaces for architectural excellence" 
-              className="h-8 sm:h-10 md:h-12 w-auto"
+              className="h-8 sm:h-10 md:h-12 w-auto max-w-none object-contain"
+              onError={(e) => {
+                console.error('Logo failed to load:', e);
+                e.currentTarget.style.border = '2px solid red';
+                e.currentTarget.alt = 'Logo Error';
+              }}
+              onLoad={() => console.log('Logo loaded successfully')}
             />
           </Link>
 
