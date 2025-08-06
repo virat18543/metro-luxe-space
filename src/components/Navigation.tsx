@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
+import { ChevronDown } from "lucide-react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false);
+  const [visibleItems, setVisibleItems] = useState(7);
+  const navRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   const navItems = [
@@ -20,7 +24,28 @@ const Navigation = () => {
 
   const handleNavClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsDesktopDropdownOpen(false);
   };
+
+  // Responsive navigation logic
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setVisibleItems(7); // Show all items on large screens
+      } else if (window.innerWidth >= 768) {
+        setVisibleItems(4); // Show fewer items on medium screens
+      } else {
+        setVisibleItems(0); // Hide all on mobile (use mobile menu)
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const visibleNavItems = navItems.slice(0, visibleItems);
+  const hiddenNavItems = navItems.slice(visibleItems);
 
   return (
     <nav className="fixed top-0 w-full bg-gradient-to-r from-background via-background to-background/95 backdrop-blur-md border-b border-border/50 z-50 shadow-lg">
@@ -51,13 +76,14 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
+          <div ref={navRef} className="hidden md:flex items-center space-x-1 relative">
+            {/* Visible Navigation Items */}
+            {visibleNavItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={handleNavClick}
-                className={`relative px-4 py-2 font-inter font-medium transition-all duration-300 rounded-full group ${
+                className={`relative px-3 py-2 font-inter font-medium transition-all duration-300 rounded-full group whitespace-nowrap ${
                   isActive(item.path)
                     ? 'text-primary bg-primary/10'
                     : 'text-muted-foreground hover:text-primary hover:bg-primary/5'
@@ -70,6 +96,45 @@ const Navigation = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Link>
             ))}
+
+            {/* More Menu Dropdown */}
+            {hiddenNavItems.length > 0 && (
+              <div className="relative">
+                <Button
+                  variant="ghost"
+                  onClick={() => setIsDesktopDropdownOpen(!isDesktopDropdownOpen)}
+                  className="relative px-3 py-2 font-inter font-medium transition-all duration-300 rounded-full group text-muted-foreground hover:text-primary hover:bg-primary/5"
+                >
+                  <span className="relative z-10 flex items-center gap-1">
+                    More
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isDesktopDropdownOpen ? 'rotate-180' : ''}`} />
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </Button>
+
+                {/* Dropdown Menu */}
+                {isDesktopDropdownOpen && (
+                  <div className="absolute top-full right-0 mt-2 w-48 bg-background/95 backdrop-blur-md border border-border/50 rounded-lg shadow-lg z-50 animate-fade-in">
+                    <div className="py-2">
+                      {hiddenNavItems.map((item) => (
+                        <Link
+                          key={item.path}
+                          to={item.path}
+                          onClick={handleNavClick}
+                          className={`block px-4 py-2 font-inter font-medium transition-all duration-200 hover:bg-primary/5 ${
+                            isActive(item.path)
+                              ? 'text-primary bg-primary/10'
+                              : 'text-muted-foreground hover:text-primary'
+                          }`}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -115,6 +180,14 @@ const Navigation = () => {
           </div>
         )}
       </div>
+
+      {/* Click outside to close dropdown */}
+      {isDesktopDropdownOpen && (
+        <div 
+          className="fixed inset-0 z-40" 
+          onClick={() => setIsDesktopDropdownOpen(false)}
+        />
+      )}
     </nav>
   );
 };
