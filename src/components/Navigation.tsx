@@ -31,7 +31,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/b07303d8-e39a-4b29-968d-c44490fbbfd8.png" 
               alt="Metro Laminates - Premium decorative surfaces for architectural excellence" 
-              className="h-10 w-auto"
+              className="h-8 sm:h-10 md:h-12 w-auto"
             />
           </Link>
 
