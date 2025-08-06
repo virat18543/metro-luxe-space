@@ -185,12 +185,12 @@ const Downloads = () => {
             delivered directly to your project location.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button asChild className="bg-transparent border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-colors">
               <a href="https://wa.me/919326005195" target="_blank" rel="noopener noreferrer">
                 Request via WhatsApp
               </a>
             </Button>
-            <Button asChild variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button asChild className="bg-transparent border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-colors">
               <a href="mailto:rrrmetro@gmail.com">
                 Email Sample Request
               </a>
