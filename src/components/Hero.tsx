@@ -26,7 +26,7 @@ const Hero = () => {
             e.currentTarget.style.display = "none";
           }}
         >
-          <source src="/modern-interior-video.mp4" type="video/mp4" />
+          <source src="/hero-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90" />
       </div>
