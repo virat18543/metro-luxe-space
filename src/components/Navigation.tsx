@@ -112,7 +112,7 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && <div className="md:hidden border-t border-border/50 bg-gradient-to-b from-background to-background/95 backdrop-blur-md">
+        {isMenuOpen && <div className="md:hidden border-t border-border/50 bg-gradient-to-b from-background to-background/95 backdrop-blur-md animate-fade-in">
             <div className="py-6 space-y-2">
               {navItems.map(item => <Link key={item.path} to={item.path} className={`block mx-4 px-4 py-3 font-inter font-medium transition-all duration-300 rounded-lg group ${isActive(item.path) ? 'text-primary bg-gradient-to-r from-primary/20 to-accent/20' : 'text-muted-foreground hover:text-primary hover:bg-gradient-to-r hover:from-primary/10 hover:to-accent/10'}`} onClick={() => {
             setIsMenuOpen(false);
