@@ -2,7 +2,7 @@ import heroImage from "@/assets/hero-ambient.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative aspect-[3/2] md:min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Video-Ready Structure */}
       <div className="absolute inset-0 z-0">
         {/* Main background image */}
