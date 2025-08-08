@@ -43,27 +43,27 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full text-center px-4 sm:px-6 max-w-4xl mx-auto animate-fade-in">
         {/* Mobile-optimized typography */}
-        <div className="space-y-6 sm:space-y-8">
-          <div className="mb-6 sm:mb-8">
-            <h1 className="font-playfair text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-3 sm:mb-6 leading-tight drop-shadow-lg">
+        <div className="space-y-4 sm:space-y-8">
+          <div className="mb-4 sm:mb-8">
+            <h1 className="font-playfair text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-3 sm:mb-6 leading-tight drop-shadow-lg">
               Metro Laminates
             </h1>
             {/* Mobile visual separator */}
             <div className="block sm:hidden w-16 h-0.5 bg-white/60 mx-auto mb-4"></div>
           </div>
           
-          <div className="space-y-3 sm:space-y-4">
-            <p className="font-inter text-lg sm:text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
+          <div className="space-y-2 sm:space-y-4">
+            <p className="font-inter text-base sm:text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
               Beautiful Spaces, Beautiful Life
             </p>
-            <p className="font-inter text-base sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-relaxed drop-shadow-sm px-2">
+            <p className="font-inter text-sm sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-relaxed drop-shadow-sm px-2">
               ASA Acrycore sheets, laminates, louvers, and cane wallpaper 
               for discerning architects and designers
             </p>
           </div>
 
           {/* Mobile CTA buttons */}
-          <div className="mt-8 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <div className="block sm:hidden">
               <a 
                 href="/products" 
