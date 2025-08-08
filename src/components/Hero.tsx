@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
       
       {/* Floating Elements for Visual Interest */}
-      <div className="absolute inset-0 z-5 pointer-events-none">
+      <div className="absolute inset-0 z-5 pointer-events-none hidden sm:block">
         <div className="absolute top-20 left-4 w-2 h-2 bg-white/30 rounded-full animate-pulse"></div>
         <div className="absolute top-32 right-8 w-1 h-1 bg-white/40 rounded-full animate-bounce"></div>
         <div className="absolute bottom-40 left-12 w-1.5 h-1.5 bg-white/20 rounded-full animate-pulse delay-300"></div>
@@ -45,25 +45,25 @@ const Hero = () => {
         {/* Mobile-optimized typography */}
         <div className="space-y-4 sm:space-y-8">
           <div className="mb-4 sm:mb-8">
-            <h1 className="font-playfair text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-3 sm:mb-6 leading-tight drop-shadow-lg">
+            <h1 className="font-playfair text-2xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-2 sm:mb-6 leading-snug drop-shadow-lg">
               Metro Laminates
             </h1>
             {/* Mobile visual separator */}
-            <div className="block sm:hidden w-16 h-0.5 bg-white/60 mx-auto mb-4"></div>
+            <div className="block sm:hidden w-16 h-0.5 bg-white/60 mx-auto mb-3"></div>
           </div>
           
           <div className="space-y-2 sm:space-y-4">
-            <p className="font-inter text-base sm:text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
+            <p className="font-inter text-sm sm:text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
               Beautiful Spaces, Beautiful Life
             </p>
-            <p className="font-inter text-sm sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-relaxed drop-shadow-sm px-2">
+            <p className="font-inter text-xs sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-snug drop-shadow-sm px-2">
               ASA Acrycore sheets, laminates, louvers, and cane wallpaper 
               for discerning architects and designers
             </p>
           </div>
 
           {/* Mobile CTA buttons */}
-          <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <div className="block sm:hidden">
               <a 
                 href="/products" 
@@ -77,7 +77,7 @@ const Hero = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 hidden sm:block">
         <div className="w-6 h-10 border-2 border-white/70 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-bounce" />
         </div>
