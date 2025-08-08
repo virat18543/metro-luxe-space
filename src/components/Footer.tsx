@@ -93,7 +93,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center"
                 >
-                  WhatsApp: +91 9326005195
+                  WhatsApp
                 </a>
               </Button>
               <Button 
