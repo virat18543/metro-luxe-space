@@ -87,26 +87,26 @@ const Footer = () => {
                 variant="outline"
                 className="w-full border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
               >
-                <Link 
-                  to="/contact"
-                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                <a 
+                  href="https://wa.me/919326005195" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center"
                 >
                   WhatsApp
-                </Link>
+                </a>
               </Button>
               <Button 
                 asChild 
                 variant="outline"
                 className="w-full border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
               >
-                <Link 
-                  to="/contact"
-                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                <a 
+                  href="mailto:rrrmetro@gmail.com"
                   className="inline-flex items-center justify-center"
                 >
                   Email
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
