@@ -1,10 +1,9 @@
 
 import heroImage from "@/assets/hero-ambient.jpg";
-import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden min-h-[60vh] sm:aspect-video">
+    <section className="relative w-full aspect-video overflow-hidden">
       {/* Background Image with Video-Ready Structure */}
       <div className="absolute inset-0 z-0">
         {/* Main background image */}
@@ -42,29 +41,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      {/* Mobile Content (smaller, tighter, action-oriented) */}
-      <div className="relative z-10 sm:hidden h-full px-4 py-8 flex items-end">
-        <div className="w-full max-w-md mx-auto text-left">
-          <p className="font-inter text-[11px] tracking-wide uppercase text-white/80 mb-1">Beautiful Spaces, Beautiful Life</p>
-          <h1 className="font-playfair text-2xl font-bold text-white leading-snug mb-1.5">Metro Laminates</h1>
-          <p className="font-inter text-[12px] text-white/90 mb-3">ASA sheets, laminates, louvers, cane wallpaper</p>
-          <div className="grid grid-cols-1 gap-2">
-            <Button asChild className="w-full bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
-              <a href="https://wa.me/919326005195" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-                WhatsApp
-              </a>
-            </Button>
-            <Button asChild variant="outline" className="w-full border-white/30 text-white hover:bg-white/10 hover:text-white">
-              <a href="mailto:rrrmetro@gmail.com" aria-label="Send us an email">
-                Email
-              </a>
-            </Button>
-          </div>
-        </div>
-      </div>
-
-      {/* Desktop/Tablet Content */}
-      <div className="relative z-10 hidden sm:flex items-center justify-center h-full text-center px-4 sm:px-6 max-w-4xl mx-auto animate-fade-in">
+      <div className="relative z-10 flex items-center justify-center h-full text-center px-4 sm:px-6 max-w-4xl mx-auto animate-fade-in">
         {/* Mobile-optimized typography */}
         <div className="space-y-4 sm:space-y-8">
           <div className="mb-4 sm:mb-8">
