@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col items-center space-y-6">
           <div className="flex items-center justify-center">
             <img
-              src="/lovable-uploads/b07303d8-e39a-4b29-968d-c44490fbbfd8.png"
+              src="/lovable-uploads/55a265a5-4ff8-406b-912e-3b254f02cb99.png"
               alt="Metro Laminates logo"
               className="h-8 w-auto opacity-90"
             />
@@ -135,7 +135,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <img
-                  src="/lovable-uploads/b07303d8-e39a-4b29-968d-c44490fbbfd8.png"
+                  src="/lovable-uploads/55a265a5-4ff8-406b-912e-3b254f02cb99.png"
                   alt="Metro Laminates"
                   className="h-8 w-auto opacity-90"
                 />

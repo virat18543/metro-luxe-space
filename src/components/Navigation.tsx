@@ -63,7 +63,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-4 min-w-0 flex-shrink-0 group">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur-md group-hover:blur-lg transition-all duration-300"></div>
-              <img src="/lovable-uploads/b07303d8-e39a-4b29-968d-c44490fbbfd8.png" alt="Metro Laminates - Premium decorative surfaces for architectural excellence" className="relative h-10 sm:h-12 md:h-14 w-auto max-w-none object-contain transition-all duration-300 group-hover:scale-105" onError={e => {
+              <img src="/lovable-uploads/55a265a5-4ff8-406b-912e-3b254f02cb99.png" alt="Metro Laminates - Premium decorative surfaces for architectural excellence" className="relative h-10 sm:h-12 md:h-14 w-auto max-w-none object-contain transition-all duration-300 group-hover:scale-105" onError={e => {
               console.error('Logo failed to load:', e);
               e.currentTarget.style.border = '2px solid red';
               e.currentTarget.alt = 'Logo Error';
