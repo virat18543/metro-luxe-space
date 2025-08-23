@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import JsonLd from "@/components/JsonLd";
@@ -14,7 +14,7 @@ const AsaAcrycoreSheets = () => {
     "description": "Premium ASA Acrycore PETG decorative sheets for architectural applications",
     "manufacturer": {
       "@type": "Organization",
-      "name": "Metro Laminates"
+      "name": "Metro Surfaces"
     },
     "category": "Building Materials"
   };
@@ -214,3 +214,4 @@ const AsaAcrycoreSheets = () => {
 };
 
 export default AsaAcrycoreSheets;
+

@@ -1,11 +1,11 @@
-const JsonLd = () => {
+﻿const JsonLd = () => {
   const businessData = {
     "@context": "https://schema.org",
     "@type": "Business",
-    "name": "Metro Laminates",
-    "alternateName": "Metro Laminates - Premium Decorative Surfaces",
+    "name": "Metro Surfaces",
+    "alternateName": "Metro Surfaces - Premium Decorative Surfaces",
     "url": "https://voli.co.in",
-    "description": "Metro Laminates offers premium decorative surfaces including ASA Acrycore sheets, laminates, louvers, and cane wallpaper. Trusted B2B partner for architectural excellence.",
+    "description": "Metro Surfaces offers premium decorative surfaces including ASA Acrycore sheets, laminates, louvers, and cane wallpaper. Trusted B2B partner for architectural excellence.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "IN"
@@ -90,3 +90,4 @@ const JsonLd = () => {
 };
 
 export default JsonLd;
+

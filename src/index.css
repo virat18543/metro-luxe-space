@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Metro Laminates Brand Colors - Cream & Brown Palette */
+    /* Metro Surfaces Brand Colors - Cream & Brown Palette */
     --background: 48 44% 98.8%; /* #fffdf7 - Clean cream */
     --foreground: 23 26% 22%; /* #5a3e36 - Rich brown */
 
@@ -119,3 +119,4 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+

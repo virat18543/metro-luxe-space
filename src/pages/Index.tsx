@@ -1,4 +1,4 @@
-import Hero from "../components/Hero";
+﻿import Hero from "../components/Hero";
 import Philosophy from "../components/Philosophy";
 import ProductGallery from "../components/ProductGallery";
 import Contact from "../components/Contact";
@@ -21,3 +21,4 @@ const Index = () => {
 };
 
 export default Index;
+

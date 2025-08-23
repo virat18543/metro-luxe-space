@@ -1,4 +1,4 @@
-import { Card } from "../components/ui/card";
+﻿import { Card } from "../components/ui/card";
 import { Users, RefreshCw, Scale, Target } from "lucide-react";
 
 const PhilosophyPage = () => {
@@ -155,3 +155,4 @@ const PhilosophyPage = () => {
 };
 
 export default PhilosophyPage;
+

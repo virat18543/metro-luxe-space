@@ -1,4 +1,4 @@
-import ProductGallery from "../components/ProductGallery";
+﻿import ProductGallery from "../components/ProductGallery";
 
 const Applications = () => {
   return (
@@ -74,3 +74,4 @@ const Applications = () => {
 };
 
 export default Applications;
+

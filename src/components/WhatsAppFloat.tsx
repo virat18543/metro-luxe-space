@@ -1,4 +1,4 @@
-const WhatsAppFloat = () => {
+﻿const WhatsAppFloat = () => {
   return (
     <a
       href="https://wa.me/919326005195"
@@ -15,3 +15,4 @@ const WhatsAppFloat = () => {
 };
 
 export default WhatsAppFloat;
+

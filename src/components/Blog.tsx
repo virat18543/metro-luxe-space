@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+﻿import { Card } from "./ui/card";
 import { Link } from "react-router-dom";
 
 const Blog = () => {
@@ -90,3 +90,4 @@ const Blog = () => {
 };
 
 export default Blog;
+

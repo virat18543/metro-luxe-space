@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import JsonLd from "@/components/JsonLd";
@@ -13,7 +13,7 @@ const DecorativeLouvers = () => {
     "description": "Architectural louver systems for interior design and space division",
     "manufacturer": {
       "@type": "Organization",
-      "name": "Metro Laminates"
+      "name": "Metro Surfaces"
     },
     "category": "Building Materials"
   };
@@ -326,3 +326,4 @@ const DecorativeLouvers = () => {
 };
 
 export default DecorativeLouvers;
+

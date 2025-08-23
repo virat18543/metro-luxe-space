@@ -1,4 +1,4 @@
-const PrivacyPolicy = () => {
+﻿const PrivacyPolicy = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
                 Information We Collect
               </h2>
               <p className="mb-4">
-                Metro Laminates collects information you provide directly to us, such as when you:
+                Metro Surfaces collects information you provide directly to us, such as when you:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>Fill out contact forms or inquiry forms on our website</li>
@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
                 Information Sharing
               </h2>
               <p className="mb-4">
-                Metro Laminates does not sell, trade, or rent your personal information to third parties. 
+                Metro Surfaces does not sell, trade, or rent your personal information to third parties. 
                 We may share your information only in the following circumstances:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
@@ -181,3 +181,4 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
+

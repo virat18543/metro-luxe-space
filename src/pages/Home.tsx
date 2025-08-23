@@ -1,4 +1,4 @@
-import Hero from "../components/Hero";
+﻿import Hero from "../components/Hero";
 import CoreValues from "../components/CoreValues";
 import ProductIcons from "../components/ProductIcons";
 import JsonLd from "../components/JsonLd";
@@ -50,7 +50,7 @@ const Home = () => {
               Crafting Excellence Through Partnership
             </h2>
             <p className="font-inter text-lg text-muted-foreground leading-relaxed mb-8">
-              For decades, Metro Laminates has been the trusted partner for architects, 
+              For decades, Metro Surfaces has been the trusted partner for architects, 
               designers, and distributors seeking exceptional decorative surfaces. 
               Our commitment extends beyond products to lasting relationships built on 
               service, continuity, and ethical practice.
@@ -114,3 +114,4 @@ const Home = () => {
 };
 
 export default Home;
+

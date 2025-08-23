@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+﻿import type { Config } from "tailwindcss";
 
 export default {
 	darkMode: ["class"],
@@ -52,7 +52,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Metro Laminates Brand Extensions
+				// Metro Surfaces Brand Extensions
 				cream: {
 					light: 'hsl(var(--cream-light))',
 					DEFAULT: 'hsl(var(--cream-base))',
@@ -128,3 +128,5 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
+

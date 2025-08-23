@@ -1,4 +1,4 @@
-
+﻿
 import heroImage from "@/assets/hero-ambient.jpg";
 
 const Hero = () => {
@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="space-y-4 sm:space-y-8">
           <div className="mb-4 sm:mb-8">
             <h1 className="font-playfair text-2xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-2 sm:mb-6 leading-snug drop-shadow-lg">
-              Metro Laminates
+              Metro Surfaces
             </h1>
             {/* Mobile visual separator */}
             <div className="block sm:hidden w-16 h-0.5 bg-white/60 mx-auto mb-3"></div>
@@ -87,3 +87,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+

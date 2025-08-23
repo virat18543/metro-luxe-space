@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 
 const BackToTop = () => {
@@ -44,3 +44,4 @@ const BackToTop = () => {
 };
 
 export default BackToTop;
+

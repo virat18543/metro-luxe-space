@@ -1,4 +1,4 @@
-import { Card } from "../components/ui/card";
+﻿import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 const Downloads = () => {
   const catalogs = [{
@@ -201,3 +201,4 @@ const Downloads = () => {
     </div>;
 };
 export default Downloads;
+

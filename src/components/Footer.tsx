@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./ui/accordion";
 
@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex items-center justify-center">
             <img
               src="/lovable-uploads/55a265a5-4ff8-406b-912e-3b254f02cb99.png"
-              alt="Metro Laminates logo"
+              alt="Metro Surfaces logo"
               className="h-8 w-auto opacity-90"
             />
           </div>
@@ -113,7 +113,7 @@ const Footer = () => {
           <div className="w-full pt-6 border-t border-primary-foreground/20">
             <div className="flex flex-col items-center space-y-2">
               <p className="font-inter text-primary-foreground/80 text-xs">
-                © 2024 Metro Laminates. All rights reserved.
+                © 2024 Metro Surfaces. All rights reserved.
               </p>
               <Link
                 to="/privacy-policy"
@@ -136,7 +136,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <img
                   src="/lovable-uploads/55a265a5-4ff8-406b-912e-3b254f02cb99.png"
-                  alt="Metro Laminates"
+                  alt="Metro Surfaces"
                   className="h-8 w-auto opacity-90"
                 />
               </div>
@@ -237,7 +237,7 @@ const Footer = () => {
           <div className="mt-12 pt-8 border-t border-primary-foreground/20">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="font-inter text-primary-foreground/80">
-                © 2024 Metro Laminates. All rights reserved.
+                © 2024 Metro Surfaces. All rights reserved.
               </p>
               <div className="flex space-x-6">
                 <Link
@@ -258,3 +258,4 @@ const Footer = () => {
 
 
 export default Footer;
+

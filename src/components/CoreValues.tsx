@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+﻿import { Card } from "./ui/card";
 
 const CoreValues = () => {
   const values = [
@@ -77,3 +77,4 @@ const CoreValues = () => {
 };
 
 export default CoreValues;
+

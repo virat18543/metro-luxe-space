@@ -1,4 +1,4 @@
-import { Card } from "../../components/ui/card";
+﻿import { Card } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import { Link } from "react-router-dom";
 import JsonLd from "../../components/JsonLd";
@@ -161,7 +161,7 @@ const AsaVsPetg = () => {
                   <p>
                     Both ASA and PETG offer distinct advantages for decorative sheet applications. 
                     Understanding these material properties ensures optimal performance and longevity 
-                    in your architectural projects. Our technical team at Metro Laminates can provide 
+                    in your architectural projects. Our technical team at Metro Surfaces can provide 
                     detailed guidance for your specific application requirements.
                   </p>
                 </div>
@@ -227,3 +227,4 @@ const AsaVsPetg = () => {
 };
 
 export default AsaVsPetg;
+

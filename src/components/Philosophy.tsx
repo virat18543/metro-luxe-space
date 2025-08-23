@@ -1,4 +1,4 @@
-const Philosophy = () => {
+﻿const Philosophy = () => {
   const principles = [
     {
       title: "Uncompromising Service",
@@ -52,3 +52,4 @@ const Philosophy = () => {
 };
 
 export default Philosophy;
+
