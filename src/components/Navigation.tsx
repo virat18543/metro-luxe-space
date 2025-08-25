@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { ChevronDown } from "lucide-react";
-import { BrandLogo } from "./BrandLogo";
+import BrandLogo from "./BrandLogo";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,28 +11,36 @@ const Navigation = () => {
   const navRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
-  const navItems = [{
-    name: "Home",
-    path: "/"
-  }, {
-    name: "Products",
-    path: "/products"
-  }, {
-    name: "Applications",
-    path: "/applications"
-  }, {
-    name: "Philosophy",
-    path: "/philosophy"
-  }, {
-    name: "Resources",
-    path: "/resources"
-  }, {
-    name: "Downloads",
-    path: "/downloads"
-  }, {
-    name: "Contact",
-    path: "/contact"
-  }];
+  const navItems = [
+    {
+      name: "Home",
+      path: "/"
+    },
+    {
+      name: "Products",
+      path: "/products"
+    },
+    {
+      name: "Applications",
+      path: "/applications"
+    },
+    {
+      name: "Philosophy",
+      path: "/philosophy"
+    },
+    {
+      name: "Resources",
+      path: "/resources"
+    },
+    {
+      name: "Downloads",
+      path: "/downloads"
+    },
+    {
+      name: "Contact",
+      path: "/contact"
+    }
+  ];
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -70,13 +78,13 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link className="flex items-center space-x-4 min-w-0 flex-shrink-0 group" to="/">
-            <BrandLogo withText className="shrink-0" />
+            <BrandLogo className="shrink-0" withText />
           </Link>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1 relative" ref={navRef}>
             {/* Visible Navigation Items */}
-            {visibleNavItems.map(item => (
+            {visibleNavItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
@@ -114,7 +122,7 @@ const Navigation = () => {
                 {isDesktopDropdownOpen && (
                   <div className="absolute top-full right-0 mt-2 w-48 bg-background/95 backdrop-blur-md border border-border/50 rounded-lg shadow-lg z-50 animate-fade-in">
                     <div className="py-2">
-                      {hiddenNavItems.map(item => (
+                      {hiddenNavItems.map((item) => (
                         <Link
                           key={item.path}
                           to={item.path}
@@ -143,9 +151,9 @@ const Navigation = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <svg className="relative w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path d="M6 18L18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
               )}
             </svg>
           </Button>
@@ -155,7 +163,7 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-border/50 bg-gradient-to-b from-background to-background/95 backdrop-blur-md animate-fade-in">
             <div className="py-6 space-y-2">
-              {navItems.map(item => (
+              {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
