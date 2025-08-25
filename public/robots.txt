@@ -1,14 +1,34 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# Let search engines & reputable AI crawlers access the site
 User-agent: *
 Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+# Google’s AI data control token
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity (for showing links in their results)
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl (used widely in research)
+User-agent: CCBot
+Allow: /
+
+# Anthropic (Claude) family
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+
+# Amazon (Alexa/GPS/AI experiences)
+User-agent: Amazonbot
+Allow: /
+
+# Your sitemap location
+Sitemap: https://voli.co.in/sitemap.xml
