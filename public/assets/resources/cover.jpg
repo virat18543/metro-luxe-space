@@ -1,0 +1,15 @@
+# Placeholder for /resources/cover.jpg
+# This is a placeholder file for the Metro Luxe Space assets.
+# Replace this text file with the actual cover.jpg image.
+# 
+# This commit also sets up the directory structure for:
+# - /case/corporate-hq.jpg
+# - /case/hospitality.jpg  
+# - /case/residential.jpg
+# - /products/laminate-01.jpg
+# - /products/laminate-02.jpg
+# - /products/louver-01.jpg
+# - /products/asa-01.jpg
+# - /products/wallpaper-01.jpg
+#
+# All paths are relative to public/assets/
