@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./ui/accordion";
-import { BrandLogo } from "./BrandLogo";
+import BrandLogo from "./BrandLogo";
 
 const Footer = () => {
   return (
