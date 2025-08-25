@@ -1,7 +1,8 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import JsonLd from "@/components/JsonLd";
+import SmartImage from "../../components/SmartImage";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
@@ -21,16 +22,17 @@ const AsaAcrycoreSheets = () => {
 
   return (
     <>
+      <JsonLd data={jsonLdData} />
       <div className="min-h-screen bg-background">
         {/* Breadcrumbs */}
         <div className="bg-cream-light py-4">
           <div className="max-w-7xl mx-auto px-6">
             <nav className="flex items-center space-x-2 text-sm font-inter">
-              <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link className="text-muted-foreground hover:text-primary transition-colors" to="/">
                 Home
               </Link>
               <span className="text-muted-foreground">/</span>
-              <Link to="/products" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link className="text-muted-foreground hover:text-primary transition-colors" to="/products">
                 Products
               </Link>
               <span className="text-muted-foreground">/</span>
@@ -38,7 +40,7 @@ const AsaAcrycoreSheets = () => {
             </nav>
           </div>
         </div>
-
+        
         {/* Hero Section */}
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto">
@@ -56,22 +58,23 @@ const AsaAcrycoreSheets = () => {
                   <Button asChild size="lg">
                     <Link to="/contact">Request Samples</Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg">
+                  <Button asChild size="lg" variant="outline">
                     <Link to="/applications">View Applications</Link>
                   </Button>
                 </div>
               </div>
               <div className="relative">
-                <img
+                <SmartImage
                   src={asaSheetBrown}
                   alt="ASA Acrycore decorative sheet sample brown oak veneer texture"
                   className="w-full h-96 object-cover rounded-lg shadow-elegant"
+                  aspect="aspect-[4/3]"
                 />
               </div>
             </div>
           </div>
         </section>
-
+        
         {/* Features Section */}
         <section className="py-16 px-6 bg-cream-light">
           <div className="max-w-7xl mx-auto">
@@ -93,7 +96,7 @@ const AsaAcrycoreSheets = () => {
                   description: "High-quality decorative surfaces with wood grain, solid colors, and textured finishes."
                 }
               ].map((feature, index) => (
-                <Card key={index} className="text-center">
+                <Card className="text-center" key={index}>
                   <CardContent className="p-6">
                     <h3 className="font-inter font-semibold text-xl text-primary mb-4">
                       {feature.title}
@@ -107,7 +110,7 @@ const AsaAcrycoreSheets = () => {
             </div>
           </div>
         </section>
-
+        
         {/* Applications Gallery */}
         <section className="py-16 px-6">
           <div className="max-w-7xl mx-auto">
@@ -117,12 +120,13 @@ const AsaAcrycoreSheets = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg shadow-soft">
-                  <img
+                  <SmartImage
                     src={officeBrownPanels}
                     alt="ASA Acrycore sheets used for corporate office wall paneling"
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                    aspect="aspect-[16/9]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <h3 className="font-inter font-semibold text-xl text-primary mt-4 mb-2">
                   Corporate Office Paneling
@@ -131,14 +135,16 @@ const AsaAcrycoreSheets = () => {
                   Professional interior wall solutions for modern office environments.
                 </p>
               </div>
+              
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg shadow-soft">
-                  <img
+                  <SmartImage
                     src={residentialFeatureWall}
                     alt="ASA Acrycore sheets as residential feature wall"
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                    aspect="aspect-[16/9]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <h3 className="font-inter font-semibold text-xl text-primary mt-4 mb-2">
                   Residential Feature Walls
@@ -150,7 +156,7 @@ const AsaAcrycoreSheets = () => {
             </div>
           </div>
         </section>
-
+        
         {/* Specifications */}
         <section className="py-16 px-6 bg-cream-light">
           <div className="max-w-7xl mx-auto">
@@ -171,6 +177,7 @@ const AsaAcrycoreSheets = () => {
                   </ul>
                 </CardContent>
               </Card>
+              
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-inter font-semibold text-xl text-primary mb-4">
@@ -187,7 +194,7 @@ const AsaAcrycoreSheets = () => {
             </div>
           </div>
         </section>
-
+        
         {/* CTA Section */}
         <section className="py-16 px-6">
           <div className="max-w-4xl mx-auto text-center">
@@ -202,7 +209,7 @@ const AsaAcrycoreSheets = () => {
               <Button asChild size="lg">
                 <Link to="/contact">Get Quote</Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild size="lg" variant="outline">
                 <Link to="/downloads">Download Catalog</Link>
               </Button>
             </div>
@@ -214,4 +221,3 @@ const AsaAcrycoreSheets = () => {
 };
 
 export default AsaAcrycoreSheets;
-
