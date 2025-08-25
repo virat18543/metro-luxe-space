@@ -7,7 +7,7 @@ import BrandLogo from "./BrandLogo";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false);
-  const [visibleItems, setVisibleItems] = useState(7);
+  const [visibleItems, setVisibleItems] = useState(6);
   const navRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
@@ -33,10 +33,6 @@ const Navigation = () => {
       path: "/resources"
     },
     {
-      name: "Downloads",
-      path: "/downloads"
-    },
-    {
       name: "Contact",
       path: "/contact"
     }
@@ -56,7 +52,7 @@ const Navigation = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
-        setVisibleItems(7); // Show all items on large screens
+        setVisibleItems(6); // Show all items on large screens
       } else if (window.innerWidth >= 768) {
         setVisibleItems(4); // Show fewer items on medium screens
       } else {
