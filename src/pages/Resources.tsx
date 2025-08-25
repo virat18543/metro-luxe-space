@@ -1,48 +1,79 @@
-﻿import Blog from "../components/Blog";
-import { Card } from "../components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Button } from "../components/ui/button";
-import { Link } from "react-router-dom";
+import { Badge } from "../components/ui/badge";
+import { Download, ExternalLink, FileText, Users, Building, Utensils } from "lucide-react";
+import SmartImage from "../components/SmartImage";
 
 const Resources = () => {
   const technicalGuides = [
     {
       title: "ASA vs PETG Material Guide",
-      description: "Comprehensive comparison of material properties, applications, and performance characteristics.",
+      description: "Comprehensive comparison of material properties, applications, and performance characteristics for informed decision-making.",
       category: "Technical",
-      downloadUrl: "#"
+      downloadUrl: "#",
+      icon: FileText
     },
     {
       title: "Installation Best Practices",
-      description: "Step-by-step installation guidelines for optimal performance and longevity.",
+      description: "Step-by-step installation guidelines for optimal performance and longevity of decorative surfaces.",
       category: "Installation",
-      downloadUrl: "#"
+      downloadUrl: "#",
+      icon: FileText
     },
     {
       title: "Maintenance & Care Manual",
-      description: "Proper care instructions to maintain the beauty and durability of decorative surfaces.",
+      description: "Proper care instructions to maintain the beauty and durability of decorative surfaces over time.",
       category: "Maintenance",
-      downloadUrl: "#"
+      downloadUrl: "#",
+      icon: FileText
     }
   ];
 
   const caseStudies = [
     {
       title: "Corporate Headquarters Transformation",
-      description: "How ASA Acrycore sheets elevated a 50,000 sq ft office space with modern elegance.",
+      description: "How ASA Acrycore sheets elevated a 50,000 sq ft office space with modern elegance and functionality.",
       category: "Commercial",
-      image: "office-case-study"
+      image: "office-case-study",
+      icon: Building,
+      results: "40% improvement in employee satisfaction, 25% reduction in noise levels"
     },
     {
       title: "Luxury Residential Project",
-      description: "Premium laminates and louvers create sophisticated living environments.",
-      category: "Residential", 
-      image: "residential-case-study"
+      description: "Premium laminates and decorative louvers create sophisticated living environments that blend form and function.",
+      category: "Residential",
+      image: "residential-case-study",
+      icon: Users,
+      results: "30% increase in property value, seamless integration with existing architecture"
     },
     {
       title: "Restaurant Design Innovation",
-      description: "Decorative louvers balance acoustics and aesthetics in high-traffic dining spaces.",
+      description: "Decorative louvers balance acoustics and aesthetics in high-traffic dining spaces while maintaining durability.",
       category: "Hospitality",
-      image: "restaurant-case-study"
+      image: "restaurant-case-study",
+      icon: Utensils,
+      results: "50% noise reduction, enhanced dining experience, easy maintenance"
+    }
+  ];
+
+  const designTools = [
+    {
+      title: "Color & Finish Selector",
+      description: "Interactive tool to explore our complete range of colors, textures, and finishes.",
+      type: "Interactive Tool",
+      url: "#"
+    },
+    {
+      title: "3D Visualization Library",
+      description: "High-resolution 3D models and textures for architectural visualization software.",
+      type: "Download",
+      url: "#"
+    },
+    {
+      title: "CAD Blocks & Specifications",
+      description: "Detailed technical drawings and specifications in multiple CAD formats.",
+      type: "Download",
+      url: "#"
     }
   ];
 
@@ -61,112 +92,185 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* Technical Guides */}
-      <section className="py-24 px-6 bg-background">
+      {/* Technical Guides Section */}
+      <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
+            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-4">
               Technical Documentation
             </h2>
-            <p className="font-inter text-lg text-muted-foreground">
-              Essential guides for specifiers, installers, and facility managers.
+            <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
+              In-depth technical guides and documentation to support your projects from conception to completion.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {technicalGuides.map((guide, index) => (
-              <Card key={index} className="p-8 hover:shadow-elegant transition-all duration-300">
-                <div className="mb-4">
-                  <span className="font-inter text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-                    {guide.category}
-                  </span>
-                </div>
-                <h3 className="font-playfair text-xl font-semibold text-primary mb-4">
-                  {guide.title}
-                </h3>
-                <p className="font-inter text-muted-foreground mb-6 leading-relaxed">
-                  {guide.description}
-                </p>
-                <Button 
-                  asChild 
-                  variant="outline" 
-                  className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                >
-                  <a href={guide.downloadUrl} download>
-                    Download Guide
-                  </a>
-                </Button>
-              </Card>
-            ))}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {technicalGuides.map((guide, index) => {
+              const IconComponent = guide.icon;
+              return (
+                <Card key={index} className="group hover:shadow-lg transition-all duration-300">
+                  <CardHeader>
+                    <div className="flex items-center justify-between mb-2">
+                      <IconComponent className="h-8 w-8 text-primary" />
+                      <Badge variant="secondary">{guide.category}</Badge>
+                    </div>
+                    <CardTitle className="font-playfair text-xl group-hover:text-primary transition-colors">
+                      {guide.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="font-inter mb-4 text-base leading-relaxed">
+                      {guide.description}
+                    </CardDescription>
+                    <Button 
+                      variant="outline" 
+                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+                      asChild
+                    >
+                      <a href={guide.downloadUrl}>
+                        <Download className="h-4 w-4 mr-2" />
+                        Download Guide
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Case Studies */}
-      <section className="py-24 px-6 bg-cream-light">
+      {/* Case Studies Section */}
+      <section className="py-20 px-6 bg-cream-light/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
-              Project Case Studies
+            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-4">
+              Success Stories
             </h2>
-            <p className="font-inter text-lg text-muted-foreground">
-              Real-world applications showcasing the versatility of our decorative surfaces.
+            <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
+              Real-world applications showcasing the versatility and impact of our decorative solutions.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {caseStudies.map((study, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-elegant transition-all duration-300">
-                <div className="h-48 bg-gradient-brown flex items-center justify-center">
-                  <span className="font-inter text-primary-foreground">Project Image</span>
-                </div>
-                <div className="p-8">
-                  <div className="mb-4">
-                    <span className="font-inter text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-                      {study.category}
-                    </span>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {caseStudies.map((study, index) => {
+              const IconComponent = study.icon;
+              return (
+                <Card key={index} className="group hover:shadow-xl transition-all duration-500 overflow-hidden">
+                  <div className="relative h-48 overflow-hidden">
+                    <SmartImage
+                      src={study.image}
+                      alt={study.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      fallback={
+                        <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
+                          <IconComponent className="h-16 w-16 text-primary/40" />
+                        </div>
+                      }
+                    />
+                    <div className="absolute top-4 right-4">
+                      <Badge className="bg-background/90 text-primary hover:bg-background">
+                        {study.category}
+                      </Badge>
+                    </div>
                   </div>
-                  <h3 className="font-playfair text-xl font-semibold text-primary mb-4">
-                    {study.title}
-                  </h3>
-                  <p className="font-inter text-muted-foreground leading-relaxed">
-                    {study.description}
-                  </p>
-                </div>
+                  <CardHeader>
+                    <CardTitle className="font-playfair text-xl group-hover:text-primary transition-colors">
+                      {study.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="font-inter mb-4 text-base leading-relaxed">
+                      {study.description}
+                    </CardDescription>
+                    <div className="bg-cream-light/50 p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-primary mb-2 font-inter">Key Results:</h4>
+                      <p className="text-sm text-muted-foreground font-inter">{study.results}</p>
+                    </div>
+                    <Button 
+                      variant="outline" 
+                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      View Full Case Study
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Design Tools Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-4">
+              Design Tools & Assets
+            </h2>
+            <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
+              Professional tools and resources to streamline your design process and enhance your presentations.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {designTools.map((tool, index) => (
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 text-center">
+                <CardHeader className="pb-4">
+                  <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-full w-fit group-hover:bg-primary/20 transition-colors">
+                    <FileText className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="font-playfair text-xl group-hover:text-primary transition-colors">
+                    {tool.title}
+                  </CardTitle>
+                  <Badge variant="outline" className="mx-auto w-fit">
+                    {tool.type}
+                  </Badge>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="font-inter mb-6 text-base leading-relaxed">
+                    {tool.description}
+                  </CardDescription>
+                  <Button 
+                    variant="default" 
+                    className="group-hover:shadow-lg transition-all duration-300"
+                    asChild
+                  >
+                    <a href={tool.url}>
+                      {tool.type === "Download" ? (
+                        <><Download className="h-4 w-4 mr-2" />Download</>
+                      ) : (
+                        <><ExternalLink className="h-4 w-4 mr-2" />Launch Tool</>
+                      )}
+                    </a>
+                  </Button>
+                </CardContent>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Blog Section */}
-      <Blog />
-
       {/* Support Section */}
-      <section className="py-24 px-6 bg-primary text-primary-foreground">
+      <section className="py-20 px-6 bg-gradient-to-b from-background to-cream-light/30">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-8">
-            Need Technical Support?
+          <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
+            Need Additional Support?
           </h2>
-          <p className="font-inter text-xl leading-relaxed mb-8">
-            Our technical team is ready to assist with product selection, 
-            installation guidance, and project-specific requirements.
+          <p className="font-inter text-lg text-muted-foreground mb-8 leading-relaxed">
+            Our technical team is here to help you with project-specific questions, 
+            custom specifications, and design consultations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild 
-              variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
-            >
-              <Link to="/contact">Contact Technical Team</Link>
+            <Button size="lg" className="font-inter" asChild>
+              <a href="/contact">
+                Contact Technical Support
+              </a>
             </Button>
-            <Button 
-              asChild 
-              variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
-            >
-              <a href="https://wa.me/919326005195" target="_blank" rel="noopener noreferrer">
-                WhatsApp Support
+            <Button variant="outline" size="lg" className="font-inter" asChild>
+              <a href="/products">
+                Browse Products
               </a>
             </Button>
           </div>
@@ -177,4 +281,3 @@ const Resources = () => {
 };
 
 export default Resources;
-
