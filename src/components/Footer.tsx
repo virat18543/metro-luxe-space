@@ -1,7 +1,7 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./ui/accordion";
-
+import { BrandLogo } from "./BrandLogo";
 
 const Footer = () => {
   return (
@@ -10,17 +10,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 md:hidden">
         <div className="flex flex-col items-center space-y-6">
           <div className="flex items-center justify-center">
-            <img
-              src="/lovable-uploads/55a265a5-4ff8-406b-912e-3b254f02cb99.png"
-              alt="Metro Surfaces logo"
-              className="h-8 w-auto opacity-90"
-            />
+            <BrandLogo className="shrink-0" />
           </div>
-
           <p className="font-inter text-primary-foreground/80 text-center text-sm">
             Decorative surfaces for architectural excellence.
           </p>
-
           <div className="w-full">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="quick-links">
@@ -45,7 +39,6 @@ const Footer = () => {
                   </div>
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="products">
                 <AccordionTrigger className="text-base">Our Products</AccordionTrigger>
                 <AccordionContent>
@@ -83,7 +76,6 @@ const Footer = () => {
               </AccordionItem>
             </Accordion>
           </div>
-
           <div className="grid grid-cols-2 gap-3 w-full">
             <Button
               asChild
@@ -104,12 +96,11 @@ const Footer = () => {
               variant="outline"
               className="w-full border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
             >
-              <a href="mailto:rrrmetro@gmail.com" className="inline-flex items-center justify-center">
+              <a className="inline-flex items-center justify-center" href="mailto:rrrmetro@gmail.com">
                 Email
               </a>
             </Button>
           </div>
-
           <div className="w-full pt-6 border-t border-primary-foreground/20">
             <div className="flex flex-col items-center space-y-2">
               <p className="font-inter text-primary-foreground/80 text-xs">
@@ -134,11 +125,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <img
-                  src="/lovable-uploads/55a265a5-4ff8-406b-912e-3b254f02cb99.png"
-                  alt="Metro Surfaces"
-                  className="h-8 w-auto opacity-90"
-                />
+                <BrandLogo className="shrink-0" />
               </div>
               <p className="font-inter text-primary-foreground/80 leading-relaxed">
                 Decorative surfaces for architectural excellence.
@@ -226,7 +213,7 @@ const Footer = () => {
                   variant="outline"
                   className="w-full border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
                 >
-                  <a href="mailto:rrrmetro@gmail.com" className="inline-flex items-center justify-center">
+                  <a className="inline-flex items-center justify-center" href="mailto:rrrmetro@gmail.com">
                     Email
                   </a>
                 </Button>
@@ -256,6 +243,4 @@ const Footer = () => {
   );
 };
 
-
 export default Footer;
-
