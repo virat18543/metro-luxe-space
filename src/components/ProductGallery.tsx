@@ -1,5 +1,6 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import SmartImage from "./SmartImage";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
@@ -93,12 +94,14 @@ const ProductGallery = () => {
                 {/* Product Sheet */}
                 <div className="group">
                   <div className="relative overflow-hidden rounded-lg shadow-elegant">
-                    <img
+                    <SmartImage
                       src={product.sheetImage}
                       alt={`${product.name} ${product.category} decorative sheet sample ASA Acrycore PETG`}
+                      width={400}
+                      height={256}
                       className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="mt-4 text-center">
                     <h3 className="font-playfair text-2xl font-semibold text-primary mb-2">
@@ -120,14 +123,16 @@ const ProductGallery = () => {
                   </h4>
                   <div className="grid md:grid-cols-2 gap-6">
                     {product.applications.map((app, appIndex) => (
-                      <div key={appIndex} className="group">
+                      <div className="group" key={appIndex}>
                         <div className="relative overflow-hidden rounded-lg shadow-soft">
-                          <img
+                          <SmartImage
                             src={app.image}
                             alt={app.alt}
+                            width={400}
+                            height={192}
                             className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                           <div className="absolute bottom-4 left-4 right-4">
                             <h5 className="font-inter font-semibold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                               {app.title}
@@ -152,13 +157,13 @@ const ProductGallery = () => {
               { name: 'Decorative Louvers', anchor: '#louvers' },
               { name: 'Cane Wallpaper', anchor: '#wallpaper' }
             ].map((category, index) => (
-              <Link 
+              <Link
                 key={index} 
                 to={`/products${category.anchor}`}
                 className="group hover:scale-105 transition-all duration-300"
               >
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-brown rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <div className="w-8 h-8 border-2 border-primary-foreground rounded-full" />
+                  <div className="w-8 h-8 border-2 border-primary-foreground rounded-full"></div>
                 </div>
                 <h5 className="font-inter font-medium text-primary group-hover:text-primary/80 transition-colors">
                   {category.name}
@@ -173,4 +178,3 @@ const ProductGallery = () => {
 };
 
 export default ProductGallery;
-
