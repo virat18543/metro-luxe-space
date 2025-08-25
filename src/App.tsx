@@ -7,6 +7,8 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import ScrollToTop from "./components/ScrollToTop";
+import HashScroll from "./components/HashScroll";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Applications from "./pages/Applications";
@@ -31,6 +33,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
+        <HashScroll />
         <div className="min-h-screen bg-background font-inter">
           <Navigation />
           <Routes>
