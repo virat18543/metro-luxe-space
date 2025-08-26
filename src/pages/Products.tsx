@@ -3,7 +3,7 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import louversCream from "@/assets/products/louvers-cream.jpg";
-import premiumLaminatesImg from "/assets/products/Lam-in-MS.jpg";
+import premiumLaminatesImg from "@/assets/products/Lam-in-MS.jpg";
 
 const Products = () => {
   const productCategories = [
