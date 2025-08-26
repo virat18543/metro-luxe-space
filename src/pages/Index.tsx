@@ -45,6 +45,8 @@ const Index = () => {
       <JsonLd data={organizationData} />
       <JsonLd data={websiteData} />
       <div className="min-h-screen bg-background font-inter">
+        <Philosophy />
+        
         {/* Product Categories Overview */}
         <section className="py-16 px-6 bg-background">
           <div className="max-w-7xl mx-auto">
@@ -73,7 +75,6 @@ const Index = () => {
         </section>
         
         <Hero />
-        <Philosophy />
         <ProductGallery />
         <Contact />
       </div>
