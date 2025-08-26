@@ -1,5 +1,4 @@
 import SmartImage from './SmartImage';
-import heroAmbient from '../assets/hero-ambient.jpg';
 
 const Hero = () => {
   return (
@@ -7,7 +6,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <SmartImage
-          src={heroAmbient}
+          src='/hero-ambient.jpg'
           alt="Modern interior with premium decorative surfaces and laminates showcasing ASA Acrycore sheets"
           className="w-full h-full object-cover object-center"
         />
