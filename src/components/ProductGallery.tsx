@@ -147,31 +147,6 @@ const ProductGallery = () => {
             </div>
           ))}
         </div>
-
-        {/* Product Categories Overview */}
-        <div className="mt-24 pt-16 border-t border-border">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            {[
-              { name: 'ASA Acrycore Sheets', anchor: '#asa-sheets' },
-              { name: 'Premium Laminates', anchor: '#laminates' },
-              { name: 'Decorative Louvers', anchor: '#louvers' },
-              { name: 'Cane Wallpaper', anchor: '#wallpaper' }
-            ].map((category, index) => (
-              <Link
-                key={index} 
-                to={`/products${category.anchor}`}
-                className="group hover:scale-105 transition-all duration-300"
-              >
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-brown rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <div className="w-8 h-8 border-2 border-primary-foreground rounded-full"></div>
-                </div>
-                <h5 className="font-inter font-medium text-primary group-hover:text-primary/80 transition-colors">
-                  {category.name}
-                </h5>
-              </Link>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
