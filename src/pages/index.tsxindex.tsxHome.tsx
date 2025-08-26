@@ -39,9 +39,11 @@ const Home = () => {
 
   return (
     <>
-      
+      <div style={{color:'red',fontWeight:'bold',fontSize:'2rem',zIndex:99999,position:'absolute',top:'10px',left:'10px'}}>INDEX IS RENDERED</div>
+      <Hero />
       <div className="pt-16">
-        
+        <ProductIcons />
+        <CoreValues />
         
         {/* Philosophy Introduction */}
         <section className="py-16 px-6 bg-gradient-to-b from-background to-cream-light">
@@ -60,13 +62,13 @@ const Home = () => {
             </Button>
           </div>
         </section>
-
+        
         {/* Product Icons Section */}
         <ProductIcons />
         
         {/* Core Values Strip */}
         <CoreValues />
-
+        
         {/* Where Our Work Lives */}
         <section className="py-24 px-6 bg-cream-light">
           <div className="max-w-6xl mx-auto">
@@ -81,7 +83,7 @@ const Home = () => {
             </div>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               {workGallery.map((work, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-elegant">
+                <div className="group relative overflow-hidden rounded-lg shadow-elegant" key={index}>
                   <img 
                     src={work.image} 
                     alt={`${work.title} - ${work.description} featuring premium decorative surfaces`}
