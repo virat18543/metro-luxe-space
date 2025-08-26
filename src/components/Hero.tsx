@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="absolute top-64 right-4 w-1 h-1 bg-white/35 rounded-full animate-bounce delay-500"></div>
       </div>
       
-      {/* Content */}
+      {/* Content - Overlay section with proper white text visibility */}
       <div className="relative z-10 flex items-center justify-center h-full text-center px-4 sm:px-6 max-w-4xl mx-auto animate-fade-in">
         {/* Mobile-optimized typography */}
         <div className="space-y-4 sm:space-y-8">
@@ -39,7 +39,7 @@ const Hero = () => {
               Beautiful Spaces, Beautiful Life
             </p>
             <p className="font-inter text-xs sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-snug drop-shadow-sm px-2">
-              ASA Acrycore sheets, laminates, louvers, and cane wallpaper <br/>
+              ASA Acrycore sheets, laminates, louvers, and cane wallpaper
               for discerning architects and designers
             </p>
           </div>
@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <div className="block sm:hidden">
               <a
-                href="/products" 
+                href="/products"
                 className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm font-medium"
               >
                 Explore Products
