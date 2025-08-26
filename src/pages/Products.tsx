@@ -59,7 +59,7 @@ const Products = () => {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {productCategories.map((category, index) => (
-              <div
+              <div 
                 key={index} 
                 id={
                   index === 0 ? "asa-sheets" : 
@@ -88,7 +88,7 @@ const Products = () => {
                       ))}
                     </div>
                   </div>
-
+                  
                   <div className="flex space-x-4">
                     <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
                       <Link to="/contact">Request Samples</Link>
@@ -98,7 +98,6 @@ const Products = () => {
                     </Button>
                   </div>
                 </div>
-
                 <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                   <Card className="overflow-hidden group hover:shadow-elegant transition-all duration-300">
                     <img 
@@ -125,7 +124,6 @@ const Products = () => {
               All products meet industry standards with customization options available for specific project requirements.
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8">
               <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Sheet Dimensions</h3>
@@ -135,7 +133,6 @@ const Products = () => {
                 <div>Custom sizes available on request</div>
               </div>
             </Card>
-
             <Card className="p-8">
               <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Quality Standards</h3>
               <div className="space-y-2 font-inter text-muted-foreground">
@@ -144,12 +141,6 @@ const Products = () => {
                 <div>Fire safety compliant</div>
               </div>
             </Card>
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
-              <Link to="/downloads">Download Product Catalogs</Link>
-            </Button>
           </div>
         </div>
       </section>
