@@ -1,4 +1,4 @@
-﻿const Philosophy = () => {
+const Philosophy = () => {
   const principles = [
     {
       title: "Uncompromising Service",
@@ -33,14 +33,14 @@
         
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {principles.map((principle, index) => (
-            <div 
+            <div
               key={index}
-              className="group p-8 bg-card rounded-lg shadow-soft hover:shadow-elegant transition-all duration-300 border border-border/50"
+              className="group p-8 bg-card rounded-lg shadow-soft hover:shadow-elegant hover:scale-105 transition-all duration-300 border border-border/50"
             >
               <h3 className="font-playfair text-2xl font-semibold text-primary mb-4 group-hover:text-brown-dark transition-colors">
                 {principle.title}
               </h3>
-              <p className="font-inter text-muted-foreground leading-relaxed">
+              <p className="font-inter text-lg text-muted-foreground leading-relaxed">
                 {principle.description}
               </p>
             </div>
@@ -52,4 +52,3 @@
 };
 
 export default Philosophy;
-
