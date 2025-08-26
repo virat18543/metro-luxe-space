@@ -14,7 +14,6 @@ const Contact = () => {
             and premium decorative surface solutions.
           </p>
         </div>
-
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* WhatsApp Contact */}
           <Card className="p-8 text-center hover:shadow-elegant transition-all duration-300 border-border/50">
@@ -43,7 +42,6 @@ const Contact = () => {
               </a>
             </Button>
           </Card>
-
           {/* Email Contact */}
           <Card className="p-8 text-center hover:shadow-elegant transition-all duration-300 border-border/50">
             <div className="w-16 h-16 mx-auto mb-6 bg-gradient-brown rounded-full flex items-center justify-center">
@@ -68,23 +66,6 @@ const Contact = () => {
               >
                 rrrmetro@gmail.com
               </a>
-            </Button>
-          </Card>
-        </div>
-
-        {/* Brochure Download */}
-        <div className="text-center">
-          <Card className="p-8 inline-block hover:shadow-elegant transition-all duration-300 border-border/50">
-            <h3 className="font-playfair text-2xl font-semibold text-primary mb-4">
-              Product Catalog
-            </h3>
-            <p className="font-inter text-muted-foreground mb-6 max-w-md">
-              Download our comprehensive brochure featuring the complete range of decorative surfaces
-            </p>
-            <Button 
-              className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground font-inter font-medium"
-            >
-              Download Brochure
             </Button>
           </Card>
         </div>
