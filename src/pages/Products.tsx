@@ -3,7 +3,7 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import louversCream from "@/assets/products/louvers-cream.jpg";
-import premiumLaminatesImg from "@/assets/products/Lam-in-MS.jpg";
+import premiumLaminatesImg from "@/assets/products/Lam-in-MS.png";
 
 const Products = () => {
   const productCategories = [
@@ -57,7 +57,7 @@ const Products = () => {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {productCategories.map((category, index) => (
-              <div
+              <div 
                 key={index} 
                 id={
                   index === 0 ? "asa-sheets" : 
@@ -128,18 +128,18 @@ const Products = () => {
             <Card className="p-8">
               <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Sheet Dimensions</h3>
               <div className="space-y-2 font-inter text-muted-foreground">
-                <div>Standard: 8×4 feet (2440×1220 mm)</div>
-                <div>Thickness: 0.5mm to 3mm</div>
-                <div>Custom sizes available on request</div>
+                Standard: 8×4 feet (2440×1220 mm)<br/>
+                Thickness: 0.5mm to 3mm<br/>
+                Custom sizes available on request
               </div>
             </Card>
 
             <Card className="p-8">
               <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Quality Standards</h3>
               <div className="space-y-2 font-inter text-muted-foreground">
-                <div>ISO certified manufacturing</div>
-                <div>Weather resistance tested</div>
-                <div>Fire safety compliant</div>
+                ISO certified manufacturing<br/>
+                Weather resistance tested<br/>
+                Fire safety compliant
               </div>
             </Card>
           </div>
