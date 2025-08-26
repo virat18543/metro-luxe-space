@@ -5,6 +5,7 @@ import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import louversCream from "@/assets/products/louvers-cream.jpg";
 import premiumLaminatesImg from "@/assets/products/Lam-in-MS.png";
 import decorativeLouversImg from "@/assets/products/Lou-in-MS.png";
+import caneWallpaperImg from "@/assets/products/Cane-in-MS.png";
 
 const Products = () => {
   const productCategories = [
@@ -32,7 +33,7 @@ const Products = () => {
     {
       name: "Cane Wallpaper",
       description: "Natural texture wallpaper solutions bringing organic elegance to contemporary interior design projects.",
-      image: louversCream,
+      image: caneWallpaperImg,
       features: ["Natural Texture", "Eco-Friendly", "Easy Application", "Durable Finish"],
       keywords: "cane wallpaper natural texture eco-friendly interior design organic"
     }
@@ -58,7 +59,7 @@ const Products = () => {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {productCategories.map((category, index) => (
-              <div                
+              <div
                 key={index} 
                 id={
                   index === 0 ? "asa-sheets" : 
@@ -92,7 +93,7 @@ const Products = () => {
                     <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
                       <Link to="/contact">Request Samples</Link>
                     </Button>
-                    <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
+                    <Button asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background" variant="outline">
                       <Link to="/applications">View Applications</Link>
                     </Button>
                   </div>
@@ -129,18 +130,18 @@ const Products = () => {
             <Card className="p-8">
               <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Sheet Dimensions</h3>
               <div className="space-y-2 font-inter text-muted-foreground">
-                Standard: 8×4 feet (2440×1220 mm)<br/>
-                Thickness: 0.5mm to 3mm<br/>
-                Custom sizes available on request
+                <div>Standard: 8×4 feet (2440×1220 mm)</div>
+                <div>Thickness: 0.5mm to 3mm</div>
+                <div>Custom sizes available on request</div>
               </div>
             </Card>
 
             <Card className="p-8">
               <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Quality Standards</h3>
               <div className="space-y-2 font-inter text-muted-foreground">
-                ISO certified manufacturing<br/>
-                Weather resistance tested<br/>
-                Fire safety compliant
+                <div>ISO certified manufacturing</div>
+                <div>Weather resistance tested</div>
+                <div>Fire safety compliant</div>
               </div>
             </Card>
           </div>
