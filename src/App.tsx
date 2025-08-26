@@ -13,7 +13,6 @@ import Home from "./pages/Index";
 import Products from "./pages/Products";
 import Applications from "./pages/Applications";
 import PhilosophyPage from "./pages/PhilosophyPage";
-import Resources from "./pages/Resources";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AsaVsPetg from "./pages/blog/AsaVsPetg";
@@ -46,7 +45,6 @@ const App = () => (
             <Route path="/products/cane-wallpaper" element={<CaneWallpaper />} />
             <Route path="/applications" element={<Applications />} />
             <Route path="/philosophy" element={<PhilosophyPage />} />
-            <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog/asa-vs-petg" element={<AsaVsPetg />} />
