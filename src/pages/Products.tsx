@@ -1,8 +1,9 @@
-﻿import { Card } from "../components/ui/card";
+import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import louversCream from "@/assets/products/louvers-cream.jpg";
+import premiumLaminatesImg from "/assets/products/Lam-in-MS.jpg";
 
 const Products = () => {
   const productCategories = [
@@ -16,7 +17,7 @@ const Products = () => {
     {
       name: "Premium Laminates", 
       description: "High-pressure decorative laminates offering superior performance and aesthetic appeal for commercial and residential projects.",
-      image: asaSheetBrown,
+      image: premiumLaminatesImg,
       features: ["High Pressure", "Scratch Resistant", "Easy Maintenance", "Wide Design Range"],
       keywords: "premium laminates HPL decorative high pressure laminate commercial residential"
     },
@@ -56,7 +57,7 @@ const Products = () => {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {productCategories.map((category, index) => (
-              <div 
+              <div
                 key={index} 
                 id={
                   index === 0 ? "asa-sheets" : 
@@ -78,8 +79,8 @@ const Products = () => {
                     <h3 className="font-inter font-semibold text-primary">Key Features:</h3>
                     <div className="grid grid-cols-2 gap-2">
                       {category.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-primary rounded-full" />
+                        <div className="flex items-center space-x-2" key={featureIndex}>
+                          <div className="w-2 h-2 bg-primary rounded-full"></div>
                           <span className="font-inter text-muted-foreground">{feature}</span>
                         </div>
                       ))}
@@ -90,7 +91,7 @@ const Products = () => {
                     <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
                       <Link to="/contact">Request Samples</Link>
                     </Button>
-                    <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
+                    <Button asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background" variant="outline">
                       <Link to="/applications">View Applications</Link>
                     </Button>
                   </div>
@@ -127,18 +128,18 @@ const Products = () => {
             <Card className="p-8">
               <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Sheet Dimensions</h3>
               <div className="space-y-2 font-inter text-muted-foreground">
-                <p>Standard: 8×4 feet (2440×1220 mm)</p>
-                <p>Thickness: 0.5mm to 3mm</p>
-                <p>Custom sizes available on request</p>
+                <div>Standard: 8×4 feet (2440×1220 mm)</div>
+                <div>Thickness: 0.5mm to 3mm</div>
+                <div>Custom sizes available on request</div>
               </div>
             </Card>
 
             <Card className="p-8">
               <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Quality Standards</h3>
               <div className="space-y-2 font-inter text-muted-foreground">
-                <p>ISO certified manufacturing</p>
-                <p>Weather resistance tested</p>
-                <p>Fire safety compliant</p>
+                <div>ISO certified manufacturing</div>
+                <div>Weather resistance tested</div>
+                <div>Fire safety compliant</div>
               </div>
             </Card>
           </div>
@@ -155,4 +156,3 @@ const Products = () => {
 };
 
 export default Products;
-
