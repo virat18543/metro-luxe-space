@@ -5,8 +5,7 @@ const heroAmbient = '/hero-ambient.jpg';
 const Hero = () => {
   return (
     <>
-      {/* Diagnostic fallback for testing */}
-      <div style={{color: 'red', zIndex: 1000}}>Hero Render Test</div>
+      <div style={{color: 'red', fontWeight: 'bold', fontSize: '2rem', zIndex: 99999}}>Hero Confirmed Rendered</div>
       
       <section className="relative w-full aspect-video overflow-hidden">
         {/* Background Image */}
