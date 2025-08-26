@@ -1,35 +1,16 @@
-﻿
-import heroImage from "@/assets/hero-ambient.jpg";
+import SmartImage from './SmartImage';
 
 const Hero = () => {
   return (
     <section className="relative w-full aspect-video overflow-hidden">
-      {/* Background Image with Video-Ready Structure */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        {/* Main background image */}
-        <img 
-          src={heroImage} 
-          alt="Modern interior with premium decorative surfaces and laminates"
+        <SmartImage 
+          src="/assets/hero-ambient.jpg"
+          alt="Modern interior with premium decorative surfaces and laminates showcasing ASA Acrycore sheets"
           className="w-full h-full object-cover object-center"
         />
-        {/* Video will be added when available */}
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          className="w-full h-full object-cover object-center absolute inset-0 opacity-0"
-          poster={heroImage}
-          onLoadedData={(e) => {
-            e.currentTarget.style.opacity = "1";
-          }}
-          onError={(e) => {
-            e.currentTarget.style.display = "none";
-          }}
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90"></div>
       </div>
       
       {/* Floating Elements for Visual Interest */}
@@ -79,7 +60,7 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 hidden sm:block">
         <div className="w-6 h-10 border-2 border-white/70 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-bounce" />
+          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-bounce"></div>
         </div>
       </div>
     </section>
@@ -87,5 +68,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
