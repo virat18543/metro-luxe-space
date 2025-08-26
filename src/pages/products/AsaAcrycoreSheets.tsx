@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import JsonLd from "@/components/JsonLd";
 import SmartImage from "../../components/SmartImage";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
-import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
+import render04Texture867 from "@/assets/applications/RENDER04 TEXTURE 867.png";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
 
 const AsaAcrycoreSheets = () => {
@@ -121,7 +121,7 @@ const AsaAcrycoreSheets = () => {
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg shadow-soft">
                   <SmartImage
-                    src={officeBrownPanels}
+                    src={render04Texture867}
                     alt="ASA Acrycore sheets used for corporate office wall paneling"
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                     aspect="aspect-[16/9]"

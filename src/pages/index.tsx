@@ -1,4 +1,4 @@
-﻿import Hero from "../components/Hero";
+import Hero from "../components/Hero";
 import CoreValues from "../components/CoreValues";
 import ProductIcons from "../components/ProductIcons";
 import JsonLd from "../components/JsonLd";
@@ -7,7 +7,7 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import louversCream from "@/assets/products/louvers-cream.jpg";
-import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
+import minimalistWorkstationDesign from "@/assets/applications/20250825_1334_Minimalist Workstation Design_remix_01k3g409jqehsvv8ybz8g2jr25.png";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
   const workGallery = [
     {
       title: "Corporate Excellence",
-      image: officeBrownPanels,
+      image: minimalistWorkstationDesign,
       description: "Premium office environments"
     },
     {
@@ -39,9 +39,13 @@ const Home = () => {
 
   return (
     <>
+      <div style={{color:'red', fontWeight:'bold', fontSize:'2rem', zIndex:99999, position:'absolute', top:'10px', left:'10px'}}>INDEX IS RENDERED</div>
+      <Hero />
       <JsonLd />
+      
       <div className="pt-16">
-        <Hero />
+        <ProductIcons />
+        <CoreValues />
         
         {/* Philosophy Introduction */}
         <section className="py-16 px-6 bg-gradient-to-b from-background to-cream-light">
@@ -60,13 +64,7 @@ const Home = () => {
             </Button>
           </div>
         </section>
-
-        {/* Product Icons Section */}
-        <ProductIcons />
         
-        {/* Core Values Strip */}
-        <CoreValues />
-
         {/* Where Our Work Lives */}
         <section className="py-24 px-6 bg-cream-light">
           <div className="max-w-6xl mx-auto">
@@ -79,16 +77,15 @@ const Home = () => {
                 architectural visions into remarkable environments.
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               {workGallery.map((work, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-elegant">
+                <Card key={index} className="group relative overflow-hidden rounded-lg shadow-elegant">
                   <img 
                     src={work.image} 
                     alt={`${work.title} - ${work.description} featuring premium decorative surfaces`}
                     className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                   <div className="absolute bottom-6 left-6 right-6 text-white">
                     <h3 className="font-playfair text-2xl font-semibold mb-2">
                       {work.title}
@@ -97,10 +94,9 @@ const Home = () => {
                       {work.description}
                     </p>
                   </div>
-                </div>
+                </Card>
               ))}
             </div>
-
             <div className="text-center">
               <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
                 <Link to="/applications">View All Applications</Link>
@@ -114,4 +110,3 @@ const Home = () => {
 };
 
 export default Home;
-
