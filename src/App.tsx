@@ -9,7 +9,7 @@ import BackToTop from "./components/BackToTop";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import ScrollToTop from "./components/ScrollToTop";
 import HashScroll from "./components/HashScroll";
-import Home from "./pages/Home";
+import Home from "./pages/Index";
 import Products from "./pages/Products";
 import Applications from "./pages/Applications";
 import PhilosophyPage from "./pages/PhilosophyPage";
