@@ -1,13 +1,26 @@
 import SmartImage from './SmartImage';
 
-const heroAmbient = '/hero-ambient.jpg';
+const heroAmbient = '/brand/hero-ambient.jpg';
 
 const Hero = () => {
   return (
     <>
-      <div style={{color: 'red', fontWeight: 'bold', fontSize: '2rem', zIndex: 99999}}>Hero Confirmed Rendered</div>
+      <div style={{
+        color: 'red',
+        fontWeight: 'bold', 
+        fontSize: '2rem',
+        zIndex: 99999,
+        position: 'absolute',
+        top: '10px',
+        left: '10px'
+      }}>
+        Hero Confirmed Rendered
+      </div>
       
-      <section className="relative w-full aspect-video overflow-hidden">
+      <section 
+        className="relative w-full overflow-hidden"
+        style={{ minHeight: 'calc(100vh - 72px)' }}
+      >
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <SmartImage
