@@ -6,6 +6,7 @@ import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
 import louInMS from "@/assets/products/Lou-in-MS.png";
 import restaurantLouvers from "@/assets/applications/restaurant-louvers.jpg";
+import asaAppInMS from "@/assets/applications/ASAappinMS (2).png";
 
 const ProductGallery = () => {
   const [activeProduct, setActiveProduct] = useState(0);
@@ -19,7 +20,7 @@ const ProductGallery = () => {
       applications: [
         {
           title: "Corporate Office Paneling",
-          image: officeBrownPanels,
+          image: asaAppInMS,
           alt: "ASA Acrycore PETG decorative sheet brown oak veneer office wall panels corporate interior design"
         },
         {
@@ -123,7 +124,7 @@ const ProductGallery = () => {
                   </h4>
                   <div className="grid md:grid-cols-2 gap-6">
                     {product.applications.map((app, appIndex) => (
-                      <div className="group" key={appIndex}>
+                      <div key={appIndex} className="group">
                         <div className="relative overflow-hidden rounded-lg shadow-soft">
                           <SmartImage
                             src={app.image}
@@ -157,7 +158,7 @@ const ProductGallery = () => {
               { name: 'Decorative Louvers', anchor: '#louvers' },
               { name: 'Cane Wallpaper', anchor: '#wallpaper' }
             ].map((category, index) => (
-              <Link
+              <Link 
                 key={index} 
                 to={`/products${category.anchor}`}
                 className="group hover:scale-105 transition-all duration-300"
