@@ -2,7 +2,6 @@ import Hero from "../components/Hero";
 import Philosophy from "../components/Philosophy";
 import ProductGallery from "../components/ProductGallery";
 import Contact from "../components/Contact";
-import Blog from "../components/Blog";
 import JsonLd from "../components/JsonLd";
 
 const Index = () => {
@@ -48,7 +47,6 @@ const Index = () => {
         <Hero />
         <Philosophy />
         <ProductGallery />
-        <Blog />
         <Contact />
       </div>
     </>
