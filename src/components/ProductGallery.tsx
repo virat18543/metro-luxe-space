@@ -4,7 +4,7 @@ import SmartImage from "./SmartImage";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
-import louversCream from "@/assets/products/louvers-cream.jpg";
+import louInMS from "@/assets/products/Lou-in-MS.png";
 import restaurantLouvers from "@/assets/applications/restaurant-louvers.jpg";
 
 const ProductGallery = () => {
@@ -33,7 +33,7 @@ const ProductGallery = () => {
       name: "Architectural Louvers",
       category: "Decorative Louvers",
       internalCode: "LVR-456_Cream",
-      sheetImage: louversCream,
+      sheetImage: louInMS,
       applications: [
         {
           title: "Restaurant Ceiling Feature",
