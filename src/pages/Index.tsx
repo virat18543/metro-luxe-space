@@ -42,6 +42,7 @@ const Index = () => {
 
   return (
     <>
+      <div style={{color:'red', fontWeight:'bold', fontSize:'2rem', zIndex:99999, position:'absolute', top:'10px', left:'10px'}}>INDEX IS RENDERED</div>
       <JsonLd data={organizationData} />
       <JsonLd data={websiteData} />
       <div className="min-h-screen bg-background font-inter">
