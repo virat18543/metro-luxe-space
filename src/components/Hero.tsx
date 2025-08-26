@@ -1,12 +1,13 @@
 import SmartImage from './SmartImage';
+import heroAmbient from '@/assets/hero-ambient.jpg';
 
 const Hero = () => {
   return (
     <section className="relative w-full aspect-video overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <SmartImage 
-          src="/assets/hero-ambient.jpg"
+        <SmartImage
+          src={heroAmbient}
           alt="Modern interior with premium decorative surfaces and laminates showcasing ASA Acrycore sheets"
           className="w-full h-full object-cover object-center"
         />
@@ -20,7 +21,7 @@ const Hero = () => {
         <div className="absolute bottom-40 left-12 w-1.5 h-1.5 bg-white/20 rounded-full animate-pulse delay-300"></div>
         <div className="absolute top-64 right-4 w-1 h-1 bg-white/35 rounded-full animate-bounce delay-500"></div>
       </div>
-
+      
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full text-center px-4 sm:px-6 max-w-4xl mx-auto animate-fade-in">
         {/* Mobile-optimized typography */}
@@ -42,11 +43,11 @@ const Hero = () => {
               for discerning architects and designers
             </p>
           </div>
-
+          
           {/* Mobile CTA buttons */}
           <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <div className="block sm:hidden">
-              <a 
+              <a
                 href="/products" 
                 className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm font-medium"
               >
