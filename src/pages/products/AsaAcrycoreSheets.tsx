@@ -63,18 +63,18 @@ const AsaAcrycoreSheets = () => {
                   </Button>
                 </div>
               </div>
-              <div className="relative">
+              <div>
                 <SmartImage
                   src={asaSheetBrown}
-                  alt="ASA Acrycore decorative sheet sample brown oak veneer texture"
-                  className="w-full h-96 object-cover rounded-lg shadow-elegant"
-                  aspect="aspect-[4/3]"
+                  alt="ASA Acrycore sheets in brown wood grain finish"
+                  className="rounded-lg shadow-lg w-full h-auto"
+                  priority
                 />
               </div>
             </div>
           </div>
         </section>
-        
+
         {/* Features Section */}
         <section className="py-16 px-6 bg-cream-light">
           <div className="max-w-7xl mx-auto">
@@ -82,82 +82,81 @@ const AsaAcrycoreSheets = () => {
               Key Features
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Weather Resistant",
-                  description: "ASA surface layer provides excellent UV and weather resistance for long-lasting color stability."
-                },
-                {
-                  title: "Thermoformable",
-                  description: "PETG core allows for easy thermoforming into complex shapes and curves."
-                },
-                {
-                  title: "Premium Finish",
-                  description: "High-quality decorative surfaces with wood grain, solid colors, and textured finishes."
-                }
-              ].map((feature, index) => (
-                <Card className="text-center" key={index}>
-                  <CardContent className="p-6">
-                    <h3 className="font-inter font-semibold text-xl text-primary mb-4">
-                      {feature.title}
-                    </h3>
-                    <p className="font-inter text-muted-foreground leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <h3 className="font-inter font-semibold text-xl text-primary mb-4">
+                    Weather Resistant
+                  </h3>
+                  <p className="font-inter text-muted-foreground">
+                    ASA surface layer provides exceptional UV resistance and long-term color stability for outdoor applications.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <h3 className="font-inter font-semibold text-xl text-primary mb-4">
+                    Formable Core
+                  </h3>
+                  <p className="font-inter text-muted-foreground">
+                    PETG core layer offers excellent thermoforming properties for creating complex curved surfaces.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <h3 className="font-inter font-semibold text-xl text-primary mb-4">
+                    Premium Finishes
+                  </h3>
+                  <p className="font-inter text-muted-foreground">
+                    Available in a wide range of decorative patterns including wood grains, solids, and textures.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
-        
-        {/* Applications Gallery */}
+
+        {/* Applications Section */}
         <section className="py-16 px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary text-center mb-12">
-              Application Examples
+              Applications
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="group">
-                <div className="relative overflow-hidden rounded-lg shadow-soft">
-                  <SmartImage
-                    src={officeBrownPanels}
-                    alt="ASA Acrycore sheets used for corporate office wall paneling"
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                    aspect="aspect-[16/9]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <h3 className="font-inter font-semibold text-xl text-primary mt-4 mb-2">
-                  Corporate Office Paneling
+              <div>
+                <SmartImage
+                  src={officeBrownPanels}
+                  alt="ASA Acrycore sheets used for commercial office panels"
+                  className="rounded-lg shadow-lg w-full h-64 object-cover mb-4"
+                />
+                <h3 className="font-inter font-semibold text-xl text-primary mb-2">
+                  Commercial Interiors
                 </h3>
                 <p className="font-inter text-muted-foreground">
-                  Professional interior wall solutions for modern office environments.
+                  Perfect for office partitions, ceiling panels, and architectural elements requiring durability and aesthetics.
                 </p>
               </div>
               
-              <div className="group">
-                <div className="relative overflow-hidden rounded-lg shadow-soft">
-                  <SmartImage
-                    src={residentialFeatureWall}
-                    alt="ASA Acrycore sheets as residential feature wall"
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                    aspect="aspect-[16/9]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <h3 className="font-inter font-semibold text-xl text-primary mt-4 mb-2">
-                  Residential Feature Walls
+              <div>
+                <SmartImage
+                  src={residentialFeatureWall}
+                  alt="ASA Acrycore sheets creating a residential feature wall"
+                  className="rounded-lg shadow-lg w-full h-64 object-cover mb-4"
+                />
+                <h3 className="font-inter font-semibold text-xl text-primary mb-2">
+                  Residential Projects
                 </h3>
                 <p className="font-inter text-muted-foreground">
-                  Elegant decorative solutions for luxury residential interiors.
+                  Ideal for feature walls, kitchen backsplashes, and furniture applications in residential spaces.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        
-        {/* Specifications */}
+
+        {/* Specifications Section */}
         <section className="py-16 px-6 bg-cream-light">
           <div className="max-w-7xl mx-auto">
             <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary text-center mb-12">
@@ -208,9 +207,6 @@ const AsaAcrycoreSheets = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
                 <Link to="/contact">Get Quote</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link to="/downloads">Download Catalog</Link>
               </Button>
             </div>
           </div>
