@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import louversCream from "@/assets/products/louvers-cream.jpg";
 import premiumLaminatesImg from "@/assets/products/Lam-in-MS.png";
+import decorativeLouversImg from "@/assets/products/Lou-in-MS.png";
 
 const Products = () => {
   const productCategories = [
@@ -24,7 +25,7 @@ const Products = () => {
     {
       name: "Decorative Louvers",
       description: "Architectural louver systems combining functionality with aesthetic excellence for modern commercial and residential spaces.",
-      image: louversCream,
+      image: decorativeLouversImg,
       features: ["Architectural Grade", "Custom Spacing", "Multiple Materials", "Easy Installation"],
       keywords: "decorative louvers architectural elements ventilation commercial residential"
     },
@@ -57,7 +58,7 @@ const Products = () => {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {productCategories.map((category, index) => (
-              <div 
+              <div                
                 key={index} 
                 id={
                   index === 0 ? "asa-sheets" : 
@@ -91,7 +92,7 @@ const Products = () => {
                     <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
                       <Link to="/contact">Request Samples</Link>
                     </Button>
-                    <Button asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background" variant="outline">
+                    <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
                       <Link to="/applications">View Applications</Link>
                     </Button>
                   </div>
