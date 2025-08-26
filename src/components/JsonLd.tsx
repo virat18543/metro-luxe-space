@@ -1,4 +1,4 @@
-﻿const JsonLd = () => {
+const JsonLd = () => {
   const businessData = {
     "@context": "https://schema.org",
     "@type": "Business",
@@ -13,7 +13,7 @@
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+91-93260-05195",
+        "telephone": "+91-82865-80449",
         "contactType": "Customer Service",
         "availableLanguage": ["English", "Hindi"]
       },
@@ -24,7 +24,7 @@
       }
     ],
     "sameAs": [
-      "https://wa.me/919326005195"
+      "https://wa.me/918286580449"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -90,4 +90,3 @@
 };
 
 export default JsonLd;
-
