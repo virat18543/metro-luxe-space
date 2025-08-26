@@ -45,6 +45,10 @@ const Index = () => {
       <JsonLd data={organizationData} />
       <JsonLd data={websiteData} />
       <div className="min-h-screen bg-background font-inter">
+        {/* Hero section at the top */}
+        <Hero />
+        
+        {/* Philosophy section */}
         <Philosophy />
         
         {/* Product Categories Overview */}
@@ -74,8 +78,10 @@ const Index = () => {
           </div>
         </section>
         
-        <Hero />
+        {/* Product Gallery section */}
         <ProductGallery />
+        
+        {/* Contact section */}
         <Contact />
       </div>
     </>
