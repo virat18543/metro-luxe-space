@@ -1,5 +1,5 @@
 import SmartImage from './SmartImage';
-import heroAmbient from '@/assets/hero-ambient.jpg';
+import heroAmbient from '../assets/hero-ambient.jpg';
 
 const Hero = () => {
   return (
