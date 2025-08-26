@@ -1,9 +1,16 @@
+import SmartImage from './SmartImage';
+import heroAmbient from '@/assets/hero-ambient.jpg';
+
 const Hero = () => {
   return (
     <section className="relative w-full aspect-video overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src='/hero-ambient.jpg' alt='Modern interior with premium decorative surfaces and laminates showcasing ASA Acrycore sheets' className='w-full h-full object-cover object-center' />
+        <SmartImage
+          src={heroAmbient}
+          alt="Modern interior with premium decorative surfaces and laminates showcasing ASA Acrycore sheets"
+          className="w-full h-full object-cover object-center"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90"></div>
       </div>
       
@@ -32,7 +39,7 @@ const Hero = () => {
               Beautiful Spaces, Beautiful Life
             </p>
             <p className="font-inter text-xs sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-snug drop-shadow-sm px-2">
-              ASA Acrycore sheets, laminates, louvers, and cane wallpaper <br />
+              ASA Acrycore sheets, laminates, louvers, and cane wallpaper <br/>
               for discerning architects and designers
             </p>
           </div>
