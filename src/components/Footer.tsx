@@ -83,7 +83,7 @@ const Footer = () => {
               className="w-full border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
             >
               <a
-                href="https://wa.me/919326005195"
+                href="https://wa.me/918286580449"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center"
@@ -200,7 +200,7 @@ const Footer = () => {
                   className="w-full border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-primary/5"
                 >
                   <a
-                    href="https://wa.me/919326005195"
+                    href="https://wa.me/918286580449"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center"
