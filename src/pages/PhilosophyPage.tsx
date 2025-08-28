@@ -1,5 +1,6 @@
-﻿import { Card } from "../components/ui/card";
+import { Card } from "../components/ui/card";
 import { Users, RefreshCw, Scale, Target } from "lucide-react";
+import Seo from '../components/Seo';
 
 const PhilosophyPage = () => {
   const timeline = [
@@ -61,46 +62,82 @@ const PhilosophyPage = () => {
     },
     {
       icon: Target,
-      title: "Selective Distribution",
-      description: "Curated partnerships with premium brands ensure our clients access only the finest decorative surface solutions available in the market.",
+      title: "Quality Excellence",
+      description: "Uncompromising standards in material selection, testing, and delivery. We partner only with manufacturers who share our commitment to superior quality.",
       details: [
-        "Premium brand partnerships",
-        "Quality-first selection criteria",
-        "Exclusive product access",
-        "Limited distribution networks"
+        "Rigorous quality testing protocols",
+        "Certified material standards",
+        "Regular supplier audits",
+        "Continuous improvement processes"
       ]
     }
   ];
 
   return (
-    <div className="pt-16">
+    <div className="min-h-screen bg-background">
+      <Seo
+        title="Design Philosophy | Metro Surfaces Quality & Sustainability"
+        description="Metro Surfaces design philosophy: Committed to quality, sustainability, and principled business practices. Learn what sets our brand apart in premium decorative surfaces."
+        canonical="https://voli.co.in/philosophy"
+        ogImage="https://voli.co.in/philosophy/og.jpg"
+      />
+      
       {/* Hero Section */}
-      <section className="py-24 px-6 bg-gradient-to-b from-cream-light to-background">
+      <section className="relative py-24 px-6 bg-gradient-to-br from-primary/5 to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-6xl font-semibold text-primary mb-6">
-            Our Philosophy
+          <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-semibold text-primary mb-6">
+            Our Design Philosophy
           </h1>
-          <p className="font-inter text-xl text-muted-foreground leading-relaxed">
-            Built on decades of experience, our approach transcends mere product supply. 
-            We craft lasting relationships through principled business practices and 
-            unwavering commitment to architectural excellence.
+          <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Three decades of excellence built on unwavering principles. 
+            Discover the values that drive Metro Surfaces' commitment to quality, 
+            sustainability, and exceptional service.
           </p>
         </div>
       </section>
 
-
-      {/* Core Values */}
-      <section className="py-24 px-6 bg-cream-light">
+      {/* Timeline Section */}
+      <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
-              Core Values
+              Our Journey
+            </h2>
+            <p className="font-inter text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              From humble beginnings to industry leadership, our story is one of continuous growth, 
+              innovation, and unwavering commitment to our core values.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {timeline.map((item, index) => (
+              <Card key={index} className="p-6 text-center hover:shadow-elegant transition-all duration-300">
+                <div className="text-primary font-playfair text-2xl font-semibold mb-4">
+                  {item.year}
+                </div>
+                <h3 className="font-inter font-semibold text-lg mb-3">
+                  {item.title}
+                </h3>
+                <p className="font-inter text-muted-foreground text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-24 px-6 bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
+              Our Core Values
             </h2>
             <p className="font-inter text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               These principles guide every interaction, every decision, and every partnership we forge.
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 gap-8">
             {values.map((value, index) => (
               <Card key={index} className="p-8 h-full hover:shadow-elegant transition-all duration-300">
@@ -117,7 +154,9 @@ const PhilosophyPage = () => {
                 </div>
                 
                 <div className="space-y-3">
-                  <h4 className="font-inter font-semibold text-primary">How we deliver:</h4>
+                  <h4 className="font-inter font-semibold text-primary">
+                    How we deliver:
+                  </h4>
                   <div className="space-y-2">
                     {value.details.map((detail, detailIndex) => (
                       <div key={detailIndex} className="flex items-center space-x-2">
@@ -155,4 +194,3 @@ const PhilosophyPage = () => {
 };
 
 export default PhilosophyPage;
-
