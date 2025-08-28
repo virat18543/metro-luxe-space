@@ -79,7 +79,7 @@ const ContactPage: React.FC = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-lg">
                 <div className="text-center">
-                  <p className="font-playfair text-2xl font-bold">15+</p>
+                  <p className="font-playfair text-2xl font-bold">30+</p>
                   <p className="font-inter text-sm opacity-90">Years Experience</p>
                 </div>
               </div>
