@@ -1,6 +1,7 @@
 import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
+import Seo from "../components/Seo";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import louversCream from "@/assets/products/louvers-cream.jpg";
 import premiumLaminatesImg from "@/assets/products/Lam-in-MS.png";
@@ -40,111 +41,122 @@ const Products = () => {
   ];
 
   return (
-    <div className="pt-16">
-      {/* Hero Section */}
-      <section className="py-24 px-6 bg-gradient-to-b from-cream-light to-background">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-6xl font-semibold text-primary mb-6">
-            Our Product Collection
-          </h1>
-          <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover our comprehensive collection of decorative surfaces, 
-            each meticulously selected for architectural excellence and lasting performance.
-          </p>
-        </div>
-      </section>
-
-      {/* Product Categories */}
-      <section className="py-24 px-6 bg-background">
-        <div className="max-w-6xl mx-auto">
-          <div className="space-y-16">
-            {productCategories.map((category, index) => (
-              <div 
-                key={index} 
-                id={
-                  index === 0 ? "asa-sheets" : 
-                  index === 1 ? "laminates" : 
-                  index === 2 ? "louvers" : 
-                  "wallpaper"
-                }
-                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}
-              >
-                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary">
-                    {category.name}
-                  </h2>
-                  <p className="font-inter text-lg text-muted-foreground leading-relaxed">
-                    {category.description}
-                  </p>
-                  
-                  <div className="space-y-3">
-                    <h3 className="font-inter font-semibold text-primary">Key Features:</h3>
-                    <div className="grid grid-cols-2 gap-2">
-                      {category.features.map((feature, featureIndex) => (
-                        <div className="flex items-center space-x-2" key={featureIndex}>
-                          <div className="w-2 h-2 bg-primary rounded-full"></div>
-                          <span className="font-inter text-muted-foreground">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="flex space-x-4">
-                    <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
-                      <Link to="/contact">Request Samples</Link>
-                    </Button>
-                    <Button asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background" variant="outline">
-                      <Link to="/applications">View Applications</Link>
-                    </Button>
-                  </div>
-                </div>
-                <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                  <Card className="overflow-hidden group hover:shadow-elegant transition-all duration-300">
-                    <img 
-                      src={category.image} 
-                      alt={`${category.name} ${category.keywords}`}
-                      className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </Card>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Product Specifications */}
-      <section className="py-24 px-6 bg-cream-light">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
-              Standard Specifications
-            </h2>
-            <p className="font-inter text-lg text-muted-foreground leading-relaxed">
-              All products meet industry standards with customization options available for specific project requirements.
+    <>
+      <Seo
+        title="Decorative Surface Products | ASA Sheets, Laminates, Louvers, Cane Wallpaper"
+        description="Explore decorative surface products from Metro Surfaces: ASA Acrycore sheets, premium laminates, decorative louvers, cane wallpaper for high-end architecture and design."
+        canonical="https://voli.co.in/products"
+        ogImage="https://voli.co.in/products/og.jpg"
+      />
+      <div className="pt-16">
+        {/* Hero Section */}
+        <section className="py-24 px-6 bg-gradient-to-b from-cream-light to-background">
+          <div className="max-w-6xl mx-auto text-center">
+            <h1 className="font-playfair text-4xl md:text-6xl font-semibold text-primary mb-6">
+              Our Product Collection
+            </h1>
+            <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Discover our comprehensive collection of decorative surfaces, 
+              each meticulously selected for architectural excellence and lasting performance.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8">
-              <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Sheet Dimensions</h3>
-              <div className="space-y-2 font-inter text-muted-foreground">
-                <div>Standard: 8×4 feet (2440×1220 mm)</div>
-                <div>Thickness: 0.5mm to 3mm</div>
-                <div>Custom sizes available on request</div>
-              </div>
-            </Card>
-            <Card className="p-8">
-              <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Quality Standards</h3>
-              <div className="space-y-2 font-inter text-muted-foreground">
-                <div>ISO certified manufacturing</div>
-                <div>Weather resistance tested</div>
-                <div>Fire safety compliant</div>
-              </div>
-            </Card>
+        </section>
+
+        {/* Product Categories */}
+        <section className="py-24 px-6 bg-background">
+          <div className="max-w-6xl mx-auto">
+            <div className="space-y-16">
+              {productCategories.map((category, index) => (
+                <div 
+                  key={index} 
+                  id={
+                    index === 0 ? "asa-sheets" : 
+                    index === 1 ? "laminates" : 
+                    index === 2 ? "louvers" : 
+                    "wallpaper"
+                  }
+                  className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}
+                >
+                  <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                    <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary">
+                      {category.name}
+                    </h2>
+                    <p className="font-inter text-lg text-muted-foreground leading-relaxed">
+                      {category.description}
+                    </p>
+                    
+                    <div className="space-y-3">
+                      <h3 className="font-inter font-semibold text-primary">Key Features:</h3>
+                      <div className="grid grid-cols-2 gap-2">
+                        {category.features.map((feature, featureIndex) => (
+                          <div className="flex items-center space-x-2" key={featureIndex}>
+                            <div className="w-2 h-2 bg-primary rounded-full"></div>
+                            <span className="font-inter text-muted-foreground">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    <div className="flex space-x-4">
+                      <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
+                        <Link to="/contact">Request Samples</Link>
+                      </Button>
+                      <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
+                        <Link to="/applications">View Applications</Link>
+                      </Button>
+                    </div>
+                  </div>
+
+                  <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                    <Card className="overflow-hidden group hover:shadow-elegant transition-all duration-300">
+                      <img 
+                        src={category.image} 
+                        alt={`${category.name} ${category.keywords}`}
+                        className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </Card>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+
+        {/* Product Specifications */}
+        <section className="py-24 px-6 bg-cream-light">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
+                Standard Specifications
+              </h2>
+              <p className="font-inter text-lg text-muted-foreground leading-relaxed">
+                All products meet industry standards with customization options available for specific project requirements.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="p-8">
+                <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Sheet Dimensions</h3>
+                <div className="space-y-2 font-inter text-muted-foreground">
+                  Standard: 8×4 feet (2440×1220 mm)<br/>
+                  Thickness: 0.5mm to 3mm<br/>
+                  Custom sizes available on request
+                </div>
+              </Card>
+
+              <Card className="p-8">
+                <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Quality Standards</h3>
+                <div className="space-y-2 font-inter text-muted-foreground">
+                  ISO certified manufacturing<br/>
+                  Weather resistance tested<br/>
+                  Fire safety compliant
+                </div>
+              </Card>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 
