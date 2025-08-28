@@ -1,16 +1,17 @@
 import React from 'react';
 import { Button } from '../components/ui/button';
 import { Phone, Mail, MessageCircle, Download, Clock } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+// react-helmet-async import removed - SEO meta tags should be managed centrally
 
 const ContactPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Contact Us - Metro Surfaces | Premium Decorative Solutions</title>
-        <meta name="description" content="Contact Metro Surfaces for premium decorative surface solutions. Call, email, or WhatsApp us for consultations and design services." />
-      </Helmet>
-
+      {/* 
+        TODO: Add SEO meta tags centrally where SEO is managed
+        Title: Contact Us - Metro Surfaces | Premium Decorative Solutions
+        Description: Contact Metro Surfaces for premium decorative surface solutions. Call, email, or WhatsApp us for consultations and design services.
+      */}
+      
       {/* Hero Section */}
       <section className="relative py-24 px-6 bg-gradient-to-br from-cream-light via-background to-cream-dark">
         <div className="max-w-6xl mx-auto">
@@ -24,7 +25,7 @@ const ContactPage: React.FC = () => {
                   Ready to transform your space? Contact our design experts for premium decorative surface solutions.
                 </p>
               </div>
-
+              
               {/* Contact CTAs */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -65,7 +66,7 @@ const ContactPage: React.FC = () => {
                 </Button>
               </div>
             </div>
-
+            
             {/* Hero Image */}
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
