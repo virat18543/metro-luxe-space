@@ -3,6 +3,7 @@ import Philosophy from "../components/Philosophy";
 import ProductGallery from "../components/ProductGallery";
 import Contact from "../components/Contact";
 import JsonLd from "../components/JsonLd";
+import Seo from "../components/Seo";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -42,6 +43,12 @@ const Index = () => {
 
   return (
     <>
+      <Seo
+        title="Metro Surfaces | Premium Decorative Surfaces in Mumbai"
+        description="Metro Surfaces: ASA Acrycore sheets, laminates, louvers, and cane wallpaper for world-class interior architecture. Premium decorative surfaces supplier in India."
+        canonical="https://voli.co.in/"
+        ogImage="https://voli.co.in/og.jpg"
+      />
       <JsonLd data={organizationData} />
       <JsonLd data={websiteData} />
       <div className="min-h-screen bg-background font-inter">
