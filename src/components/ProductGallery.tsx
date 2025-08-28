@@ -5,6 +5,7 @@ import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
 import louInMS from "@/assets/products/Lou-in-MS.png";
 import restaurantLouvers from "@/assets/applications/restaurant-louvers.jpg";
+import minimalistWorkstation from "@/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg";
 
 const ProductGallery = () => {
   const [activeProduct, setActiveProduct] = useState(0);
@@ -18,7 +19,7 @@ const ProductGallery = () => {
       applications: [
         {
           title: "Corporate Office Paneling",
-          image: "/assets/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg",
+          image: minimalistWorkstation,
           alt: "Minimalist workstation with modern office paneling featuring clean lines and contemporary design"
         },
         {
@@ -41,7 +42,7 @@ const ProductGallery = () => {
         },
         {
           title: "Office Partition System",
-          image: "/assets/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg",
+          image: minimalistWorkstation,
           alt: "Louver partition panels office interior decorative architectural element workspace design"
         }
       ]
