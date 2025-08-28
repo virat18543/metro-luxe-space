@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import SmartImage from "./SmartImage";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
-import minimalistWorkstation from "@/assets/applications/minimalist-workstation.jpg";
+import minimalistWorkstation from "@/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
 import louInMS from "@/assets/products/Lou-in-MS.png";
 import restaurantLouvers from "@/assets/applications/restaurant-louvers.jpg";
