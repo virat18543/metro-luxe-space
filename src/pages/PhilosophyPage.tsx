@@ -82,6 +82,19 @@ const PhilosophyPage = () => {
         ogImage="https://voli.co.in/philosophy/og.jpg"
       />
       
+      <script type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context":"https://schema.org",
+            "@type":"BreadcrumbList",
+            "itemListElement":[
+              {"@type":"ListItem","position":1,"name":"Home","item":"https://voli.co.in/"},
+              {"@type":"ListItem","position":2,"name":"Philosophy","item":"https://voli.co.in/philosophy"}
+            ]
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="relative py-24 px-6 bg-gradient-to-br from-primary/5 to-background">
         <div className="max-w-4xl mx-auto text-center">
@@ -111,7 +124,7 @@ const PhilosophyPage = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {timeline.map((item, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-elegant transition-all duration-300">
+              <Card className="p-6 text-center hover:shadow-elegant transition-all duration-300" key={index}>
                 <div className="text-primary font-playfair text-2xl font-semibold mb-4">
                   {item.year}
                 </div>
@@ -140,7 +153,7 @@ const PhilosophyPage = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="p-8 h-full hover:shadow-elegant transition-all duration-300">
+              <Card className="p-8 h-full hover:shadow-elegant transition-all duration-300" key={index}>
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
                     <value.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
@@ -159,8 +172,8 @@ const PhilosophyPage = () => {
                   </h4>
                   <div className="space-y-2">
                     {value.details.map((detail, detailIndex) => (
-                      <div key={detailIndex} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0" />
+                      <div className="flex items-center space-x-2" key={detailIndex}>
+                        <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
                         <span className="font-inter text-muted-foreground text-sm">{detail}</span>
                       </div>
                     ))}
