@@ -70,8 +70,9 @@ const ContactPage: React.FC = () => {
             {/* Hero Image */}
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                {/* TODO: Replace with your desired hero image filename/path */}
                 <img
-                  src="/images/hero/contact-hero.jpg"
+                  src="/images/hero/contact-hero-new.jpg"
                   alt="Metro Surfaces showroom with premium decorative materials"
                   className="w-full h-full object-cover"
                   loading="eager"
@@ -97,27 +98,16 @@ const ContactPage: React.FC = () => {
           <h2 className="font-playfair text-3xl font-semibold text-primary mb-8">
             Business Hours
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-            <div className="bg-background p-6 rounded-xl shadow-sm">
+          <div className="max-w-md mx-auto">
+            <div className="bg-background p-8 rounded-xl shadow-sm">
               <h3 className="font-playfair text-xl font-medium text-primary mb-4">
-                Monday - Saturday
+                Business Hours
               </h3>
-              <p className="font-inter text-2xl font-semibold text-muted-foreground">
-                9:00 AM - 6:00 PM
+              <p className="font-inter text-2xl font-semibold text-muted-foreground mb-2">
+                Monday – Saturday: 9:00 AM – 6:00 PM
               </p>
-              <p className="font-inter text-sm text-muted-foreground mt-2">
-                Full service and consultations
-              </p>
-            </div>
-            <div className="bg-background p-6 rounded-xl shadow-sm">
-              <h3 className="font-playfair text-xl font-medium text-primary mb-4">
-                Sunday
-              </h3>
-              <p className="font-inter text-2xl font-semibold text-muted-foreground">
-                10:00 AM - 4:00 PM
-              </p>
-              <p className="font-inter text-sm text-muted-foreground mt-2">
-                Emergency consultations available by appointment
+              <p className="font-inter text-sm text-muted-foreground">
+                Full service and consultations available
               </p>
             </div>
           </div>
@@ -162,8 +152,7 @@ const ContactPage: React.FC = () => {
             "telephone": "+91-82865-80449",
             "email": "rrrmetro@gmail.com",
             "openingHours": [
-              "Mo-Sa 09:00-18:00",
-              "Su 10:00-16:00"
+              "Mo-Sa 09:00-18:00"
             ],
             "priceRange": "$$",
             "sameAs": [
