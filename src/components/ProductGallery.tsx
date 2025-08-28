@@ -1,30 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SmartImage from "./SmartImage";
-import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
-import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
-import louInMS from "@/assets/products/Lou-in-MS.png";
-import restaurantLouvers from "@/assets/applications/restaurant-louvers.jpg";
-import minimalistWorkstation from "@/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg";
 
 const ProductGallery = () => {
   const [activeProduct, setActiveProduct] = useState(0);
-
+  
   const products = [
     {
       name: "Frost White",
       category: "ASA Acrycore Sheet",
       internalCode: "VLT-123_Oak",
-      sheetImage: asaSheetBrown,
+      sheetImage: "/assets/products/asa-sheet-brown.jpg",
       applications: [
         {
           title: "Corporate Office Paneling",
-          image: minimalistWorkstation,
+          image: "/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg",
           alt: "Minimalist workstation with modern office paneling featuring clean lines and contemporary design"
         },
         {
           title: "Residential Feature Wall", 
-          image: residentialFeatureWall,
+          image: "/assets/applications/residential-feature-wall.jpg",
           alt: "ASA Acrycore PETG brown wood grain decor sheet residential living room feature wall luxury interior"
         }
       ]
@@ -33,16 +28,16 @@ const ProductGallery = () => {
       name: "Architectural Louvers",
       category: "Decorative Louvers",
       internalCode: "LVR-456_Cream",
-      sheetImage: louInMS,
+      sheetImage: "/assets/products/Lou-in-MS.png",
       applications: [
         {
           title: "Restaurant Ceiling Feature",
-          image: restaurantLouvers,
+          image: "/assets/applications/restaurant-louvers.jpg",
           alt: "Decorative louver ceiling installation restaurant commercial interior architectural element"
         },
         {
           title: "Office Partition System",
-          image: minimalistWorkstation,
+          image: "/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg",
           alt: "Louver partition panels office interior decorative architectural element workspace design"
         }
       ]
