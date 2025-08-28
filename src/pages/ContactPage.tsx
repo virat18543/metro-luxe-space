@@ -70,9 +70,13 @@ const ContactPage: React.FC = () => {
             {/* Hero Image */}
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                {/* TODO: Replace with your desired hero image filename/path */}
+                {/* 
+                  TODO: Add contact-hero-new.jpg image to public/assets/ directory
+                  Expected path: /assets/contact-hero-new.jpg
+                  Using placeholder.svg as fallback until image is added
+                */}
                 <img
-                  src="/assets/contact-hero-new.jpg"
+                  src="/placeholder.svg"
                   alt="Metro Surfaces showroom with premium decorative materials"
                   className="w-full h-full object-cover"
                   loading="eager"
