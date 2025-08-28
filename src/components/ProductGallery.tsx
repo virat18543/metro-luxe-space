@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import SmartImage from "./SmartImage";
 import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
-import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
+import minimalistWorkstation from "@/assets/applications/minimalist-workstation.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
 import louInMS from "@/assets/products/Lou-in-MS.png";
 import restaurantLouvers from "@/assets/applications/restaurant-louvers.jpg";
@@ -19,8 +19,8 @@ const ProductGallery = () => {
       applications: [
         {
           title: "Corporate Office Paneling",
-          image: officeBrownPanels,
-          alt: "ASA Acrycore PETG decorative sheet brown oak veneer office wall panels corporate interior design"
+          image: minimalistWorkstation,
+          alt: "Minimalist workstation with modern office paneling featuring clean lines and contemporary design"
         },
         {
           title: "Residential Feature Wall", 
@@ -42,7 +42,7 @@ const ProductGallery = () => {
         },
         {
           title: "Office Partition System",
-          image: officeBrownPanels,
+          image: minimalistWorkstation,
           alt: "Louver partition panels office interior decorative architectural element workspace design"
         }
       ]
