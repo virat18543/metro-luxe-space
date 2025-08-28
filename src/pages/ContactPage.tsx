@@ -104,7 +104,10 @@ const ContactPage: React.FC = () => {
                 Business Hours
               </h3>
               <p className="font-inter text-2xl font-semibold text-muted-foreground mb-2">
-                Monday – Saturday: 9:00 AM – 6:00 PM
+                Monday – Saturday
+              </p>
+              <p className="font-inter text-2xl font-semibold text-muted-foreground mb-2">
+                9:00 AM – 6:00 PM
               </p>
               <p className="font-inter text-sm text-muted-foreground">
                 Full service and consultations available
