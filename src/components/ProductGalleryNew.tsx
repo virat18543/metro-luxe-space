@@ -19,12 +19,12 @@ const ProductGallery = () => {
         {
           title: "Corporate Office Paneling",
           image: "/assets/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg",
-          alt: "Minimalist workstation with modern office paneling featuring clean lines and contemporary design"
+          alt: "Showcase: Frost White used for Corporate Office Paneling — ASA Acrycore Sheet by Metro Surfaces"
         },
         {
           title: "Residential Feature Wall", 
           image: residentialFeatureWall,
-          alt: "ASA Acrycore PETG brown wood grain decor sheet residential living room feature wall luxury interior"
+          alt: "Showcase: Frost White used for Residential Feature Wall — ASA Acrycore Sheet by Metro Surfaces"
         }
       ]
     },
@@ -37,12 +37,12 @@ const ProductGallery = () => {
         {
           title: "Restaurant Ceiling Feature",
           image: restaurantLouvers,
-          alt: "Decorative louver ceiling installation restaurant commercial interior architectural element"
+          alt: "Showcase: Architectural Louvers used for Restaurant Ceiling Feature — Decorative Louvers by Metro Surfaces"
         },
         {
           title: "Office Partition System",
           image: "/assets/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg",
-          alt: "Louver partition panels office interior decorative architectural element workspace design"
+          alt: "Showcase: Architectural Louvers used for Office Partition System — Decorative Louvers by Metro Surfaces"
         }
       ]
     }
@@ -95,7 +95,7 @@ const ProductGallery = () => {
                   <div className="relative overflow-hidden rounded-lg shadow-elegant">
                     <SmartImage
                       src={product.sheetImage}
-                      alt={`${product.name} ${product.category} decorative sheet sample ASA Acrycore PETG`}
+                      alt={`Sample of ${product.name} (${product.category}) by Metro Surfaces — ${product.internalCode}, features: ${product.category}`}
                       width={400}
                       height={256}
                       className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
