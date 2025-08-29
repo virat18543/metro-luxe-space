@@ -10,7 +10,7 @@ const Applications = () => {
         canonical="https://voli.co.in/applications"
         ogImage="https://voli.co.in/applications/og.jpg"
       />
-              <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
