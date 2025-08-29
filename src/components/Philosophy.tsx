@@ -1,20 +1,16 @@
 const Philosophy = () => {
   const principles = [
     {
-      title: "Uncompromising Service",
-      description: "Every client interaction reflects our commitment to excellence, from initial consultation to project completion."
+      title: "Uncompromising Service"
     },
     {
-      title: "Supply Continuity", 
-      description: "Reliable partnerships built on consistent quality and dependable delivery schedules that architects can trust."
+      title: "Supply Continuity"
     },
     {
-      title: "Ethical Practice",
-      description: "Transparent processes, honest communication, and sustainable business practices guide every decision we make."
+      title: "Ethical Practice"
     },
     {
-      title: "Selective Distribution",
-      description: "Curated partnerships with premium brands ensure our clients access only the finest decorative surface solutions."
+      title: "Selective Distribution"
     }
   ];
 
@@ -40,9 +36,6 @@ const Philosophy = () => {
               <h3 className="font-playfair text-2xl font-semibold text-primary mb-4 group-hover:text-brown-dark transition-colors">
                 {principle.title}
               </h3>
-              <p className="font-inter text-lg text-muted-foreground leading-relaxed">
-                {principle.description}
-              </p>
             </div>
           ))}
         </div>
