@@ -1,6 +1,6 @@
 import SmartImage from "./SmartImage";
 
-const heroAmbient = "/hero-ambient.jpg";
+const heroAmbient = "/hero-ambient.webp";
 
 const Hero = () => {
   return (
