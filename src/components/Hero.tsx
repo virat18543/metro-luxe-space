@@ -4,7 +4,7 @@ const heroAmbient = "/hero-ambient.webp";
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden min-h-[calc(100vh-var(--header-h))]">
+    <section className="relative w-full overflow-hidden min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <SmartImage
@@ -23,16 +23,15 @@ const Hero = () => {
         <div className="absolute top-64 right-4 w-1 h-1 bg-white/35 rounded-full animate-bounce delay-500"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 flex items-center justify-center h-full text-center px-4 sm:px-6 max-w-4xl mx-auto animate-fade-in">
-        <div className="space-y-4 sm:space-y-8">
+      {/* Content - Centered flex container */}
+      <div className="relative z-10 h-full min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6">
+        <div className="flex flex-col justify-center items-center h-full text-center space-y-4 sm:space-y-8 max-w-4xl mx-auto animate-fade-in">
           <div className="mb-4 sm:mb-8">
             <h1 className="font-playfair text-2xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-2 sm:mb-6 leading-snug drop-shadow-lg">
               Metro Surfaces
             </h1>
             <div className="block sm:hidden w-16 h-0.5 bg-white/60 mx-auto mb-3"></div>
           </div>
-
           <div className="space-y-2 sm:space-y-4">
             <p className="font-inter text-sm sm:text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
               Beautiful Spaces, Beautiful Life
@@ -42,7 +41,6 @@ const Hero = () => {
               for discerning architects and designers
             </p>
           </div>
-
           {/* Mobile CTA */}
           <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <div className="block sm:hidden">
