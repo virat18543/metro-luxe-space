@@ -59,7 +59,8 @@ const PhilosophyPage = () => {
         ogImage="https://voli.co.in/philosophy/og.jpg"
       />
       
-      <script type="application/ld+json"
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context":"https://schema.org",
@@ -72,20 +73,6 @@ const PhilosophyPage = () => {
         }}
       />
       
-      {/* Hero Section */}
-      <section className="relative py-24 px-6 bg-gradient-to-br from-primary/5 to-background">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-semibold text-primary mb-6">
-            Our Design Philosophy
-          </h1>
-          <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Three decades of excellence built on unwavering principles. 
-            Discover the values that drive Metro Surfaces' commitment to quality, 
-            sustainability, and exceptional service.
-          </p>
-        </div>
-      </section>
-
       {/* Core Values */}
       <section className="py-24 px-6 bg-muted/30">
         <div className="max-w-6xl mx-auto">
@@ -130,7 +117,7 @@ const PhilosophyPage = () => {
           </div>
         </div>
       </section>
-
+      
       {/* Mission Statement */}
       <section className="py-24 px-6 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center">
@@ -148,7 +135,7 @@ const PhilosophyPage = () => {
           </p>
         </div>
       </section>
-
+      
       <footer>
         <nav>
           <a href="/products">Products</a> |
