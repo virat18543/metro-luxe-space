@@ -151,7 +151,7 @@ const Products = () => {
                       <Card className="overflow-hidden group hover:shadow-elegant transition-all duration-300">
                         <img 
                           src={category.image} 
-                          alt={`${category.name} ${category.keywords}`}
+                          alt={`Product photo of ${category.name} by Metro Surfaces — ${category.description}`}
                           className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       </Card>
