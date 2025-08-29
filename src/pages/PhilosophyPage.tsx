@@ -135,14 +135,6 @@ const PhilosophyPage = () => {
           </p>
         </div>
       </section>
-      
-      <footer>
-        <nav>
-          <a href="/products">Products</a> |
-          <a href="/applications">Applications</a> |
-          <a href="/contact">Contact</a>
-        </nav>
-      </footer>
     </div>
   );
 };
