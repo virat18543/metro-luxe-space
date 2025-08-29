@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# auto-generated backups/logs
+*.bak
+ref-update.log
+skipped-images.log
+failed-images.log
