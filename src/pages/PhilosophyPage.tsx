@@ -3,29 +3,6 @@ import { Users, RefreshCw, Scale, Target } from "lucide-react";
 import Seo from '../components/Seo';
 
 const PhilosophyPage = () => {
-  const timeline = [
-    {
-      year: "1990s",
-      title: "Foundation Years",
-      description: "Established with a vision to bring premium decorative surfaces to the Indian market. Built initial partnerships with quality manufacturers."
-    },
-    {
-      year: "2000s", 
-      title: "Market Expansion",
-      description: "Expanded product range and distribution network. Established reputation for reliable service and consistent quality."
-    },
-    {
-      year: "2010s",
-      title: "Innovation Focus",
-      description: "Introduced advanced materials like ASA Acrycore. Strengthened B2B partnerships with architects and designers."
-    },
-    {
-      year: "2020s",
-      title: "Sustainable Future",
-      description: "Leading the industry in sustainable practices and innovative surface solutions. Continuing the legacy of excellence."
-    }
-  ];
-
   const values = [
     {
       icon: Users,
@@ -106,37 +83,6 @@ const PhilosophyPage = () => {
             Discover the values that drive Metro Surfaces' commitment to quality, 
             sustainability, and exceptional service.
           </p>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
-              Our Journey
-            </h2>
-            <p className="font-inter text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              From humble beginnings to industry leadership, our story is one of continuous growth, 
-              innovation, and unwavering commitment to our core values.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {timeline.map((item, index) => (
-              <Card className="p-6 text-center hover:shadow-elegant transition-all duration-300" key={index}>
-                <div className="text-primary font-playfair text-2xl font-semibold mb-4">
-                  {item.year}
-                </div>
-                <h3 className="font-inter font-semibold text-lg mb-3">
-                  {item.title}
-                </h3>
-                <p className="font-inter text-muted-foreground text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </Card>
-            ))}
-          </div>
         </div>
       </section>
 
