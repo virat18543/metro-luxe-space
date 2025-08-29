@@ -8,6 +8,16 @@ import premiumLaminatesImg from "@/assets/products/Lam-in-MS.png";
 import decorativeLouversImg from "@/assets/products/Lou-in-MS.png";
 import caneWallpaperImg from "@/assets/products/Cane-in-MS.png";
 
+// Helper function for slugifying product names
+const slugify = (text: string): string => {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9 -]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .trim();
+};
+
 const Products = () => {
   const productCategories = [
     {
@@ -81,53 +91,71 @@ const Products = () => {
           <div className="max-w-6xl mx-auto">
             <div className="space-y-16">
               {productCategories.map((category, index) => (
-                <div
-                  key={index} 
-                  id={
-                    index === 0 ? "asa-sheets" : 
-                    index === 1 ? "laminates" : 
-                    index === 2 ? "louvers" : 
-                    "wallpaper"
-                  }
-                  className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}
-                >
-                  <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                    <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary">
-                      {category.name}
-                    </h2>
-                    <p className="font-inter text-lg text-muted-foreground leading-relaxed">
-                      {category.description}
-                    </p>
-                    
-                    <div className="space-y-3">
-                      <h3 className="font-inter font-semibold text-primary">Key Features:</h3>
-                      <div className="grid grid-cols-2 gap-2">
-                        {category.features.map((feature, featureIndex) => (
-                          <div className="flex items-center space-x-2" key={featureIndex}>
-                            <div className="w-2 h-2 bg-primary rounded-full"></div>
-                            <span className="font-inter text-muted-foreground">{feature}</span>
-                          </div>
-                        ))}
+                <div key={index}>
+                  {/* Product JSON-LD Schema */}
+                  <script type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                      __html: JSON.stringify({
+                        "@context":"https://schema.org",
+                        "@type":"Product",
+                        "name": category.name,
+                        "brand": {"@type": "Brand", "name": "Metro Surfaces"},
+                        "description": category.description,
+                        "material": category.name.includes('ASA Acrycore') ? "ASA (Acrylic Styrene Acrylonitrile)" : undefined,
+                        "size": "8x4 ft",
+                        "url": `https://voli.co.in/products/${slugify(category.name)}`,
+                        "image": [category.image]
+                      })
+                    }}
+                  />
+                  
+                  <div
+                    id={
+                      index === 0 ? "asa-sheets" : 
+                      index === 1 ? "laminates" : 
+                      index === 2 ? "louvers" : 
+                      "wallpaper"
+                    }
+                    className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}
+                  >
+                    <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                      <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary">
+                        {category.name}
+                      </h2>
+                      <p className="font-inter text-lg text-muted-foreground leading-relaxed">
+                        {category.description}
+                      </p>
+                      
+                      <div className="space-y-3">
+                        <h3 className="font-inter font-semibold text-primary">Key Features:</h3>
+                        <div className="grid grid-cols-2 gap-2">
+                          {category.features.map((feature, featureIndex) => (
+                            <div className="flex items-center space-x-2" key={featureIndex}>
+                              <div className="w-2 h-2 bg-primary rounded-full"></div>
+                              <span className="font-inter text-muted-foreground">{feature}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      <div className="flex space-x-4">
+                        <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
+                          <Link to="/contact">Request Samples</Link>
+                        </Button>
+                        <Button asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background" variant="outline">
+                          <Link to="/applications">View Applications</Link>
+                        </Button>
                       </div>
                     </div>
-                    
-                    <div className="flex space-x-4">
-                      <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
-                        <Link to="/contact">Request Samples</Link>
-                      </Button>
-                      <Button asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background" variant="outline">
-                        <Link to="/applications">View Applications</Link>
-                      </Button>
+                    <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                      <Card className="overflow-hidden group hover:shadow-elegant transition-all duration-300">
+                        <img 
+                          src={category.image} 
+                          alt={`${category.name} ${category.keywords}`}
+                          className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </Card>
                     </div>
-                  </div>
-                  <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                    <Card className="overflow-hidden group hover:shadow-elegant transition-all duration-300">
-                      <img 
-                        src={category.image} 
-                        alt={`${category.name} ${category.keywords}`}
-                        className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </Card>
                   </div>
                 </div>
               ))}
