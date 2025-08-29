@@ -10,16 +10,16 @@ const ProductGallery = () => {
       name: "Frost White",
       category: "ASA Acrycore Sheet",
       internalCode: "VLT-123_Oak",
-      sheetImage: "/assets/products/asa-sheet-brown.jpg",
+      sheetImage: "/assets/products/asa-sheet-brown.webp",
       applications: [
         {
           title: "Corporate Office Paneling",
-          image: "/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg",
+          image: "/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.webp",
           alt: "Showcase: Frost White used for Corporate Office Paneling — ASA Acrycore Sheet by Metro Surfaces"
         },
         {
           title: "Residential Feature Wall", 
-          image: "/assets/applications/residential-feature-wall.jpg",
+          image: "/assets/applications/residential-feature-wall.webp",
           alt: "Showcase: Frost White used for Residential Feature Wall — ASA Acrycore Sheet by Metro Surfaces"
         }
       ]
@@ -28,16 +28,16 @@ const ProductGallery = () => {
       name: "Architectural Louvers",
       category: "Decorative Louvers",
       internalCode: "LVR-456_Cream",
-      sheetImage: "/assets/products/Lou-in-MS.png",
+      sheetImage: "/assets/products/Lou-in-MS.webp",
       applications: [
         {
           title: "Restaurant Ceiling Feature",
-          image: "/assets/applications/restaurant-louvers.jpg",
+          image: "/assets/applications/restaurant-louvers.webp",
           alt: "Showcase: Architectural Louvers used for Restaurant Ceiling Feature — Decorative Louvers by Metro Surfaces"
         },
         {
           title: "Office Partition System",
-          image: "/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg",
+          image: "/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.webp",
           alt: "Showcase: Architectural Louvers used for Office Partition System — Decorative Louvers by Metro Surfaces"
         }
       ]
