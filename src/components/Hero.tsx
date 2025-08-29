@@ -3,7 +3,7 @@ import heroAmbient from '@/assets/hero-ambient.jpg';
 
 const Hero = () => {
   return (
-    <section className="relative w-full aspect-video overflow-hidden">
+    <section className="sticky-offset relative w-full min-h-[62vh] sm:min-h-[72vh] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <SmartImage
@@ -27,7 +27,7 @@ const Hero = () => {
         {/* Mobile-optimized typography */}
         <div className="space-y-4 sm:space-y-8">
           <div className="mb-4 sm:mb-8">
-            <h1 className="font-playfair text-2xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-2 sm:mb-6 leading-snug drop-shadow-lg">
+            <h1 className="font-head text-[28px] leading-tight sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-2 sm:mb-6 drop-shadow-lg">
               Metro Surfaces
             </h1>
             {/* Mobile visual separator */}
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           
           <div className="space-y-2 sm:space-y-4">
-            <p className="font-inter text-sm sm:text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
+            <p className="font-inter text-[14px] sm:text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
               Beautiful Spaces, Beautiful Life
             </p>
             <p className="font-inter text-xs sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-snug drop-shadow-sm px-2">
