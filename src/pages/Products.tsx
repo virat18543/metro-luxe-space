@@ -48,6 +48,20 @@ const Products = () => {
         canonical="https://voli.co.in/products"
         ogImage="https://voli.co.in/products/og.jpg"
       />
+      
+      <script type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context":"https://schema.org",
+            "@type":"BreadcrumbList",
+            "itemListElement":[
+              {"@type":"ListItem","position":1,"name":"Home","item":"https://voli.co.in/"},
+              {"@type":"ListItem","position":2,"name":"Products","item":"https://voli.co.in/products"}
+            ]
+          })
+        }}
+      />
+      
       <div className="pt-16">
         {/* Hero Section */}
         <section className="py-24 px-6 bg-gradient-to-b from-cream-light to-background">
@@ -67,7 +81,7 @@ const Products = () => {
           <div className="max-w-6xl mx-auto">
             <div className="space-y-16">
               {productCategories.map((category, index) => (
-                <div 
+                <div
                   key={index} 
                   id={
                     index === 0 ? "asa-sheets" : 
@@ -101,12 +115,11 @@ const Products = () => {
                       <Button asChild className="bg-gradient-brown hover:bg-primary/90 text-primary-foreground">
                         <Link to="/contact">Request Samples</Link>
                       </Button>
-                      <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
+                      <Button asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background" variant="outline">
                         <Link to="/applications">View Applications</Link>
                       </Button>
                     </div>
                   </div>
-
                   <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                     <Card className="overflow-hidden group hover:shadow-elegant transition-all duration-300">
                       <img 
@@ -133,7 +146,6 @@ const Products = () => {
                 All products meet industry standards with customization options available for specific project requirements.
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8">
                 <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Sheet Dimensions</h3>
@@ -143,7 +155,6 @@ const Products = () => {
                   Custom sizes available on request
                 </div>
               </Card>
-
               <Card className="p-8">
                 <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Quality Standards</h3>
                 <div className="space-y-2 font-inter text-muted-foreground">
