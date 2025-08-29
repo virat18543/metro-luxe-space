@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <SmartImage
           src={heroAmbient}
-          alt="Modern interior with premium decorative surfaces and laminates showcasing ASA Acrycore sheets"
+          alt="Modern workspace interior with Metro Surfaces ASA Acrycore sheets in neutral tones — elegant premium decorative surfaces for architects"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90"></div>
@@ -39,7 +39,7 @@ const Hero = () => {
               Beautiful Spaces, Beautiful Life
             </p>
             <p className="font-inter text-xs sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-snug drop-shadow-sm px-2">
-              ASA Acrycore sheets, laminates, louvers, and cane wallpaper 
+              ASA Acrycore sheets, laminates, louvers, and cane wallpaper <br/>
               for discerning architects and designers
             </p>
           </div>
