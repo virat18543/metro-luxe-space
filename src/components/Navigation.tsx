@@ -60,6 +60,7 @@ const Navigation = () => {
         setVisibleItems(0); // Hide all on mobile (use mobile menu)
       }
     };
+
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -69,9 +70,9 @@ const Navigation = () => {
   const hiddenNavItems = navItems.slice(visibleItems);
 
   return (
-    <nav className="fixed top-0 w-full bg-gradient-to-r from-background via-background to-background/95 backdrop-blur-md border-b border-border/50 z-50 shadow-lg">
+    <header className="fixed top-0 inset-x-0 z-50 h-14 sm:h-16 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <Link className="flex items-center space-x-4 min-w-0 flex-shrink-0 group" to="/">
             <BrandLogo className="shrink-0" withText />
@@ -183,7 +184,7 @@ const Navigation = () => {
       {isDesktopDropdownOpen && (
         <div className="fixed inset-0 z-40" onClick={() => setIsDesktopDropdownOpen(false)} />
       )}
-    </nav>
+    </header>
   );
 };
 
