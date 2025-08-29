@@ -40,7 +40,7 @@ const ContactPage: React.FC = () => {
                     size="lg"
                     className="bg-primary hover:bg-primary/90 text-primary-foreground"
                   >
-                    <a href="tel:+918286580449">
+                    <a href="tel:+918286580449" onClick={() => gtag('event', 'call_click', { location: document.location.pathname })}>
                       <Phone className="w-5 h-5 mr-2" />
                       Call Now
                     </a>
@@ -51,7 +51,7 @@ const ContactPage: React.FC = () => {
                     variant="outline"
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   >
-                    <a href="mailto:rrrmetro@gmail.com">
+                    <a href="mailto:rrrmetro@gmail.com" onClick={() => gtag('event', 'email_click', { location: document.location.pathname })}>
                       <Mail className="w-5 h-5 mr-2" />
                       Email Us
                     </a>
@@ -66,6 +66,7 @@ const ContactPage: React.FC = () => {
                       href="https://wa.me/918286580449"
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() => gtag('event', 'whatsapp_click', { location: document.location.pathname })}
                     >
                       <MessageCircle className="w-5 h-5 mr-2" />
                       WhatsApp Us
@@ -77,7 +78,7 @@ const ContactPage: React.FC = () => {
               {/* Hero Image */}
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                  <img
+                  <img 
                     src="/assets/contact-hero-new.jpg"
                     alt="Metro Surfaces showroom with premium decorative materials"
                     className="w-full h-full object-cover"
