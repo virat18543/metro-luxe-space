@@ -32,6 +32,11 @@ const Navigation = () => {
       name: "Contact",
       path: "/contact"
     }
+    // Note: Downloads menu item removed as requested
+    // {
+    //   name: "Downloads",
+    //   path: "/downloads"
+    // }
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -55,7 +60,6 @@ const Navigation = () => {
         setVisibleItems(0); // Hide all on mobile (use mobile menu)
       }
     };
-
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -72,7 +76,7 @@ const Navigation = () => {
           <Link className="flex items-center space-x-4 min-w-0 flex-shrink-0 group" to="/">
             <BrandLogo className="shrink-0" withText />
           </Link>
-
+          
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1 relative" ref={navRef}>
             {/* Visible Navigation Items */}
