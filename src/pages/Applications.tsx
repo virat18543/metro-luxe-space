@@ -11,7 +11,8 @@ const Applications = () => {
         ogImage="https://voli.co.in/applications/og.jpg"
       />
       
-      <script type="application/ld+json"
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context":"https://schema.org",
@@ -25,15 +26,6 @@ const Applications = () => {
       />
       
       <div className="pt-16">
-        {/* Hero Section */}
-        <section className="py-24 px-6 bg-gradient-to-b from-cream-light to-background">
-          <div className="max-w-6xl mx-auto text-center">
-            <h1 className="font-playfair text-4xl md:text-6xl font-semibold text-primary mb-6">
-              From Product to Space
-            </h1>
-          </div>
-        </section>
-        
         {/* Interactive Gallery */}
         <ProductGallery />
         
