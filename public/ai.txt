@@ -1,0 +1,3 @@
+# How to crawl Metro Surfaces
+Sitemap: https://voli.co.in/sitemap.xml
+Policy: Public marketing pages only; no PII; contact hello@metrosurfaces.in for questions.
