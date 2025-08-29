@@ -29,17 +29,38 @@ const Applications = () => {
         <section className="py-24 px-6 bg-gradient-to-b from-cream-light to-background">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="font-playfair text-4xl md:text-6xl font-semibold text-primary mb-6">
-              Application Showcase
+              From Product to Space
             </h1>
-            <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Witness the transformation from raw materials to stunning architectural elements. 
-              Each application demonstrates the versatility and beauty of our premium decorative surfaces.
-            </p>
           </div>
         </section>
         
         {/* Interactive Gallery */}
         <ProductGallery />
+        
+        {/* Decorative Louvers Section */}
+        <section className="py-24 px-6 bg-muted/30">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
+                Decorative Louvers
+              </h2>
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="font-inter text-muted-foreground">Premium aluminum construction</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="font-inter text-muted-foreground">Weather-resistant coating</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="font-inter text-muted-foreground">Custom color matching available</span>
+              </div>
+            </div>
+          </div>
+        </section>
         
         {/* Application Types */}
         <section className="py-24 px-6 bg-cream-light">
@@ -48,26 +69,23 @@ const Applications = () => {
               <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
                 Versatile Applications
               </h2>
-              <p className="font-inter text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Our decorative surfaces adapt to diverse architectural needs across multiple sectors.
-              </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   title: "Commercial Spaces",
-                  applications: ["Office Interiors", "Retail Environments", "Hospitality Design", "Healthcare Facilities"],
-                  description: "Professional environments requiring durability and aesthetic appeal"
+                  applications: ["Offices", "Retail", "Hotels", "Healthcare"],
+                  description: "Professional environments"
                 },
                 {
                   title: "Residential Projects", 
-                  applications: ["Living Rooms", "Kitchens", "Bedrooms", "Feature Walls"],
-                  description: "Sophisticated home interiors with premium finishes"
+                  applications: ["Living rooms", "Kitchens", "Bedrooms", "Feature walls"],
+                  description: "Sophisticated home interiors"
                 },
                 {
                   title: "Architectural Elements",
-                  applications: ["Exterior Cladding", "Interior Paneling", "Ceiling Systems", "Partition Walls"],
-                  description: "Structural and decorative architectural components"
+                  applications: ["Exterior cladding", "Interior panels", "Ceilings", "Partitions"],
+                  description: "Structural and decorative components"
                 }
               ].map((category, index) => (
                 <div className="bg-background p-8 rounded-lg shadow-soft" key={index}>
