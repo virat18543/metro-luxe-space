@@ -39,7 +39,7 @@ const Hero = () => {
               Beautiful Spaces, Beautiful Life
             </p>
             <p className="font-inter text-xs sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-snug drop-shadow-sm px-2">
-              ASA Acrycore sheets, laminates, louvers, and cane wallpaper <br/>
+              ASA Acrycore sheets, laminates, louvers, and cane wallpaper<br />
               for discerning architects and designers
             </p>
           </div>
@@ -47,7 +47,7 @@ const Hero = () => {
           {/* Mobile CTA buttons */}
           <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <div className="block sm:hidden">
-              <a
+              <a 
                 href="/products" 
                 className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm font-medium"
               >
