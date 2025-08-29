@@ -10,7 +10,6 @@ const Applications = () => {
         canonical="https://voli.co.in/applications"
         ogImage="https://voli.co.in/applications/og.jpg"
       />
-      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -28,31 +27,6 @@ const Applications = () => {
       <div className="pt-16">
         {/* Interactive Gallery */}
         <ProductGallery />
-        
-        {/* Decorative Louvers Section */}
-        <section className="py-24 px-6 bg-muted/30">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
-                Decorative Louvers
-              </h2>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="font-inter text-muted-foreground">Premium aluminum construction</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="font-inter text-muted-foreground">Weather-resistant coating</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="font-inter text-muted-foreground">Custom color matching available</span>
-              </div>
-            </div>
-          </div>
-        </section>
         
         {/* Application Types */}
         <section className="py-24 px-6 bg-cream-light">
