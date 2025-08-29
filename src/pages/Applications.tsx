@@ -10,6 +10,20 @@ const Applications = () => {
         canonical="https://voli.co.in/applications"
         ogImage="https://voli.co.in/applications/og.jpg"
       />
+      
+      <script type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context":"https://schema.org",
+            "@type":"BreadcrumbList",
+            "itemListElement":[
+              {"@type":"ListItem","position":1,"name":"Home","item":"https://voli.co.in/"},
+              {"@type":"ListItem","position":2,"name":"Applications","item":"https://voli.co.in/applications"}
+            ]
+          })
+        }}
+      />
+      
       <div className="pt-16">
         {/* Hero Section */}
         <section className="py-24 px-6 bg-gradient-to-b from-cream-light to-background">
@@ -23,10 +37,10 @@ const Applications = () => {
             </p>
           </div>
         </section>
-
+        
         {/* Interactive Gallery */}
         <ProductGallery />
-
+        
         {/* Application Types */}
         <section className="py-24 px-6 bg-cream-light">
           <div className="max-w-6xl mx-auto">
@@ -56,7 +70,7 @@ const Applications = () => {
                   description: "Structural and decorative architectural components"
                 }
               ].map((category, index) => (
-                <div key={index} className="bg-background p-8 rounded-lg shadow-soft">
+                <div className="bg-background p-8 rounded-lg shadow-soft" key={index}>
                   <h3 className="font-playfair text-xl font-semibold text-primary mb-4">
                     {category.title}
                   </h3>
@@ -65,7 +79,7 @@ const Applications = () => {
                   </p>
                   <div className="space-y-2">
                     {category.applications.map((app, appIndex) => (
-                      <div key={appIndex} className="flex items-center space-x-2">
+                      <div className="flex items-center space-x-2" key={appIndex}>
                         <div className="w-2 h-2 bg-primary rounded-full"></div>
                         <span className="font-inter text-muted-foreground">{app}</span>
                       </div>
