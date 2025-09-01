@@ -1,5 +1,7 @@
 import SmartImage from "./SmartImage";
+
 const heroAmbient = "/hero-ambient.webp";
+
 const Hero = () => {
   return (
     <section className="relative w-full overflow-hidden min-h-screen">
@@ -12,6 +14,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90"></div>
       </div>
+
       {/* Floating Elements for Visual Interest (hidden on mobile) */}
       <div className="absolute inset-0 z-5 pointer-events-none hidden sm:block">
         <div className="absolute top-20 left-4 w-2 h-2 bg-white/30 rounded-full animate-pulse"></div>
@@ -19,6 +22,7 @@ const Hero = () => {
         <div className="absolute bottom-40 left-12 w-1.5 h-1.5 bg-white/20 rounded-full animate-pulse delay-300"></div>
         <div className="absolute top-64 right-4 w-1 h-1 bg-white/35 rounded-full animate-bounce delay-500"></div>
       </div>
+
       {/* Content - Centered flex container */}
       <div className="relative z-10 h-full min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6">
         <div className="flex flex-col justify-center items-center h-full text-center space-y-4 sm:space-y-8 max-w-4xl mx-auto animate-fade-in">
@@ -28,15 +32,17 @@ const Hero = () => {
             </h1>
             <div className="block sm:hidden w-16 h-0.5 bg-white/60 mx-auto mb-3"></div>
           </div>
+
           <div className="space-y-2 sm:space-y-4">
             <p className="font-inter text-sm sm:text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
               Beautiful Spaces, Beautiful Life
             </p>
             <p className="font-inter text-xs sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-snug drop-shadow-sm px-2">
-              ASA Acrycore sheets, laminates, louvers, and cane wallpaper
-              for discerning architects and designers
+              ASA Acrycore | Laminates | Louvers | Cane Wallpaper<br/>
+              For discerning Architects and Interior Designers
             </p>
           </div>
+
           {/* Mobile CTA */}
           <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <div className="block sm:hidden">
@@ -50,6 +56,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
       {/* Scroll Indicator (desktop only) */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 hidden sm:block">
         <div className="w-6 h-10 border-2 border-white/70 rounded-full flex justify-center">
@@ -59,4 +66,5 @@ const Hero = () => {
     </section>
   );
 };
+
 export default Hero;
