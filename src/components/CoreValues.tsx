@@ -1,5 +1,4 @@
 import { Card } from "./ui/card";
-import { Link } from "react-router-dom";
 
 const CoreValues = () => {
   const values = [
@@ -60,9 +59,9 @@ const CoreValues = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
-            <Link
+            <a
               key={index}
-              to={`/philosophy#${value.anchor}`}
+              href={`/philosophy#${value.anchor}`}
               className="block"
             >
               <Card className="p-6 text-center group hover:shadow-elegant hover:-translate-y-1 transition-all duration-300 cursor-pointer bg-white/50 backdrop-blur-sm h-full">
@@ -76,7 +75,7 @@ const CoreValues = () => {
                   {value.description}
                 </p>
               </Card>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
