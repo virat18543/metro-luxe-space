@@ -1,4 +1,5 @@
-﻿import { Card } from "./ui/card";
+import { Card } from "./ui/card";
+import { Link } from "react-router-dom";
 
 const CoreValues = () => {
   const values = [
@@ -9,7 +10,8 @@ const CoreValues = () => {
         </svg>
       ),
       title: "Uncompromising Service",
-      description: "Dedicated support and guidance throughout your project journey"
+      description: "Dedicated support and guidance throughout your project journey",
+      anchor: "service"
     },
     {
       icon: (
@@ -18,7 +20,8 @@ const CoreValues = () => {
         </svg>
       ),
       title: "Supply Continuity",
-      description: "Reliable inventory and consistent product availability"
+      description: "Reliable inventory and consistent product availability",
+      anchor: "continuity"
     },
     {
       icon: (
@@ -27,7 +30,8 @@ const CoreValues = () => {
         </svg>
       ),
       title: "Ethical Practice",
-      description: "Transparent business relationships built on trust and integrity"
+      description: "Transparent business relationships built on trust and integrity",
+      anchor: "ethics"
     },
     {
       icon: (
@@ -37,7 +41,8 @@ const CoreValues = () => {
         </svg>
       ),
       title: "Selective Distribution",
-      description: "Partnering with quality-focused distributors and professionals"
+      description: "Partnering with quality-focused distributors and professionals",
+      anchor: "distribution"
     }
   ];
 
@@ -55,20 +60,23 @@ const CoreValues = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
-            <Card 
-              key={index} 
-              className="p-6 text-center group hover:shadow-elegant hover:-translate-y-1 transition-all duration-300 cursor-pointer bg-white/50 backdrop-blur-sm"
+            <Link 
+              key={index}
+              to={`/philosophy#${value.anchor}`}
+              className="block"
             >
-              <div className="text-primary mb-4 group-hover:scale-110 group-hover:text-primary/80 transition-all duration-300">
-                {value.icon}
-              </div>
-              <h3 className="font-playfair text-lg font-semibold text-primary mb-3">
-                {value.title}
-              </h3>
-              <p className="font-inter text-sm text-muted-foreground leading-relaxed">
-                {value.description}
-              </p>
-            </Card>
+              <Card className="p-6 text-center group hover:shadow-elegant hover:-translate-y-1 transition-all duration-300 cursor-pointer bg-white/50 backdrop-blur-sm h-full">
+                <div className="text-primary mb-4 group-hover:scale-110 group-hover:text-primary/80 transition-all duration-300">
+                  {value.icon}
+                </div>
+                <h3 className="font-playfair text-lg font-semibold text-primary mb-3">
+                  {value.title}
+                </h3>
+                <p className="font-inter text-sm text-muted-foreground leading-relaxed">
+                  {value.description}
+                </p>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
@@ -77,4 +85,3 @@ const CoreValues = () => {
 };
 
 export default CoreValues;
-
