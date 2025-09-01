@@ -60,7 +60,7 @@ const CoreValues = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
-            <Link 
+            <Link
               key={index}
               to={`/philosophy#${value.anchor}`}
               className="block"
