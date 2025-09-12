@@ -3,30 +3,26 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Analytics } from "@vercel/analytics/react";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import ScrollToTop from "./components/ScrollToTop";
 import HashScroll from "./components/HashScroll";
-
 import Home from "./pages/Index";
 import Products from "./pages/Products";
 import Applications from "./pages/Applications";
 import PhilosophyPage from "./pages/PhilosophyPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-
 import AsaVsPetg from "./pages/blog/AsaVsPetg";
 import SustainableDesign from "./pages/blog/SustainableDesign";
 import LouverSystems from "./pages/blog/LouverSystems";
-
 import AsaAcrycoreSheets from "./pages/products/AsaAcrycoreSheets";
 import PremiumLaminates from "./pages/products/PremiumLaminates";
 import DecorativeLouvers from "./pages/products/DecorativeLouvers";
 import CaneWallpaper from "./pages/products/CaneWallpaper";
-
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,10 +35,8 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <HashScroll />
-
         {/* Fixed header stays at the very top */}
         <Navigation />
-
         {/* Everything below starts AFTER the header height */}
         <main className="sticky-offset min-h-screen bg-background font-inter">
           <Routes>
@@ -61,11 +55,11 @@ const App = () => (
             <Route path="/blog/louver-systems" element={<LouverSystems />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-
           <Footer />
           <BackToTop />
           <WhatsAppFloat />
         </main>
+        <Analytics />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
