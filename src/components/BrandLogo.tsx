@@ -29,9 +29,13 @@ const BrandLogo: React.FC<BrandLogoProps> = ({
       // Cache-busting timestamp
       const timestamp = Date.now();
       
+      // Use the new minimalist SVG logo as primary
+      const newSvgPath = `/20250922_1429_SVG Minimalist Design_remix_01k5ra8pb0f0btsbzk30bg2v0b.svg?v=${timestamp}`;
+      
+      // Keep white variant fallback for now (will need separate white version)
       const svgPath = variant === 'white' 
         ? `/brand/logo-white.svg?v=${timestamp}` 
-        : `/brand/logo.svg?v=${timestamp}`;
+        : newSvgPath;
       
       const pngFallback = variant === 'white' 
         ? `/brand/logo-white.png?v=${timestamp}` 
