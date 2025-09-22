@@ -32,7 +32,6 @@ const Footer = () => {
                       { name: "Products", path: "/products" },
                       { name: "Applications", path: "/applications" },
                       { name: "Philosophy", path: "/philosophy" },
-                      { name: "Resources", path: "/resources" },
                     ].map((link) => (
                       <Link
                         key={link.path}
@@ -109,7 +108,6 @@ const Footer = () => {
                 { name: "Products", path: "/products" },
                 { name: "Applications", path: "/applications" },
                 { name: "Philosophy", path: "/philosophy" },
-                { name: "Resources", path: "/resources" },
               ].map((link) => (
                 <Link
                   key={link.path}
