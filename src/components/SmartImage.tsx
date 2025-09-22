@@ -6,6 +6,8 @@ export type SmartImageProps = {
   width?: number;
   height?: number;
   className?: string;
+  aspect?: string;
+  priority?: boolean;
 };
 
 function makePlaceholder(filename: string, w = 1600, h = 900) {
@@ -27,7 +29,7 @@ function makePlaceholder(filename: string, w = 1600, h = 900) {
   return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
 }
 
-export default function SmartImage({ src, alt, width = 1600, height = 900, className }: SmartImageProps) {
+export default function SmartImage({ src, alt, width = 1600, height = 900, className, aspect, priority }: SmartImageProps) {
   const file = useMemo(() => src.split("/").pop() || "image", [src]);
   const ph = useMemo(() => makePlaceholder(file, width, height), [file, width, height]);
 

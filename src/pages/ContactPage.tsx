@@ -3,6 +3,19 @@ import { Button } from '../components/ui/button';
 import { Phone, Mail, MessageCircle, Clock } from 'lucide-react';
 import Seo from '../components/Seo';
 
+// Declare gtag function for analytics
+declare global {
+  interface Window {
+    gtag?: (command: string, targetId: string, config?: any) => void;
+  }
+}
+
+const trackEvent = (eventName: string, location: string) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, { location });
+  }
+};
+
 const ContactPage: React.FC = () => {
   return (
     <>
@@ -30,7 +43,7 @@ const ContactPage: React.FC = () => {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                <a href="tel:+918286580449" onClick={() => gtag('event', 'call_click', { location: document.location.pathname })}>
+                <a href="tel:+918286580449" onClick={() => trackEvent('call_click', document.location.pathname)}>
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
                 </a>
@@ -41,7 +54,7 @@ const ContactPage: React.FC = () => {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               >
-                <a href="mailto:rrrmetro@gmail.com" onClick={() => gtag('event', 'email_click', { location: document.location.pathname })}>
+                <a href="mailto:rrrmetro@gmail.com" onClick={() => trackEvent('email_click', document.location.pathname)}>
                   <Mail className="w-5 h-5 mr-2" />
                   Email Us
                 </a>
@@ -56,7 +69,7 @@ const ContactPage: React.FC = () => {
                   href="https://wa.me/918286580449"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => gtag('event', 'whatsapp_click', { location: document.location.pathname })}
+                  onClick={() => trackEvent('whatsapp_click', document.location.pathname)}
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
                   WhatsApp Us

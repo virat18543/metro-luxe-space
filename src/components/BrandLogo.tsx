@@ -5,13 +5,15 @@ interface BrandLogoProps {
   className?: string;
   width?: number;
   height?: number;
+  withText?: boolean;
 }
 
 const BrandLogo: React.FC<BrandLogoProps> = ({ 
   variant = 'default', 
   className = '', 
   width = 200, 
-  height = 60 
+  height = 60,
+  withText = false 
 }) => {
   const [logoSrc, setLogoSrc] = useState<string>('');
   

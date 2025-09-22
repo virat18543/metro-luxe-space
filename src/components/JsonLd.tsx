@@ -1,4 +1,8 @@
-const JsonLd = () => {
+interface JsonLdProps {
+  data?: any;
+}
+
+const JsonLd: React.FC<JsonLdProps> = ({ data }) => {
   const businessData = {
     "@context": "https://schema.org",
     "@type": "Business",
@@ -81,10 +85,13 @@ const JsonLd = () => {
     }
   };
 
+  // Use passed data if available, otherwise use default business data
+  const jsonData = data || businessData;
+
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(businessData) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonData) }}
     />
   );
 };
