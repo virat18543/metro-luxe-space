@@ -54,18 +54,20 @@ const BrandLogo: React.FC<BrandLogoProps> = ({
   const altText = 'Metro Surfaces Logo';
   
   return (
-    <img
-      src={logoSrc}
-      alt={altText}
-      width={width}
-      height={height}
-      className={`brand-logo ${className}`}
-      style={{
-        width: width + 'px',
-        height: height + 'px',
-        objectFit: 'contain'
-      }}
-    />
+    <a href="/" className="brand-logo-link">
+      <img
+        src={logoSrc}
+        alt={altText}
+        width={width}
+        height={height}
+        className={`brand-logo ${className}`}
+        style={{
+          width: width + 'px',
+          height: height + 'px',
+          objectFit: 'contain'
+        }}
+      />
+    </a>
   );
 };
 
