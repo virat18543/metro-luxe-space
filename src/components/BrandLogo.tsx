@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 interface BrandLogoProps {
   variant?: 'default' | 'white';
@@ -16,6 +17,7 @@ const BrandLogo: React.FC<BrandLogoProps> = ({
   withText = false 
 }) => {
   const [logoSrc, setLogoSrc] = useState<string>('');
+  const location = useLocation();
   
   useEffect(() => {
     const checkImageExists = async (url: string): Promise<boolean> => {
@@ -53,8 +55,16 @@ const BrandLogo: React.FC<BrandLogoProps> = ({
   
   const altText = 'Metro Surfaces Logo';
   
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // If not on homepage, allow normal navigation to '/'
+  };
+  
   return (
-    <a href="/" className="brand-logo-link">
+    <a className="brand-logo-link" href="/" onClick={handleLogoClick}>
       <img
         src={logoSrc}
         alt={altText}
