@@ -40,7 +40,7 @@ export default function SmartImage({ src, alt, width = 1600, height = 900, class
       width={width}
       height={height}
       className={className}
-      loading="lazy"
+      loading={priority ? "eager" : "lazy"}
       decoding="async"
       onError={(e) => {
         const img = e.currentTarget as HTMLImageElement;
