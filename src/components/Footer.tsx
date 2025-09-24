@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import {
   Accordion,
@@ -9,6 +9,17 @@ import {
 import BrandLogo from "./BrandLogo";
 
 const Footer = () => {
+  const location = useLocation();
+
+  // Handle navigation click with scroll-to-top logic
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // If not on current page, allow normal navigation
+  };
+
   return (
     <footer className="bg-primary text-primary-foreground py-8 md:py-16">
       {/* Mobile Footer */}
@@ -36,7 +47,7 @@ const Footer = () => {
                       <Link
                         key={link.path}
                         to={link.path}
-                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        onClick={(e) => handleLinkClick(e, link.path)}
                         className="block font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
                       >
                         {link.name}
@@ -53,28 +64,28 @@ const Footer = () => {
                   <div className="space-y-2 font-inter text-primary-foreground/80">
                     <Link
                       to="/products"
-                      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                      onClick={(e) => handleLinkClick(e, '/products')}
                       className="block hover:text-primary-foreground transition-colors text-sm"
                     >
                       ASA Acrycore Sheets
                     </Link>
                     <Link
                       to="/products"
-                      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                      onClick={(e) => handleLinkClick(e, '/products')}
                       className="block hover:text-primary-foreground transition-colors text-sm"
                     >
                       Premium Laminates
                     </Link>
                     <Link
                       to="/products"
-                      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                      onClick={(e) => handleLinkClick(e, '/products')}
                       className="block hover:text-primary-foreground transition-colors text-sm"
                     >
                       Decorative Louvers
                     </Link>
                     <Link
                       to="/products"
-                      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                      onClick={(e) => handleLinkClick(e, '/products')}
                       className="block hover:text-primary-foreground transition-colors text-sm"
                     >
                       Cane Wallpaper
@@ -112,7 +123,7 @@ const Footer = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                  onClick={(e) => handleLinkClick(e, link.path)}
                   className="block font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
                 >
                   {link.name}
@@ -127,28 +138,28 @@ const Footer = () => {
             <div className="space-y-2">
               <Link
                 to="/products"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                onClick={(e) => handleLinkClick(e, '/products')}
                 className="block font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
               >
                 ASA Acrycore Sheets
               </Link>
               <Link
                 to="/products"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                onClick={(e) => handleLinkClick(e, '/products')}
                 className="block font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
               >
                 Premium Laminates
               </Link>
               <Link
                 to="/products"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                onClick={(e) => handleLinkClick(e, '/products')}
                 className="block font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
               >
                 Decorative Louvers
               </Link>
               <Link
                 to="/products"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                onClick={(e) => handleLinkClick(e, '/products')}
                 className="block font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
               >
                 Cane Wallpaper
@@ -186,6 +197,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="font-inter text-primary-foreground/80">
@@ -194,7 +206,7 @@ const Footer = () => {
             <div className="flex space-x-6">
               <Link
                 to="/privacy-policy"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                onClick={(e) => handleLinkClick(e, '/privacy-policy')}
                 className="font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 Privacy Policy
