@@ -1,8 +1,20 @@
+import { Link, useLocation } from "react-router-dom";
 import SmartImage from "./SmartImage";
 
 const heroAmbient = "/hero-ambient.webp";
 
 const Hero = () => {
+  const location = useLocation();
+
+  // Handle navigation click with scroll-to-top logic
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // If not on current page, allow normal navigation
+  };
+
   return (
     <section className="relative w-full overflow-hidden min-h-screen">
       {/* Background Image */}
@@ -46,12 +58,13 @@ const Hero = () => {
           {/* Mobile CTA */}
           <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <div className="block sm:hidden">
-              <a
-                href="/products"
+              <Link
+                to="/products"
+                onClick={(e) => handleLinkClick(e, '/products')}
                 className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm font-medium"
               >
                 Explore Products
-              </a>
+              </Link>
             </div>
           </div>
         </div>
