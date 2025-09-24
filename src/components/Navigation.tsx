@@ -15,6 +15,15 @@ const Navigation = () => {
   const [visible, setVisible] = useState(true);
   const location = useLocation();
 
+  // Handle navigation click with scroll-to-top logic
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // If not on current page, allow normal navigation
+  };
+
   // Measure header height and set CSS var --header-h so content can offset correctly
   useEffect(() => {
     const updateHeaderVar = () => {
@@ -46,13 +55,14 @@ const Navigation = () => {
         <Link to="/" className="relative z-10 flex items-center gap-2">
           <BrandLogo className="shrink-0" withText />
         </Link>
-
+        
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
+              onClick={(e) => handleNavClick(e, item.path)}
               className="relative px-1 py-2 font-medium transition-all duration-200 rounded-md
                          text-primary hover:text-primary/80"
             >
@@ -67,7 +77,7 @@ const Navigation = () => {
           onClick={() => setVisible((v) => !v)}
           aria-label="Toggle menu"
         >
-          <span className="i-lucide-menu" />
+          <span className="i-lucide-menu"></span>
         </button>
       </div>
 
@@ -80,7 +90,10 @@ const Navigation = () => {
                 key={item.path}
                 to={item.path}
                 className="px-2 py-3 text-lg"
-                onClick={() => setVisible(false)}
+                onClick={(e) => {
+                  handleNavClick(e, item.path);
+                  setVisible(false);
+                }}
               >
                 {item.name}
               </Link>
