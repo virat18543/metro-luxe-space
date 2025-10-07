@@ -15,12 +15,13 @@ function makePlaceholder(filename: string, w = 1600, h = 900) {
   const label = filename || "placeholder";
   const svg = `<svg height="${h}" width="${w}" xmlns="http://www.w3.org/2000/svg">  <defs>
     <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#f3f4f6"></stop>
-      <stop offset="1" stop-color="#e5e7eb"></stop>
+      <stop offset="0" stop-color="#f3f4f6" />
+      <stop offset="1" stop-color="#e5e7eb" />
     </linearGradient>
   </defs>
-  <rect fill="url(#g)" height="100%" width="100%"></rect>
-  <text dominant-baseline="middle" text-anchor="middle" x="50%" y="50%">
+  <rect fill="url(#g)" height="100%" width="100%" />
+  <text
+        dominant-baseline="middle" text-anchor="middle" x="50%" y="50%"
         font-family="Inter, Arial, sans-serif" font-size="${font}" font-weight="700"
         fill="#6b7280">${label}</text></svg>`;
   return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
@@ -57,6 +58,7 @@ export default function SmartImage({ src, alt, width = 1600, height = 900, class
       height={height}
       className={className}
       loading={priority ? "eager" : "lazy"}
+      fetchPriority={priority ? "high" : "auto"}
       decoding={priority ? "sync" : "async"}
       onError={(e) => {
         const img = e.currentTarget as HTMLImageElement;
