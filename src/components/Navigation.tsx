@@ -12,7 +12,7 @@ const navItems = [
 
 const Navigation = () => {
   const headerRef = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const location = useLocation();
 
   // Handle navigation click with scroll-to-top logic
@@ -52,7 +52,7 @@ const Navigation = () => {
       className="fixed inset-x-0 top-0 z-50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
-        <Link to="/" className="relative z-10 flex items-center gap-2">
+        <Link className="relative z-10 flex items-center gap-2" to="/">
           <BrandLogo className="shrink-0" withText />
         </Link>
         
@@ -76,8 +76,9 @@ const Navigation = () => {
           className="md:hidden relative z-10 inline-flex items-center justify-center w-10 h-10 rounded-md border"
           onClick={() => setVisible((v) => !v)}
           aria-label="Toggle menu"
+          aria-expanded={visible}
         >
-          <span className="i-lucide-menu"></span>
+          <span className="i-lucide-menu" />
         </button>
       </div>
 
