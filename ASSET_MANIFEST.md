@@ -6,7 +6,7 @@ This document tracks all image assets used in the Metro Surfaces website for ima
 
 | Filename | Path | Usage in Code/Component | Alt Text Pattern | Page(s) Used |
 |----------|------|------------------------|------------------|---------------|
-| `asa-sheet-brown.jpg` | `/src/assets/products/` | `ProductGallery.tsx` (products[0].sheetImage), `Products.tsx` (asaSheetBrown import) | `Sample of {product.name} ({product.category}) by Metro Surfaces — {product.internalCode}, features: {product.category}` | Home, Products |
+| `acrycore-sheet-brown.jpg` | `/src/assets/products/` | `ProductGallery.tsx` (products[0].sheetImage), `Products.tsx` (acrycoreSheetBrown import) | `Sample of {product.name} ({product.category}) by Metro Surfaces — {product.internalCode}, features: {product.category}` | Home, Products |
 | `Lam-in-MS.png` | `/src/assets/products/` | `Products.tsx` (premiumLaminatesImg import) | `Product photo of {category.name} by Metro Surfaces — {category.description}` | Products |
 | `Lou-in-MS.png` | `/src/assets/products/` | `ProductGallery.tsx` (products[1].sheetImage), `Products.tsx` (decorativeLouversImg import) | `Sample of {product.name} ({product.category}) by Metro Surfaces — {product.internalCode}, features: {product.category}` | Home, Products |
 | `Cane-in-MS.png` | `/src/assets/products/` | `Products.tsx` (caneWallpaperImg import) | `Product photo of {category.name} by Metro Surfaces — {category.description}` | Products |
@@ -20,14 +20,14 @@ This document tracks all image assets used in the Metro Surfaces website for ima
 | `residential-feature-wall.jpg` | `/src/assets/applications/` | `ProductGallery.tsx` (applications[0].image) | `Showcase: {product.name} used for {app.title} — {product.category} by Metro Surfaces` | Home |
 | `restaurant-louvers.jpg` | `/src/assets/applications/` | `ProductGallery.tsx` (applications[1].image) | `Showcase: {product.name} used for {app.title} — {product.category} by Metro Surfaces` | Home |
 | `office-brown-panels.jpg` | `/src/assets/applications/` | Not currently used in code | N/A | None (available) |
-| `ASAappinMS (2).png` | `/src/assets/applications/` | Not currently used in code | N/A | None (available) |
+| `acrycoreappinMS (2).png` | `/src/assets/applications/` | Not currently used in code | N/A | None (available) |
 | `RENDER04 TEXTURE 867.png` | `/src/assets/applications/` | Not currently used in code | N/A | None (available) |
 
 ## Hero/Banner Images
 
 | Filename | Path | Usage in Code/Component | Alt Text Pattern | Page(s) Used |
 |----------|------|------------------------|------------------|---------------|
-| `hero-ambient.jpg` | `/src/assets/` | `Hero.tsx` (heroAmbient import) | `Modern workspace interior with Metro Surfaces ASA Acrycore sheets in neutral tones — elegant premium decorative surfaces for architects` | Home |
+| `hero-ambient.jpg` | `/src/assets/` | `Hero.tsx` (heroAmbient import) | `Modern workspace interior with Metro Surfaces acrycore Acrycore sheets in neutral tones — elegant premium decorative surfaces for architects` | Home |
 | `contact-hero-new.jpg` | `/src/assets/` | Not currently used in code | N/A | None (available) |
 
 ## Image Usage Guidelines
