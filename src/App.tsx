@@ -17,10 +17,10 @@ import Applications from "./pages/Applications";
 import PhilosophyPage from "./pages/PhilosophyPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import AsaVsPetg from "./pages/blog/AsaVsPetg";
+import AcrycoreVsPetg from "./pages/blog/AcrycoreVsPetg";
 import SustainableDesign from "./pages/blog/SustainableDesign";
 import LouverSystems from "./pages/blog/LouverSystems";
-import AsaAcrycoreSheets from "./pages/products/AsaAcrycoreSheets";
+import AcrycoreAcrycoreSheets from "./pages/products/AcrycoreAcrycoreSheets";
 import PremiumLaminates from "./pages/products/PremiumLaminates";
 import DecorativeLouvers from "./pages/products/DecorativeLouvers";
 import CaneWallpaper from "./pages/products/CaneWallpaper";
@@ -44,7 +44,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/products/asa-acrycore-sheets" element={<AsaAcrycoreSheets />} />
+            <Route path="/products/Acrycore-acrycore-sheets" element={<AcrycoreAcrycoreSheets />} />
             <Route path="/products/premium-laminates" element={<PremiumLaminates />} />
             <Route path="/products/decorative-louvers" element={<DecorativeLouvers />} />
             <Route path="/products/cane-wallpaper" element={<CaneWallpaper />} />
@@ -53,7 +53,7 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
                         <Route path="/acrycore" element={<Acrycore />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/blog/asa-vs-petg" element={<AsaVsPetg />} />
+            <Route path="/blog/Acrycore-vs-petg" element={<AcrycoreVsPetg />} />
             <Route path="/blog/sustainable-design" element={<SustainableDesign />} />
             <Route path="/blog/louver-systems" element={<LouverSystems />} />
             <Route path="*" element={<NotFound />} />
