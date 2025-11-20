@@ -30,7 +30,7 @@
 ### **Required File Migrations:**
 
 **From `src/assets/products/` → `public/assets/products/`:**
-1. ❌ `asa-sheet-brown.jpg` → Copy to `public/assets/products/asa-sheet-brown.jpg`
+1. ❌ `acrycore-sheet-brown.jpg` → Copy to `public/assets/products/acrycore-sheet-brown.jpg`
 2. ❌ `Lou-in-MS.png` → Copy to `public/assets/products/Lou-in-MS.png`
 
 **From `src/assets/applications/` → `public/assets/applications/`:**
@@ -43,7 +43,7 @@
 
 ### **ProductGallery.tsx References:**
 All paths already use correct `/assets/...` format:
-- `/assets/products/asa-sheet-brown.jpg`
+- `/assets/products/acrycore-sheet-brown.jpg`
 - `/assets/applications/20250825_1334_Minimalist-Workstation-Design_remix_01k3g409jqehsvv8ybz8g2jr25.jpg` ✅ **WORKING**
 - `/assets/applications/residential-feature-wall.jpg`
 - `/assets/products/Lou-in-MS.png`
@@ -63,7 +63,7 @@ Copy the following files from `src/assets/` to `public/assets/`:
 
 ```bash
 # Products
-cp src/assets/products/asa-sheet-brown.jpg public/assets/products/
+cp src/assets/products/acrycore-sheet-brown.jpg public/assets/products/
 cp src/assets/products/Lou-in-MS.png public/assets/products/
 
 # Applications  
@@ -73,7 +73,7 @@ cp src/assets/applications/restaurant-louvers.jpg public/assets/applications/
 
 ### **Step 2: Verification**
 After migration, verify these URLs work in production:
-- `/assets/products/asa-sheet-brown.jpg`
+- `/assets/products/acrycore-sheet-brown.jpg`
 - `/assets/products/Lou-in-MS.png` 
 - `/assets/applications/residential-feature-wall.jpg`
 - `/assets/applications/restaurant-louvers.jpg`
