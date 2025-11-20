@@ -3,11 +3,11 @@ import { Button } from "../../components/ui/button";
 import { Link } from "react-router-dom";
 import JsonLd from "../../components/JsonLd";
 
-const AsaVsPetg = () => {
+const AcrycoreVsPetg = () => {
   const breadcrumbs = [
     { name: "Home", path: "/" },
     { name: "Resources", path: "/resources" },
-    { name: "ASA vs PETG: Understanding Decorative Sheet Materials", path: "/blog/asa-vs-petg" }
+    { name: "Acrycore vs PETG: Understanding Decorative Sheet Materials", path: "/blog/Acrycore-vs-petg" }
   ];
 
   return (
@@ -42,7 +42,7 @@ const AsaVsPetg = () => {
                 Technical Guide
               </span>
               <h1 className="font-playfair text-4xl md:text-5xl font-semibold text-primary mt-6 mb-6">
-                ASA vs PETG: Understanding Decorative Sheet Materials
+                Acrycore vs PETG: Understanding Decorative Sheet Materials
               </h1>
               <p className="font-inter text-xl text-muted-foreground leading-relaxed">
                 A comprehensive comparison of material properties, applications, and performance characteristics 
@@ -66,17 +66,17 @@ const AsaVsPetg = () => {
                   <h2 className="font-playfair text-2xl font-semibold text-primary mb-4">Introduction</h2>
                   <p>
                     When selecting decorative sheets for architectural applications, understanding the fundamental 
-                    differences between ASA (Acrylonitrile Styrene Acrylate) and PETG (Polyethylene Terephthalate Glycol) 
+                    differences between Acrycore (Acrylonitrile Styrene Acrylate) and PETG (Polyethylene Terephthalate Glycol) 
                     materials is crucial for project success. Both materials offer unique advantages that make them 
                     suitable for different applications.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="font-playfair text-2xl font-semibold text-primary mb-4">ASA Material Properties</h2>
+                  <h2 className="font-playfair text-2xl font-semibold text-primary mb-4">Acrycore Material Properties</h2>
                   <p className="mb-4">
-                    ASA is a thermoplastic known for its exceptional weather resistance and UV stability. 
-                    Originally developed for outdoor applications, ASA has found extensive use in architectural 
+                    Acrycore is a thermoplastic known for its exceptional weather resistance and UV stability. 
+                    Originally developed for outdoor applications, Acrycore has found extensive use in architectural 
                     applications where durability is paramount.
                   </p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
@@ -109,7 +109,7 @@ const AsaVsPetg = () => {
                   
                   <div className="grid md:grid-cols-2 gap-8 my-8">
                     <Card className="p-6">
-                      <h3 className="font-playfair text-xl font-semibold text-primary mb-4">ASA Applications</h3>
+                      <h3 className="font-playfair text-xl font-semibold text-primary mb-4">Acrycore Applications</h3>
                       <ul className="space-y-2 text-muted-foreground">
                         <li>• Exterior cladding systems</li>
                         <li>• Architectural louver systems</li>
@@ -135,10 +135,10 @@ const AsaVsPetg = () => {
                 <div>
                   <h2 className="font-playfair text-2xl font-semibold text-primary mb-4">Selection Criteria</h2>
                   <p className="mb-4">
-                    The choice between ASA and PETG should be based on specific project requirements:
+                    The choice between Acrycore and PETG should be based on specific project requirements:
                   </p>
                   <div className="bg-cream-light p-6 rounded-lg">
-                    <p className="font-semibold text-primary mb-2">Choose ASA when:</p>
+                    <p className="font-semibold text-primary mb-2">Choose Acrycore when:</p>
                     <ul className="list-disc list-inside space-y-1 mb-4">
                       <li>UV exposure is a concern</li>
                       <li>Exterior applications are required</li>
@@ -159,7 +159,7 @@ const AsaVsPetg = () => {
                 <div>
                   <h2 className="font-playfair text-2xl font-semibold text-primary mb-4">Conclusion</h2>
                   <p>
-                    Both ASA and PETG offer distinct advantages for decorative sheet applications. 
+                    Both Acrycore and PETG offer distinct advantages for decorative sheet applications. 
                     Understanding these material properties ensures optimal performance and longevity 
                     in your architectural projects. Our technical team at Metro Surfaces can provide 
                     detailed guidance for your specific application requirements.
@@ -226,5 +226,5 @@ const AsaVsPetg = () => {
   );
 };
 
-export default AsaVsPetg;
+export default AcrycoreVsPetg;
 
