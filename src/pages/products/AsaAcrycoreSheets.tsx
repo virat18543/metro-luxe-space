@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import JsonLd from "@/components/JsonLd";
 import SmartImage from "../../components/SmartImage";
-import AcrycoreSheetBrown from "@/assets/products/Acrycore-sheet-brown.jpg";
+import AcrycoreSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
 
