@@ -25,6 +25,7 @@ import PremiumLaminates from "./pages/products/PremiumLaminates";
 import DecorativeLouvers from "./pages/products/DecorativeLouvers";
 import CaneWallpaper from "./pages/products/CaneWallpaper";
 import NotFound from "./pages/NotFound";
+import Acrycore from "./pages/Acrycore";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
             <Route path="/applications" element={<Applications />} />
             <Route path="/philosophy" element={<PhilosophyPage />} />
             <Route path="/contact" element={<ContactPage />} />
+                        <Route path="/acrycore" element={<Acrycore />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog/asa-vs-petg" element={<AsaVsPetg />} />
             <Route path="/blog/sustainable-design" element={<SustainableDesign />} />
