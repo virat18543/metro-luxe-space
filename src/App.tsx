@@ -20,7 +20,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AcrycoreVsPetg from "./pages/blog/AcrycoreVsPetg";
 import SustainableDesign from "./pages/blog/SustainableDesign";
 import LouverSystems from "./pages/blog/LouverSystems";
-import AsaAcrycoreSheets from "./pages/products/AsaAcrycoreSheets";
+import AcrycoreAcrycoreSheets from "./pages/products/AcrycoreAcrycoreSheets";
 import PremiumLaminates from "./pages/products/PremiumLaminates";
 import DecorativeLouvers from "./pages/products/DecorativeLouvers";
 import CaneWallpaper from "./pages/products/CaneWallpaper";
@@ -53,7 +53,7 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
                         <Route path="/acrycore" element={<Acrycore />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/blog/asa-vs-petg" element={<AsaVsPetg />} />
+            <Route path="/blog/Acrycore-vs-petg" element={<AcrycoreVsPetg />} />
             <Route path="/blog/sustainable-design" element={<SustainableDesign />} />
             <Route path="/blog/louver-systems" element={<LouverSystems />} />
             <Route path="*" element={<NotFound />} />
