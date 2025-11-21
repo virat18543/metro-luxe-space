@@ -8,7 +8,7 @@ const ProductGallery = () => {
   const products = [
     {
       name: "Frost White",
-      category: "Acrycore Sheet
+      category: "Acrycore Sheet",
       internalCode: "VLT-123_Oak",
       sheetImage: "/assets/products/asa-sheet-brown.webp",
       applications: [
