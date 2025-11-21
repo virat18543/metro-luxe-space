@@ -17,7 +17,7 @@ import Applications from "./pages/Applications";
 import PhilosophyPage from "./pages/PhilosophyPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import AsaVsPetg from "./pages/blog/AsaVsPetg";
+import AcrycoreVsPetg from "./pages/blog/AcrycoreVsPetg";
 import SustainableDesign from "./pages/blog/SustainableDesign";
 import LouverSystems from "./pages/blog/LouverSystems";
 import AsaAcrycoreSheets from "./pages/products/AsaAcrycoreSheets";
