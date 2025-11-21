@@ -44,14 +44,14 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/products/asa-acrycore-sheets" element={<AsaAcrycoreSheets />} />
+            <Route path="/products/asa-Acrycore-sheets" element={<AsaAcrycoreSheets />} />
             <Route path="/products/premium-laminates" element={<PremiumLaminates />} />
             <Route path="/products/decorative-louvers" element={<DecorativeLouvers />} />
             <Route path="/products/cane-wallpaper" element={<CaneWallpaper />} />
             <Route path="/applications" element={<Applications />} />
             <Route path="/philosophy" element={<PhilosophyPage />} />
             <Route path="/contact" element={<ContactPage />} />
-                        <Route path="/acrycore" element={<Acrycore />} />
+                        <Route path="/Acrycore" element={<Acrycore />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog/Acrycore-vs-petg" element={<AcrycoreVsPetg />} />
             <Route path="/blog/sustainable-design" element={<SustainableDesign />} />

@@ -67,7 +67,7 @@ const Footer = () => {
                       onClick={(e) => handleLinkClick(e, '/products')}
                       className="block hover:text-primary-foreground transition-colors text-sm"
                     >
-                      AcryCore Sheets
+                      Acrycore Sheets
                     </Link>
                     <Link
                       to="/products"
@@ -141,7 +141,7 @@ const Footer = () => {
                 onClick={(e) => handleLinkClick(e, '/products')}
                 className="block font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
               >
-                AcryCore Sheets
+                Acrycore Sheets
               </Link>
               <Link
                 to="/products"

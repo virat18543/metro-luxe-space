@@ -13,7 +13,7 @@ const Index = () => {
     "name": "Metro Surfaces",
     "alternateName": "Metro Surfaces - Premium Decorative Surfaces",
     "url": "https://voli.co.in",
-    "description": "Metro Surfaces offers premium decorative surfaces including AcryCore sheets, laminates, louvers, and cane wallpaper. Trusted B2B partner for architectural excellence.",
+    "description": "Metro Surfaces offers premium decorative surfaces including Acrycore sheets, laminates, louvers, and cane wallpaper. Trusted B2B partner for architectural excellence.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "IN"
@@ -45,7 +45,7 @@ const Index = () => {
     <>
       <Seo
         title="Metro Surfaces | Premium Decorative Surfaces in Mumbai"
-        description="Metro Surfaces: AcryCore sheets, laminates, louvers, and cane wallpaper for world-class interior architecture. Premium decorative surfaces supplier in India."
+        description="Metro Surfaces: Acrycore sheets, laminates, louvers, and cane wallpaper for world-class interior architecture. Premium decorative surfaces supplier in India."
         canonical="https://voli.co.in/"
         ogImage="https://voli.co.in/og.jpg"
       />
@@ -63,7 +63,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               {[
-                { name: 'AcryCore Sheets', anchor: '#asa-sheets' },
+                { name: 'Acrycore Sheets', anchor: '#asa-sheets' },
                 { name: 'Premium Laminates', anchor: '#laminates' },
                 { name: 'Decorative Louvers', anchor: '#louvers' },
                 { name: 'Cane Wallpaper', anchor: '#wallpaper' }

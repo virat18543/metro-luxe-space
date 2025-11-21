@@ -50,7 +50,7 @@ const Hero = () => {
               Beautiful Spaces, Beautiful Life
             </p>
             <p className="font-inter text-xs sm:text-lg text-white/90 max-w-xl sm:max-w-2xl mx-auto leading-snug drop-shadow-sm px-2">
-              AcryCore | Laminates | Louvers | Cane Wallpaper<br/>
+              Acrycore | Laminates | Louvers | Cane Wallpaper<br/>
               For discerning Architects and Interior Designers
             </p>
           </div>

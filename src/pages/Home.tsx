@@ -13,7 +13,7 @@ import residentialFeatureWall from "@/assets/applications/residential-feature-wa
 const Home = () => {
   const productPreview = [
     {
-      name: "AcryCore Sheets",      description: "Weather-resistant decorative surfaces",
+      name: "Acrycore Sheets",      description: "Weather-resistant decorative surfaces",
       image: asaSheetBrown
     },
     {

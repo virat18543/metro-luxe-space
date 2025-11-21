@@ -21,7 +21,7 @@ const slugify = (text: string): string => {
 const Products = () => {
   const productCategories = [
     {
-      name: "AcryCore Sheets",
+      name: "Acrycore Sheets",
       description: "Weather-resistant decorative surfaces with exceptional durability and UV stability. Perfect for both interior and exterior applications.",
       image: asaSheetBrown,
       features: ["UV Resistant", "Weather Proof", "8×4 feet standard", "Multiple finishes"],

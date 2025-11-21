@@ -6,10 +6,10 @@ const Blog = () => {
   const articles = [
     {
       title: "ASA vs PETG: Understanding Decorative Sheet Materials",
-      excerpt: "A comprehensive guide to choosing between AcryCore and PETG decorative sheets for your architectural projects.",
+      excerpt: "A comprehensive guide to choosing between Acrycore and PETG decorative sheets for your architectural projects.",
       category: "Material Science",
       readTime: "5 min read",
-      keywords: "AcryCore, PETG, decorative sheets, material comparison, architectural surfaces",
+      keywords: "Acrycore, PETG, decorative sheets, material comparison, architectural surfaces",
       path: "/blog/asa-vs-petg",
       image: "/images/blog/asa-vs-petg.jpg"
     },

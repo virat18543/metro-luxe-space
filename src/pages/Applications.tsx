@@ -6,7 +6,7 @@ const Applications = () => {
     <>
       <Seo
         title="Decorative Surface Applications | Wall Cladding, Ceilings, Commercial Spaces"
-        description="Applications of premium decorative surfaces by Metro Surfaces: Innovative wall cladding, hotel interiors, ceilings, and retail solutions using AcryCore, laminates, louvers."
+        description="Applications of premium decorative surfaces by Metro Surfaces: Innovative wall cladding, hotel interiors, ceilings, and retail solutions using Acrycore, laminates, louvers."
         canonical="https://voli.co.in/applications"
         ogImage="https://voli.co.in/applications/og.jpg"
       />
