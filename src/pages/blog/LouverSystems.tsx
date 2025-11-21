@@ -1,4 +1,4 @@
-﻿import { Card } from "../../components/ui/card";
+180﻿import { Card } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import { Link } from "react-router-dom";
 import JsonLd from "../../components/JsonLd";
@@ -177,7 +177,7 @@ const LouverSystems = () => {
                           <td className="border border-cream-light p-3">Exterior facades, commercial applications</td>
                         </tr>
                         <tr className="bg-cream-light/50">
-                          <td className="border border-cream-light p-3 font-medium">ASA Acrycore</td>
+                          <td className="border border-cream-light p-3 font-medium">AcryCore</td>
                           <td className="border border-cream-light p-3">UV-stable, weather-resistant, color variety</td>
                           <td className="border border-cream-light p-3">Decorative screens, architectural features</td>
                         </tr>
