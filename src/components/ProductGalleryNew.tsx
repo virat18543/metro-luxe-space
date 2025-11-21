@@ -12,7 +12,7 @@ const ProductGallery = () => {
   const products = [
     {
       name: "Frost White",
-      category: "ASA Acrycore Sheet",
+      category: "AcryCore Sheet",
       internalCode: "VLT-123_Oak",
       sheetImage: asaSheetBrown,
       applications: [
