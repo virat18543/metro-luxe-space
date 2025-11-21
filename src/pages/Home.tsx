@@ -45,16 +45,16 @@ const Home = () => {
         {/* Philosophy Introduction */}
         <section className="py-16 px-6 bg-gradient-to-b from-background to-cream-light">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6">
+            <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-primary mb-6" animate-fade-in-up animate-delay-200>
               Crafting Excellence Through Partnership
             </h2>
-            <p className="font-inter text-lg text-muted-foreground leading-relaxed mb-8">
+            <p className="font-inter text-lg text-muted-foreground leading-relaxed mb-8" animate-fade-in-up animate-delay-300>
               For decades, Metro Surfaces has been the trusted partner for architects, 
               designers, and distributors seeking exceptional decorative surfaces. 
               Our commitment extends beyond products to lasting relationships built on 
               service, continuity, and ethical practice.
             </p>
-            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background">
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-background" hover-lift>
               <Link to="/philosophy">Discover Our Philosophy</Link>
             </Button>
           </div>
