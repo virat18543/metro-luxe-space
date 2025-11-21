@@ -44,7 +44,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/products/asa-acrycore-sheets" element={<AsaAcrycoreSheets />} />
+            <Route path="/products/Acrycore-acrycore-sheets" element={<AcrycoreAcrycoreSheets />} />
             <Route path="/products/premium-laminates" element={<PremiumLaminates />} />
             <Route path="/products/decorative-louvers" element={<DecorativeLouvers />} />
             <Route path="/products/cane-wallpaper" element={<CaneWallpaper />} />

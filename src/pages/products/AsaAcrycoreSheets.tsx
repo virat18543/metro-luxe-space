@@ -3,16 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import JsonLd from "@/components/JsonLd";
 import SmartImage from "../../components/SmartImage";
-import asaSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
+import AcrycoreSheetBrown from "@/assets/products/asa-sheet-brown.jpg";
 import officeBrownPanels from "@/assets/applications/office-brown-panels.jpg";
 import residentialFeatureWall from "@/assets/applications/residential-feature-wall.jpg";
 
-const AsaAcrycoreSheets = () => {
+const AcrycoreAcrycoreSheets = () => {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "ASA Acrycore Sheets",
-    "description": "Premium ASA Acrycore PETG decorative sheets for architectural applications",
+    "name": "Acrycore Acrycore Sheets",
+    "description": "Premium Acrycore Acrycore PETG decorative sheets for architectural applications",
     "manufacturer": {
       "@type": "Organization",
       "name": "Metro Surfaces"
@@ -36,7 +36,7 @@ const AsaAcrycoreSheets = () => {
                 Products
               </Link>
               <span className="text-muted-foreground">/</span>
-              <span className="text-primary font-medium">ASA Acrycore Sheets</span>
+              <span className="text-primary font-medium">Acrycore Acrycore Sheets</span>
             </nav>
           </div>
         </div>
@@ -47,10 +47,10 @@ const AsaAcrycoreSheets = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="font-playfair text-4xl md:text-5xl font-semibold text-primary mb-6">
-                  ASA Acrycore Sheets
+                  Acrycore Acrycore Sheets
                 </h1>
                 <p className="font-inter text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Premium decorative sheets combining the weather resistance of ASA with the 
+                  Premium decorative sheets combining the weather resistance of Acrycore with the 
                   formability of PETG. Perfect for architectural applications requiring both 
                   durability and aesthetic excellence.
                 </p>
@@ -65,8 +65,8 @@ const AsaAcrycoreSheets = () => {
               </div>
               <div>
                 <SmartImage
-                  src={asaSheetBrown}
-                  alt="ASA Acrycore sheets in brown wood grain finish"
+                  src={AcrycoreSheetBrown}
+                  alt="Acrycore Acrycore sheets in brown wood grain finish"
                   className="rounded-lg shadow-lg w-full h-auto"
                   priority
                 />
@@ -88,7 +88,7 @@ const AsaAcrycoreSheets = () => {
                     Weather Resistant
                   </h3>
                   <p className="font-inter text-muted-foreground">
-                    ASA surface layer provides exceptional UV resistance and long-term color stability for outdoor applications.
+                    Acrycore surface layer provides exceptional UV resistance and long-term color stability for outdoor applications.
                   </p>
                 </CardContent>
               </Card>
@@ -128,7 +128,7 @@ const AsaAcrycoreSheets = () => {
               <div>
                 <SmartImage
                   src={officeBrownPanels}
-                  alt="ASA Acrycore sheets used for commercial office panels"
+                  alt="Acrycore Acrycore sheets used for commercial office panels"
                   className="rounded-lg shadow-lg w-full h-64 object-cover mb-4"
                 />
                 <h3 className="font-inter font-semibold text-xl text-primary mb-2">
@@ -142,7 +142,7 @@ const AsaAcrycoreSheets = () => {
               <div>
                 <SmartImage
                   src={residentialFeatureWall}
-                  alt="ASA Acrycore sheets creating a residential feature wall"
+                  alt="Acrycore Acrycore sheets creating a residential feature wall"
                   className="rounded-lg shadow-lg w-full h-64 object-cover mb-4"
                 />
                 <h3 className="font-inter font-semibold text-xl text-primary mb-2">
@@ -201,7 +201,7 @@ const AsaAcrycoreSheets = () => {
               Ready to Transform Your Project?
             </h2>
             <p className="font-inter text-lg text-muted-foreground mb-8 leading-relaxed">
-              Contact us today to discuss your ASA Acrycore sheet requirements and get expert guidance 
+              Contact us today to discuss your Acrycore Acrycore sheet requirements and get expert guidance 
               on selecting the perfect finish for your application.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -216,4 +216,4 @@ const AsaAcrycoreSheets = () => {
   );
 };
 
-export default AsaAcrycoreSheets;
+export default AcrycoreAcrycoreSheets;
