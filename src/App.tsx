@@ -20,7 +20,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AcrycoreVsPetg from "./pages/blog/AcrycoreVsPetg";
 import SustainableDesign from "./pages/blog/SustainableDesign";
 import LouverSystems from "./pages/blog/LouverSystems";
-import AcrycoreAcrycoreSheets from "./pages/products/AcrycoreAcrycoreSheets";
+import AsaAcrycoreSheets from "./pages/products/AsaAcrycoreSheets";
 import PremiumLaminates from "./pages/products/PremiumLaminates";
 import DecorativeLouvers from "./pages/products/DecorativeLouvers";
 import CaneWallpaper from "./pages/products/CaneWallpaper";
