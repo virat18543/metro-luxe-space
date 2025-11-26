@@ -49,8 +49,7 @@ const Navigation = () => {
   return (
     <header
       ref={headerRef}
-      className="fixed inset-x-0 top-0 z-50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b"
-    >
+className="fixed inset-x-0 top-0 z-50 bg-background/80 backdrop-blur max-md:bg-black/40 supports-[backdrop-filter]:bg-background/60 max-md:supports-[backdrop-filter]:bg-black/30 border-b"    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
         <Link className="relative z-10 flex items-center gap-2" to="/">
           <BrandLogo className="shrink-0" withText />
