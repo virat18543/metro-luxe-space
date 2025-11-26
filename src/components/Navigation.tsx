@@ -73,7 +73,7 @@ const Navigation = () => {
 
         {/* Mobile menu button (you can wire it later if needed) */}
         <button
-          className="md:hidden relative z-10 inline-flex items-center justify-center w-10 h-10 rounded-md border"
+          className="md:hidden relative z-10 inline-flex items-center justify-center w-10 h-10 rounded-md"
           onClick={() => setVisible((v) => !v)}
           aria-label="Toggle menu"
           aria-expanded={visible}
