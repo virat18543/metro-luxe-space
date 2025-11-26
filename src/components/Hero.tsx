@@ -53,7 +53,7 @@ const Hero = () => {
               Acrycore | Laminates | Louvers | Cane Wallpaper<br/>
               For discerning Architects and Interior Designers
             </p>
-  animate-fade-in-up animate-delay-500         </div>
+  </div>
 
           {/* Mobile CTA */}
           <div className="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
