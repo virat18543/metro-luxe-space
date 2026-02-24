@@ -28,8 +28,7 @@ const Index = () => {
           <div className="text-center space-y-2">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-primary tracking-tight whitespace-nowrap">              Acrycore™ Digital Library
             </h1>
-            <p className="text-lg text-muted-foreground font-medium">
-              Technical references and 3D tools for architects and designers
+        <p className="text-sm md:text-lg text-muted-foreground font-medium">              Technical references and 3D tools for architects and designers
             </p>
             <p className="text-sm text-muted-foreground max-w-2xl mx-auto pt-2">
               Use the product names or numbers from your Acrycore™ folder to locate details below
@@ -147,7 +146,7 @@ const Index = () => {
         </div>
 
         {/* Color Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12 order-3 md:order-3">          {filteredColors.map(color => <ColorCard key={color.id} color={color} onViewDetails={() => handleViewDetails(color)} />)}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-12 order-3 md:order-3">          {filteredColors.map(color => <ColorCard key={color.id} color={color} onViewDetails={() => handleViewDetails(color)} />)}
         </div>
 
         {filteredColors.length === 0 && <div className="text-center py-16">
