@@ -10,8 +10,7 @@ const Hero = () => {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
     if (location.pathname === path) {
       e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+        window.scrollTo(0, 0);    }
     // If not on current page, allow normal navigation
   };
 
@@ -29,10 +28,8 @@ const Hero = () => {
 
       {/* Floating Elements for Visual Interest (hidden on mobile) */}
       <div className="absolute inset-0 z-5 pointer-events-none hidden sm:block">
-        <div className="absolute top-20 left-4 w-2 h-2 bg-white/30 rounded-full animate-pulse"></div>
-        <div className="absolute top-32 right-8 w-1 h-1 bg-white/40 rounded-full animate-bounce"></div>
-        <div className="absolute bottom-40 left-12 w-1.5 h-1.5 bg-white/20 rounded-full animate-pulse delay-300"></div>
-        <div className="absolute top-64 right-4 w-1 h-1 bg-white/35 rounded-full animate-bounce delay-500"></div>
+          <div className="absolute top-20 left-4 w-2 h-2 bg-white/30 rounded-full"></div>        <div className="absolute top-32 right-8 w-1 h-1 bg-white/40 rounded-full animate-bounce"></div>
+          <div className="absolute bottom-40 left-12 w-1.5 h-1.5 bg-white/20 rounded-full"></div>        <div className="absolute top-64 right-4 w-1 h-1 bg-white/35 rounded-full animate-bounce delay-500"></div>
       </div>
 
       {/* Content - Centered flex container */}
