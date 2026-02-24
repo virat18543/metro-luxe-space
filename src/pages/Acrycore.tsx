@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+grid-cols-2  grid-cols-1import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search } from "lucide-react";
@@ -144,8 +144,7 @@ const Index = () => {
         </div>
 
         {/* Color Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-12 order-3 md:order-3">          {filteredColors.map(color => <ColorCard key={color.id} color={color} onViewDetails={() => handleViewDetails(color)} />)}
-        </div>
+<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-12 order-3 md:order-3">        </div>
 
         {filteredColors.length === 0 && <div className="text-center py-16">
             <p className="text-muted-foreground text-lg">
