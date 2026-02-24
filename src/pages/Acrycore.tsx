@@ -40,9 +40,9 @@ const Index = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col">
         {/* Product Overview Section */}
-        <section className="max-w-6xl mx-auto mb-12 mt-8">
+        <section className="max-w-6xl mx-auto mb-12 mt-8 order-2 md:order-1">
           <h2 className="text-2xl font-heading font-semibold text-primary mb-6 text-center">
             Why Acrycore™
           </h2>
@@ -121,7 +121,7 @@ const Index = () => {
         </section>
 
         {/* Search and Filter Bar */}
-        <div className="mb-8 space-y-4">
+        <div className="mb-8 space-y-4 order-1 md:order-2">
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -148,7 +148,7 @@ const Index = () => {
         </div>
 
         {/* Color Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12 order-3 md:order-3">
           {filteredColors.map(color => <ColorCard key={color.id} color={color} onViewDetails={() => handleViewDetails(color)} />)}
         </div>
 
