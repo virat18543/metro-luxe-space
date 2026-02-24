@@ -42,7 +42,7 @@ const Index = () => {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Product Overview Section */}
-        <section className="max-w-6xl mx-auto mb-12 mt-8 hidden md:block">
+        <section className="max-w-6xl mx-auto mb-12 mt-8">
           <h2 className="text-2xl font-heading font-semibold text-primary mb-6 text-center">
             Why Acrycore™
           </h2>
