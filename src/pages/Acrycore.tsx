@@ -146,8 +146,7 @@ const Index = () => {
         {/* Color Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-12 order-3 md:order-3">
             {filteredColors.map((color) => (
-              <ColorCard key={color.id} color={color} onViewDetails={() => handleViewDetails(color)} />
-            ))}
+              <ColorCard key={color.id} color={color} onViewDetails={() => handleViewDetails(color)} />            ))}
           </div>
 
         {filteredColors.length === 0 && <div className="text-center py-16">
