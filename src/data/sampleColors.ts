@@ -29,7 +29,7 @@ export const sampleColors: ColorData[] = [
   { id: "16", productName: "MINT GREEN", catalogueCode: "99316", type: "Solid", edgeBandCode: "10039 ASIS", photoshopCode: "c6d6c9", renderUrl: "https://svr.3d66.com/nextvrview/7074878", notes: "Fresh mint green aesthetic." },
   { id: "17", productName: "IRON BLUE", catalogueCode: "99317", type: "Solid", edgeBandCode: "EB 129 MD", photoshopCode: "3b464a", renderUrl: "https://svr.3d66.com/nextvrview/7074908", notes: "Industrial iron blue tone." },
   { id: "18", productName: "STEEL BLUE", catalogueCode: "99318", type: "Solid", edgeBandCode: "112266 REHAU", photoshopCode: "6c7e82", renderUrl: "https://svr.3d66.com/nextvrview/7074919", notes: "Modern steel blue finish." },
-  { id: "19", productName: "WILLOW MIST", catalogueCode: "99319", type: "Solid", edgeBandCode: "N/A", photoshopCode: "f0f0e6", renderUrl: "https://www.kujiale.cn/design/3FO3CDC7DE/PHshow", notes: "Soft willow mist color." },
+  { id: "19", productName: "WILLOW MIST", catalogueCode: "99319", type: "Solid", edgeBandCode: "N/A", photoshopCode: "f0f0e6", renderUrl: "https://www.kujiale.cn/design/3FO3CDC7DE//show", notes: "Soft willow mist color." },
   { id: "20", productName: "PORCELAIN OFF-WHITE", catalogueCode: "99320", type: "Solid", edgeBandCode: "N/A", photoshopCode: "f4ede1", renderUrl: "https://www.kujiale.cn/design/3FO3CDDDW228/show", notes: "Creamy porcelain off-white." },
   { id: "21", productName: "GREIGE GALLERY", catalogueCode: "99322", type: "Solid", edgeBandCode: "N/A", photoshopCode: "aea397", renderUrl: "https://www.kujiale.cn/design/3FO3CDSJJFKp/show", notes: "Contemporary greige gallery tone." },
   { id: "22", productName: "PEBBLE PLAN", catalogueCode: "99323", type: "Solid", edgeBandCode: "N/A", photoshopCode: "e9e0d8", renderUrl: "https://www.kujiale.cn/design/3FO3CDOIK871/show", notes: "Natural pebble plan aesthetic." },
@@ -63,7 +63,8 @@ export const sampleColors: ColorData[] = [
   { id: "50", productName: "BLUSH LINEN", catalogueCode: "99469", type: "Solid", edgeBandCode: "N/A", photoshopCode: "f1f5f1", renderUrl: "https://www.kujiale.cn/design/3FO3CD97CXK9/show", notes: "Soft blush linen texture." },
   { id: "51", productName: "WALNUT BROWN", catalogueCode: "99471", type: "Solid", edgeBandCode: "N/A", photoshopCode: "b59d8a", renderUrl: "https://www.kujiale.cn/design/3FO3CDOII7YF/show", notes: "Rich walnut brown finish." },
   { id: "52", productName: "SEAFOAM STUDIO", catalogueCode: "99472", type: "Solid", edgeBandCode: "N/A", photoshopCode: "b3aca6", renderUrl: "https://www.kujiale.cn/design/3FO3CDSB7O0G/show", notes: "Fresh seafoam studio aesthetic." },
-  { id: "53", productName: "MIST PAVILION", catalogueCode: "99473", type: "Solid", edgeBandCode: "N/A", photoshopCode: "a59b90", renderUrl: "N/A", notes: "Soft mist pavilion tone." },
+  { id: "53", productName: "66
+    ", catalogueCode: "99473", type: "Solid", edgeBandCode: "N/A", photoshopCode: "a59b90", renderUrl: "https://www.kujiale.cn/design/3FO3CDAJSM41/show", notes: "Soft mist pavilion tone." },
   { id: "54", productName: "ALMOND BEIGE", catalogueCode: "99475", type: "Solid", edgeBandCode: "N/A", photoshopCode: "91847d", renderUrl: "https://www.kujiale.cn/design/3FO3CDSB7AMC/show", notes: "Classic almond beige color." },
   { id: "55", productName: "MIDNIGHT SLATE", catalogueCode: "99476", type: "Solid", edgeBandCode: "N/A", photoshopCode: "86796e", renderUrl: "https://www.kujiale.cn/design/3FO3CDS42UAQ/show", notes: "Moody midnight slate finish." },
   { id: "56", productName: "PEWTER PLAN", catalogueCode: "99477", type: "Solid", edgeBandCode: "N/A", photoshopCode: "96a99f", renderUrl: "https://www.kujiale.cn/design/3FO3CDSM2F41/show", notes: "Neutral pewter plan aesthetic." },
