@@ -63,8 +63,7 @@ export const sampleColors: ColorData[] = [
   { id: "50", productName: "BLUSH LINEN", catalogueCode: "99469", type: "Solid", edgeBandCode: "N/A", photoshopCode: "f1f5f1", renderUrl: "https://www.kujiale.cn/design/3FO3CD97CXK9/show", notes: "Soft blush linen texture." },
   { id: "51", productName: "WALNUT BROWN", catalogueCode: "99471", type: "Solid", edgeBandCode: "N/A", photoshopCode: "b59d8a", renderUrl: "https://www.kujiale.cn/design/3FO3CDOII7YF/show", notes: "Rich walnut brown finish." },
   { id: "52", productName: "SEAFOAM STUDIO", catalogueCode: "99472", type: "Solid", edgeBandCode: "N/A", photoshopCode: "b3aca6", renderUrl: "https://www.kujiale.cn/design/3FO3CDSB7O0G/show", notes: "Fresh seafoam studio aesthetic." },
-  { id: "53", productName: "MIST PAVILION
-    ", catalogueCode: "99473", type: "Solid", edgeBandCode: "N/A", photoshopCode: "a59b90", renderUrl: "https://www.kujiale.cn/design/3FO3CDAJSM41/show", notes: "Soft mist pavilion tone." },
+  { id: "53", productName: "MIST PAVILION", catalogueCode: "99473", type: "Solid", edgeBandCode: "N/A", photoshopCode: "a59b90", renderUrl: "https://www.kujiale.cn/design/3FO3CDAJSM41/show", notes: "Soft mist pavilion tone." },/www.kujiale.cn/design/3FO3CDAJSM41/show", notes: "Soft mist pavilion tone." },
   { id: "54", productName: "ALMOND BEIGE", catalogueCode: "99475", type: "Solid", edgeBandCode: "N/A", photoshopCode: "91847d", renderUrl: "https://www.kujiale.cn/design/3FO3CDSB7AMC/show", notes: "Classic almond beige color." },
   { id: "55", productName: "MIDNIGHT SLATE", catalogueCode: "99476", type: "Solid", edgeBandCode: "N/A", photoshopCode: "86796e", renderUrl: "https://www.kujiale.cn/design/3FO3CDS42UAQ/show", notes: "Moody midnight slate finish." },
   { id: "56", productName: "PEWTER PLAN", catalogueCode: "99477", type: "Solid", edgeBandCode: "N/A", photoshopCode: "96a99f", renderUrl: "https://www.kujiale.cn/design/3FO3CDSM2F41/show", notes: "Neutral pewter plan aesthetic." },
